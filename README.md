@@ -2,7 +2,15 @@
 
 ### 使用情况
 
-能想到的都完美了,除了触摸板不能双指手势
+- [x] 声音
+- [x] 显卡
+- [x] 网卡
+- [x] 雷电口热拔插
+- [x] 触摸板
+- [x] 睡眠
+- [ ] 蓝牙
+- [ ] iMessage
+
 
 ### 配置
 
@@ -18,9 +26,9 @@ CPU : i7-8550U
 
 硬盘 : SM961(256G)
 
-BIOS版本 : 2.5.1
+BIOS版本 : 2.8.1
 
-系统版本 : 10.3.4 
+系统版本 : 10.3.6 
 
 ### 安装前准备
 
@@ -30,7 +38,7 @@ BIOS版本 : 2.5.1
 
 3. 升级 BIOS, 升级最新即可
 
-4. 调整 DVMT 值,参考 the-darkvoid 
+4. 调整 DVMT 值,参考 the-darkvoid（非常重要）
 
 ### 安装过程
 
@@ -41,47 +49,30 @@ BIOS版本 : 2.5.1
 3. 执行命令开启 HIDPI ,把分辨率设为1440*810,显示更清楚
 
 ### 一些问题
-1. 蓝牙问题,直接使用the-darkvoid的 CLOVER 会导致DW1830蓝牙无法驱动,具体表现为开机卡60s, 并提示 BCM2045A0 ,经过简单修改现在已经可以使用
+1. 蓝牙不稳定，无法使用
 
-2. 声音问题.插入耳机无法识别,解决方法 DSDT 中加入 SSDT-ALC256,SSDT-HDEF.耳机电流声,使用 the-darkvoid 的脚本文件 xps9360.sh解决.睡眠唤醒无声,将 config.list 中 boot 中 darkwake 值设为0
+2. 声音问题，使用xps9360.sh解决
 
-3. 触摸板驱动,使用 VoodooI2C 驱动使用双指即右击不灵敏,三指手势可用.使用VoodooPS2Controller不太好用
+3. 触摸板驱动,使用 VoodooI2C 驱动使用双指即右击不灵敏,仅三指手势可用.故替换为VoodooPS2Controller，ApplePS2SmartTouchPad，支持双指右边缘左划，上边缘下划，三指向上，向下，左划右划，四指向上，向下，左划右划   
 
 ### 注意事项
 
-1. 其他型号的电脑不要使用我的 EFI ,尤其是显卡不一样的电脑,请自己在 config.list 修改显卡仿冒值再尝试使用
+ 相对于 the-darkvoid,有以下改动
 
-2. 相对于 the-darkvoid,有以下改动
-
-**driver64EFI**
-
-    使用最新 CLOVER
-    
 **kexts**
 
-    删除 FakePCID_* wifi原生驱动,不要仿冒
-
-    删除 UVC2FaceTimeHD 不需要摄像头
-    
-    删除 VoodooI2C.kext
-    
-    添加 AirportBrcmfixup 5G网络支持
-    
-    添加 BrcmPatchRAM2 BrcmFirmwareData 蓝牙功能
-    
-    添加 Shiki 解决 Itunes 偶尔闪退
+	添加 ApplePS2SmartTouchPad.kext
+	添加 BT4LEContiunityFixup.kext
+	添加 AirportBrcmFixup.kext
 
 **themes** 
 
     添加主题文件
     
 **ACPI**
-
-    删除 SSDT-UIAC SSDT-USBX 感觉不需要
-    
-    删除 SSDT-IGPU 直接在 config 中仿冒,不需要动态patch
     
     删除 SSDT-I2C 因为双击不灵敏
+    替换 SSDT-UIAC.aml
     
 ### 致谢
 
