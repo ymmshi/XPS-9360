@@ -48,8 +48,6 @@
 				<false/>
 				<key>FixHPET</key>
 				<false/>
-				<key>FixHeaders</key>
-				<true/>
 				<key>FixIDE</key>
 				<false/>
 				<key>FixIPIC</key>
@@ -336,6 +334,8 @@
 				<string>PtidDevc</string>
 			</dict>
 		</array>
+		<key>FixHeaders</key>
+		<true/>
 		<key>SSDT</key>
 		<dict>
 			<key>DropOem</key>
@@ -384,22 +384,20 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>debug=0x12a acpi_layer=0x08 acpi_level=0x02 msgbuf=512000</string>
+		<string>acpi_level=0x02 dart=0 debug=0x12a msgbuf=512000 acpi_layer=0x08</string>
 		<key>DefaultVolume</key>
 		<string>LastBootedVolume</string>
+		<key>Fast</key>
+		<true/>
 		<key>NeverHibernate</key>
 		<true/>
 		<key>Secure</key>
 		<false/>
-		<key>Timeout</key>
-		<integer>2</integer>
 		<key>XMPDetection</key>
 		<integer>1</integer>
 	</dict>
 	<key>CPU</key>
 	<dict>
-		<key>FrequencyMHz</key>
-		<integer>1000</integer>
 		<key>HWPEnable</key>
 		<true/>
 		<key>UseARTFrequency</key>
@@ -412,7 +410,7 @@
 		<key>Audio</key>
 		<dict>
 			<key>Inject</key>
-			<string>0</string>
+			<integer>0</integer>
 		</dict>
 		<key>USB</key>
 		<dict>
@@ -443,7 +441,7 @@
 		<key>ScreenResolution</key>
 		<string>1600x900</string>
 		<key>Theme</key>
-		<string>HighSierra</string>
+		<string>SimpleDark</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
@@ -466,9 +464,9 @@
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
-		<key>AppleRTC</key>
+		<key>AppleIntelCPUPM</key>
 		<false/>
-		<key>AsusAICPUPM</key>
+		<key>AppleRTC</key>
 		<false/>
 		<key>Debug</key>
 		<false/>
@@ -476,11 +474,11 @@
 		<true/>
 		<key>KernelCpu</key>
 		<false/>
-		<key>KernelHaswellE</key>
-		<false/>
 		<key>KernelLapic</key>
 		<false/>
 		<key>KernelPm</key>
+		<false/>
+		<key>KernelXCPM</key>
 		<false/>
 		<key>KextsToPatch</key>
 		<array>
@@ -493,6 +491,8 @@
 				<data>
 				RiV1VCUwNHgA
 				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
 				<key>Name</key>
 				<string>com.apple.driver.AppleBacklight</string>
 				<key>Replace</key>
@@ -514,21 +514,21 @@
 	<key>SMBIOS</key>
 	<dict>
 		<key>BiosReleaseDate</key>
-		<string>08/08/2017</string>
+		<string>06/26/2018</string>
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>BiosVersion</key>
-		<string>MBP141.88Z.0167.B00.1708080034</string>
+		<string>MBP143.88Z.0178.B00.1806261159</string>
 		<key>Board-ID</key>
-		<string>Mac-B4831CEBD52A0C4C</string>
+		<string>Mac-551B86E5744E2388</string>
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>C02752608GUDP001M</string>
+		<string>C02739104J9F504JA</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
-		<string>MacBookPro14,1</string>
+		<string>1.0</string>
 		<key>ChassisAssetTag</key>
 		<string>MacBook-Aluminum</string>
 		<key>ChassisManufacturer</key>
@@ -536,15 +536,17 @@
 		<key>ChassisType</key>
 		<string>0x09</string>
 		<key>Family</key>
-		<string>MacBook</string>
+		<string>MacBook Pro</string>
+		<key>FirmwareFeatures</key>
+		<string>0xFC0FE13F</string>
+		<key>FirmwareFeaturesMask</key>
+		<string>0xFF1FFF3F</string>
 		<key>LocationInChassis</key>
 		<string>Part Component</string>
 		<key>Manufacturer</key>
 		<string>Apple Inc.</string>
 		<key>Memory</key>
 		<dict>
-			<key>Channels</key>
-			<integer>2</integer>
 			<key>Modules</key>
 			<array>
 				<dict>
@@ -580,19 +582,17 @@
 					<string>SK Hynix</string>
 				</dict>
 			</array>
-			<key>SlotCount</key>
-			<integer>2</integer>
 		</dict>
 		<key>Mobile</key>
 		<true/>
+		<key>PlatformFeature</key>
+		<string>0x1A</string>
 		<key>ProductName</key>
-		<string>MacBookPro14,1</string>
+		<string>MacBookPro14,3</string>
 		<key>SerialNumber</key>
-		<string>C02VL2HRHV36</string>
+		<string>C02VG163HTD5</string>
 		<key>SmUUID</key>
-		<string>A47E7BC1-DECA-439E-A6C4-DB8B6767C700</string>
-		<key>Trust</key>
-		<true/>
+		<string>CF6A8A94-43D0-484C-9F15-80B26127C987</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
