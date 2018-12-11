@@ -10,7 +10,7 @@
 - [x] 睡眠
 - [x] 蓝牙
 - [x] 变频
-- [ ] 睡眠变频
+- [x] 睡眠变频
 - [ ] iMessage
 
 
@@ -28,9 +28,9 @@ CPU : i7-8550U
 
 硬盘 : SM961(256G)
 
-BIOS版本 : 2.8.1
+BIOS版本 : 2.9.0
 
-系统版本 : 10.3.6 
+系统版本 : 10.4.2 
 
 ### 安装前准备
 
@@ -54,29 +54,6 @@ BIOS版本 : 2.8.1
 1. 蓝牙不稳定，无法使用，在config文件中boot选线添加dark=0解决
 
 2. 声音问题，使用xps9360.sh解决
-
-3. 触摸板驱动,使用 VoodooI2C 驱动使用双指即右击不灵敏,仅三指手势可用.故替换为VoodooPS2Controller，ApplePS2SmartTouchPad，支持双指右边缘左划，上边缘下划，三指向上，向下，左划右划，四指向上，向下，左划右划，双指放大缩小   
-
-### 注意事项
-
- 相对于 the-darkvoid,有以下改动
-
-**kexts**
-	
-	删除 VoodooPS2Controller.kext
-	添加 ApplePS2SmartTouchPad.kext
-	添加 BT4LEContiunityFixup.kext
-	添加 AirportBrcmFixup.kext
-	添加 BrcmFirmwareData.kext BrcmPatchRAM2.kext
-
-**themes** 
-
-    添加主题文件
-    
-**ACPI**
-    
-    删除 SSDT-I2C 因为双击不灵敏
-    替换 SSDT-UIAC，睡眠唤醒蓝牙驱动
     
 ### 致谢
 
