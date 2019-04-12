@@ -325,13 +325,13 @@
 				<key>Signature</key>
 				<string>SSDT</string>
 				<key>TableId</key>
-				<string>xh_rvp07</string>
+				<string>#TbtTypeC</string>
 			</dict>
 			<dict>
 				<key>Signature</key>
 				<string>SSDT</string>
 				<key>TableId</key>
-				<string>PtidDevc</string>
+				<string>#xh_rvp07</string>
 			</dict>
 		</array>
 		<key>FixHeaders</key>
@@ -387,11 +387,11 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>msgbuf=512000 dart=0 darkwake=0 debug=0x12a acpi_level=0x02 acpi_layer=0x08</string>
+		<string>dart=0 debug=0x12a darkwake=0 acpi_layer=0x08 brcmfx-country=#a msgbuf=512000 acpi_level=0x02</string>
 		<key>DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>Fast</key>
-		<true/>
+		<false/>
 		<key>NeverHibernate</key>
 		<true/>
 		<key>Secure</key>
