@@ -32,18 +32,27 @@ BIOS版本 : 2.9.0
 
 ### 驱动版本
 
-```
-	AirportBrcmFixup 2.0.3
-	AppleALC 1.4.1
-	BrcmPatchRam 2.2.12
-	Clover 5096
-	CPUFriend 1.1.9
-	Lilu 1.3.8
-	USBInjectAll0.7.1
-	VirtualSMC 1.0.8
-	VoodooPS2 1.9.2
-	WhateverGreen 1.3.1
-```
+
+AirportBrcmFixup 2.0.3
+
+AppleALC 1.4.1
+
+BrcmPatchRam 2.2.12
+
+Clover 5096
+
+CPUFriend 1.1.9
+
+Lilu 1.3.8
+
+USBInjectAll0.7.1
+
+VirtualSMC 1.0.8
+
+VoodooPS2 1.9.2
+
+WhateverGreen 1.3.1
+
 
 ### 安装前准备
 
