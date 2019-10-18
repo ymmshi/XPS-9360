@@ -1,58 +1,35 @@
 ## MacOS with xps-9360
 
 ### 使用情况
-
-- [x] 声音
-- [x] 显卡
-- [x] 网卡
-- [x] 雷电口热拔插
-- [x] 触摸板
-- [x] 睡眠
-- [x] 蓝牙
-- [x] 变频
-- [x] 睡眠变频
-- [ ] iMessage
-
+ 
+| 选项 | 状态 | 选项 | 状态 
+| :---: | :---: | :---:| :---: |
+声音| **ok** |睡眠| **ok** |
+显卡| **ok** |蓝牙| **ok** |
+网卡| **ok** |变频| **ok** |
+雷电口热拔插| **ok** |睡眠变频| **ok** |
+触摸板| **ok** |iMessage| no |
 
 ### 配置
-
-型号 : 戴尔XPS 13-9360-R3905S
-
-CPU : i7-8550U
-
-显卡 : HD620
-
-网卡 : DW1830
-
-内存 : 16G
-
-硬盘 : SM961(256G)
-
-BIOS版本 : 2.9.0
+|配置|参数
+|:---:|:---:|
+电脑型号 | XPS 13-9360-R3905S
+CPU | i7-8550U
+显卡 | HD620
+网卡蓝牙 | DW1830
+内存 | 16G
+硬盘 | SM961(256G)
+BIOS版本 | 2.9.0
 
 ### 驱动版本
 
-
-AirportBrcmFixup 2.0.3
-
-AppleALC 1.4.1
-
-BrcmPatchRam 2.2.12
-
-Clover 5096
-
-CPUFriend 1.1.9
-
-Lilu 1.3.8
-
-USBInjectAll0.7.1
-
-VirtualSMC 1.0.8
-
-VoodooPS2 1.9.2
-
-WhateverGreen 1.3.1
-
+驱动|版本|驱动|版本
+:---:|:---:|:---:|:---:
+AirportBrcmFixup|2.0.3|Lilu|1.3.8
+AppleALC|1.4.1|USBInjectAll|0.7.1
+BrcmPatchRam|2.2.12|VirtualSMC|1.0.8
+Clover|5096|VoodooPS2|1.9.2
+CPUFriend|1.1.9|WhateverGreen|1.3.1
 
 ### 安装前准备
 
@@ -77,3 +54,5 @@ WhateverGreen 1.3.1
 ### [the-darkvoid](https://github.com/the-darkvoid/XPS9360-macOS)
 
 ### [triton21](http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1769152&highlight=hidpi)
+
+### [黑锅小兵的部落阁](https://blog.daliansky.net/about/)
