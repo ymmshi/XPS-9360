@@ -30,7 +30,21 @@ CPU : i7-8550U
 
 BIOS版本 : 2.9.0
 
-系统版本 : 10.14.4
+系统版本 : 10.15
+
+### 驱动版本
+···
+	AirportBrcmFixup 2.0.3
+	AppleALC 1.4.1
+	BrcmPatchRam 2.2.12
+	Clover 5096
+	CPUFriend 1.1.9
+	Lilu 1.3.8
+	USBInjectAll0.7.1
+	VirtualSMC 1.0.8
+	VoodooPS2 1.9.2
+	WhateverGreen 1.3.1
+···
 
 ### 安装前准备
 
@@ -49,7 +63,7 @@ BIOS版本 : 2.9.0
 2. 使用 xps9360.sh 中相关命令注入声音驱动,打开第三方应用权限
 
 3. 执行命令开启 HIDPI ,把分辨率设为1440*810,显示更清楚
-    
+
 ### 致谢
 
 ### [the-darkvoid](https://github.com/the-darkvoid/XPS9360-macOS)
