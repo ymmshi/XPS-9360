@@ -25,11 +25,11 @@ BIOS版本 | 2.9.0
 
 驱动|版本|驱动|版本
 :---:|:---:|:---:|:---:
-AirportBrcmFixup|2.0.3|Lilu|1.3.8
-AppleALC|1.4.1|USBInjectAll|0.7.1
-BrcmPatchRam|2.2.12|VirtualSMC|1.0.8
-Clover|5096|VoodooPS2|1.9.2
-CPUFriend|1.1.9|WhateverGreen|1.3.1
+AirportBrcmFixup|2.0.4|Lilu|1.4.0
+AppleALC|1.4.4|USBInjectAll|0.7.1
+BrcmPatchRam|2.5.0|VirtualSMC|1.0.9
+Clover|5099|VoodooPS2|1.9.2
+CPUFriend|1.1.9|WhateverGreen|1.3.5
 
 ### 安装前准备
 
@@ -37,9 +37,9 @@ CPUFriend|1.1.9|WhateverGreen|1.3.1
 
 2. 更换网卡,内置 killer1535 网卡无法驱动,故需更换网卡,推荐 DW1560/DW1830,DW1830有三根天线,原装网卡两根天线接口,所以需要加接口
 
-3. 升级 BIOS, 升级最新即可
+3. 升级 BIOS, 升级到2.9.0，最新版本没有测试过
 
-4. 调整 DVMT 值,参考 the-darkvoid（非常重要）
+4. **调整 DVMT 值,参考 the-darkvoid（非常重要）**
 
 ### 安装过程
 
@@ -55,4 +55,4 @@ CPUFriend|1.1.9|WhateverGreen|1.3.1
 
 ### [triton21](http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1769152&highlight=hidpi)
 
-### [黑锅小兵的部落阁](https://blog.daliansky.net/about/)
+### [黑果小兵的部落阁](https://blog.daliansky.net/about/)
