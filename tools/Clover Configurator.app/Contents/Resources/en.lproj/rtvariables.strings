@@ -2,6 +2,12 @@
 /* Class = "NSTextField"; ibShadowedToolTip = "<key>MLB</key>\n<string>XXXXXXXXXX</string>\nDigits and letters, 13-17 in length, describing the motherboard's serial number. No special rule exists here. The best option is to choose a real serial number and to replace digits in the middle."; ObjectID = "3Rz-bH-ov6"; */
 "3Rz-bH-ov6.ibShadowedToolTip" = "<key>MLB</key>\n<string>XXXXXXXXXX</string>\nDigits and letters, 13-17 in length, describing the motherboard's serial number. No special rule exists here. The best option is to choose a real serial number and to replace digits in the middle.";
 
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"; ObjectID = "4x1-Uh-zJ4"; */
+"4x1-Uh-zJ4.ibShadowedIsNilPlaceholder" = "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX";
+
+/* Class = "NSTableColumn"; headerCell.title = "Disabled"; ObjectID = "EHj-8j-ur8"; */
+"EHj-8j-ur8.headerCell.title" = "Disabled";
+
 /* Class = "NSButtonCell"; title = "from SMBIOS"; ObjectID = "GuE-NO-NRB"; */
 "GuE-NO-NRB.title" = "from SMBIOS";
 
@@ -32,12 +38,6 @@
 /* Class = "NSTextFieldCell"; title = "ROM"; ObjectID = "Wb4-wf-DjH"; */
 "Wb4-wf-DjH.title" = "ROM";
 
-/* Class = "NSComboBoxCell"; Z1e-OV-wLC.ibShadowedObjectValues[0] = "UseMacAddr0"; ObjectID = "Z1e-OV-wLC"; */
-"Z1e-OV-wLC.ibShadowedObjectValues[0]" = "UseMacAddr0";
-
-/* Class = "NSComboBoxCell"; Z1e-OV-wLC.ibShadowedObjectValues[1] = "UseMacAddr1"; ObjectID = "Z1e-OV-wLC"; */
-"Z1e-OV-wLC.ibShadowedObjectValues[1]" = "UseMacAddr1";
-
 /* Class = "NSTextFieldCell"; title = "MLB"; ObjectID = "aah-0d-TtG"; */
 "aah-0d-TtG.title" = "MLB";
 
@@ -50,8 +50,17 @@
 /* Class = "NSButtonCell"; title = "Generate"; ObjectID = "cP0-fk-re9"; */
 "cP0-fk-re9.title" = "Generate";
 
+/* Class = "NSTableColumn"; headerCell.title = "Name"; ObjectID = "cYC-3v-ysV"; */
+"cYC-3v-ysV.headerCell.title" = "Name";
+
+/* Class = "NSBox"; title = "Block"; ObjectID = "egd-AO-RCD"; */
+"egd-AO-RCD.title" = "Block";
+
 /* Class = "NSTextFieldCell"; title = "BooterConfig"; ObjectID = "elH-so-LWT"; */
 "elH-so-LWT.title" = "BooterConfig";
+
+/* Class = "NSTableColumn"; headerCell.title = "Guid"; ObjectID = "fzW-yu-LyB"; */
+"fzW-yu-LyB.headerCell.title" = "Guid";
 
 /* Class = "NSBox"; title = "Box"; ObjectID = "g2c-NL-kj6"; */
 "g2c-NL-kj6.title" = "Box";
@@ -61,3 +70,6 @@
 
 /* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "valid ROM or MAC address"; ObjectID = "lZC-mm-lJY"; */
 "lZC-mm-lJY.ibShadowedIsNilPlaceholder" = "valid ROM or MAC address";
+
+/* Class = "NSTableColumn"; headerCell.title = "Comment"; ObjectID = "yG6-tc-Puc"; */
+"yG6-tc-Puc.headerCell.title" = "Comment";

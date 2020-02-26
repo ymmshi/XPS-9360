@@ -131,6 +131,9 @@
 /* Class = "NSButtonCell"; title = "ACPISensors"; ObjectID = "szQ-Ns-CYf"; */
 "szQ-Ns-CYf.title" = "ACPISensors";
 
+/* Class = "NSTextFieldCell"; title = "1.0"; ObjectID = "tVt-5F-wdE"; */
+"tVt-5F-wdE.title" = "1.0";
+
 /* Class = "NSBox"; title = "Box"; ObjectID = "tek-Ca-hJp"; */
 "tek-Ca-hJp.title" = "Box";
 

@@ -5,11 +5,17 @@
 /* Class = "NSTextFieldCell"; title = "Inject"; ObjectID = "1B4-NT-MXV"; */
 "1B4-NT-MXV.title" = "Inject";
 
+/* Class = "NSMenuItem"; title = "STRING"; ObjectID = "1g6-ym-4Z2"; */
+"1g6-ym-4Z2.title" = "STRING";
+
 /* Class = "NSButton"; ibShadowedToolTip = "<key>FixOwnership</key>\n<true/>\nIt is possible to leave USB injection enabled and only turn off the ownership fix.\n\nThis fix is not relevant for UEFI booting."; ObjectID = "2I2-ep-g7I"; */
 "2I2-ep-g7I.ibShadowedToolTip" = "<key>FixOwnership</key>\n<true/>\nIt is possible to leave USB injection enabled and only turn off the ownership fix.\n\nThis fix is not relevant for UEFI booting.";
 
 /* Class = "NSTabViewItem"; label = "Properties"; ObjectID = "3qf-0a-EIY"; */
 "3qf-0a-EIY.label" = "Properties";
+
+/* Class = "NSMenuItem"; title = "STRING"; ObjectID = "4K3-cd-1cu"; */
+"4K3-cd-1cu.title" = "STRING";
 
 /* Class = "NSButton"; ibShadowedToolTip = "<key>ResetHDA</key>\n<true/>\nAudio controller initialization. Some users have non-working sound after cold boot but works after restart or wake (even on Windows!). This is a workaround that works at early boot, so it will affect Windows as well."; ObjectID = "4ga-hk-hZY"; */
 "4ga-hk-hZY.ibShadowedToolTip" = "<key>ResetHDA</key>\n<true/>\nAudio controller initialization. Some users have non-working sound after cold boot but works after restart or wake (even on Windows!). This is a workaround that works at early boot, so it will affect Windows as well.";
@@ -17,20 +23,8 @@
 /* Class = "NSTableColumn"; headerCell.title = "Key*"; ObjectID = "5Yq-DI-Ikq"; */
 "5Yq-DI-Ikq.headerCell.title" = "Key*";
 
-/* Class = "NSComboBoxCell"; 6wG-aR-1wy.ibShadowedObjectValues[1] = "No"; ObjectID = "6wG-aR-1wy"; */
-"6wG-aR-1wy.ibShadowedObjectValues[1]" = "No";
-
-/* Class = "NSComboBoxCell"; 6wG-aR-1wy.ibShadowedObjectValues[2] = "Detect"; ObjectID = "6wG-aR-1wy"; */
-"6wG-aR-1wy.ibShadowedObjectValues[2]" = "Detect";
-
 /* Class = "NSBox"; title = "Audio"; ObjectID = "7jP-8O-5Hn"; */
 "7jP-8O-5Hn.title" = "Audio";
-
-/* Class = "NSTextFieldCell"; placeholderString = "PciRoot(0x0)/Pci(0x1c,0x3)/Pci(0x0,0x0)"; ObjectID = "7ub-J8-a2r"; */
-"7ub-J8-a2r.placeholderString" = "PciRoot(0x0)/Pci(0x1c,0x3)/Pci(0x0,0x0)";
-
-/* Class = "NSTextFieldCell"; title = "PciRoot(0x0)/Pci(0x1c,0x3)/Pci(0x0,0x0)"; ObjectID = "7ub-J8-a2r"; */
-"7ub-J8-a2r.title" = "PciRoot(0x0)/Pci(0x1c,0x3)/Pci(0x0,0x0)";
 
 /* Class = "NSTextFieldCell"; title = "NVidia"; ObjectID = "8ip-p9-5tY"; */
 "8ip-p9-5tY.title" = "NVidia";
@@ -47,17 +41,14 @@
 /* Class = "NSButton"; ibShadowedToolTip = "Some tuning about C4/C6 States and SpeedStep"; ObjectID = "9QK-wm-bPF"; */
 "9QK-wm-bPF.ibShadowedToolTip" = "Some tuning about C4/C6 States and SpeedStep";
 
-/* Class = "NSComboBoxCell"; 9oF-ez-2XI.ibShadowedObjectValues[0] = "STRING"; ObjectID = "9oF-ez-2XI"; */
-"9oF-ez-2XI.ibShadowedObjectValues[0]" = "STRING";
-
-/* Class = "NSComboBoxCell"; 9oF-ez-2XI.ibShadowedObjectValues[1] = "NUMBER"; ObjectID = "9oF-ez-2XI"; */
-"9oF-ez-2XI.ibShadowedObjectValues[1]" = "NUMBER";
-
-/* Class = "NSComboBoxCell"; 9oF-ez-2XI.ibShadowedObjectValues[2] = "DATA"; ObjectID = "9oF-ez-2XI"; */
-"9oF-ez-2XI.ibShadowedObjectValues[2]" = "DATA";
+/* Class = "NSMenuItem"; title = "NUMBER"; ObjectID = "9hY-fh-vxH"; */
+"9hY-fh-vxH.title" = "NUMBER";
 
 /* Class = "NSBox"; title = "USB"; ObjectID = "9yR-xy-e2p"; */
 "9yR-xy-e2p.title" = "USB";
+
+/* Class = "NSMenuItem"; title = "DATA"; ObjectID = "AJa-TR-rf6"; */
+"AJa-TR-rf6.title" = "DATA";
 
 /* Class = "NSButtonCell"; title = "NameEH00"; ObjectID = "DfW-yh-0AF"; */
 "DfW-yh-0AF.title" = "NameEH00";
@@ -76,9 +67,6 @@
 
 /* Class = "NSTableColumn"; headerCell.title = "Comment"; ObjectID = "F5e-zV-Jze"; */
 "F5e-zV-Jze.headerCell.title" = "Comment";
-
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "FWa-mo-uK1"; */
-"FWa-mo-uK1.title" = "Text Cell";
 
 /* Class = "NSButton"; ibShadowedToolTip = "<key>NoDefaultProperties</key>\n<false/>\nThis key will affect DSDT fixes and force them to generate an empty _DSM. For example, if you enable FIX_DISPLAY Clover will create a device for the graphics card but with an empty _DSM. AddProperties and FakeID values will still be injected.\n\nThis works only for Display, Sound, LAN and WiFi."; ObjectID = "Fbo-vD-sOq"; */
 "Fbo-vD-sOq.ibShadowedToolTip" = "<key>NoDefaultProperties</key>\n<false/>\nThis key will affect DSDT fixes and force them to generate an empty _DSM. For example, if you enable FIX_DISPLAY Clover will create a device for the graphics card but with an empty _DSM. AddProperties and FakeID values will still be injected.\n\nThis works only for Display, Sound, LAN and WiFi.";
@@ -122,27 +110,6 @@
 /* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "0xXXXX10DE"; ObjectID = "NDY-K4-95p"; */
 "NDY-K4-95p.ibShadowedIsNilPlaceholder" = "0xXXXX10DE";
 
-/* Class = "NSComboBoxCell"; NaD-ja-1qu.ibShadowedObjectValues[0] = "0x0710"; ObjectID = "NaD-ja-1qu"; */
-"NaD-ja-1qu.ibShadowedObjectValues[0]" = "0x0710";
-
-/* Class = "NSComboBoxCell"; NaD-ja-1qu.ibShadowedObjectValues[1] = "0x056C"; ObjectID = "NaD-ja-1qu"; */
-"NaD-ja-1qu.ibShadowedObjectValues[1]" = "0x056C";
-
-/* Class = "NSComboBoxCell"; NaD-ja-1qu.ibShadowedObjectValues[2] = "0x07A1"; ObjectID = "NaD-ja-1qu"; */
-"NaD-ja-1qu.ibShadowedObjectValues[2]" = "0x07A1";
-
-/* Class = "NSComboBoxCell"; NaD-ja-1qu.ibShadowedObjectValues[3] = "0x0AD9"; ObjectID = "NaD-ja-1qu"; */
-"NaD-ja-1qu.ibShadowedObjectValues[3]" = "0x0AD9";
-
-/* Class = "NSComboBoxCell"; NaD-ja-1qu.ibShadowedObjectValues[4] = "0x1499"; ObjectID = "NaD-ja-1qu"; */
-"NaD-ja-1qu.ibShadowedObjectValues[4]" = "0x1499";
-
-/* Class = "NSComboBoxCell"; NaD-ja-1qu.ibShadowedObjectValues[5] = "0x056C"; ObjectID = "NaD-ja-1qu"; */
-"NaD-ja-1qu.ibShadowedObjectValues[5]" = "0x056C";
-
-/* Class = "NSComboBoxCell"; NaD-ja-1qu.ibShadowedObjectValues[6] = "0xFFFF"; ObjectID = "NaD-ja-1qu"; */
-"NaD-ja-1qu.ibShadowedObjectValues[6]" = "0xFFFF";
-
 /* Class = "NSTableView"; ibShadowedToolTip = "<key>AddProperties</key>\n<array>\n  <dict>\n    <key>Device</key>\n    <string>NVidia</string>\n    <key>Key</key>\n    <string>AAPL,HasPanel</string>\n    <key>Value</key>\n    <data>AQAAAA==</data>\n  </dict>\n  <dict>\n    <key>Device</key>\n    <string>NVidia</string>\n    <key>Key</key>\n    <string>AAPL,Haslid</string>\n    <key>Value</key>\n    <data>AQAAAA==</data>\n    </dict>\n</array>\nUsing device properties injection may be insufficient for some cases (new device, new standard, new OS), so this function lets you customize these injected properties.\n\nYou may write as many properties as you want for these devices: * ATI * NVidia * IntelGFX * LAN * WIFI * Firewire * SATA * IDE * HDA * HDMI * LPC * SmBUS * USB"; ObjectID = "Ob7-UX-r0p"; */
 "Ob7-UX-r0p.ibShadowedToolTip" = "<key>AddProperties</key>\n<array>\n  <dict>\n    <key>Device</key>\n    <string>NVidia</string>\n    <key>Key</key>\n    <string>AAPL,HasPanel</string>\n    <key>Value</key>\n    <data>AQAAAA==</data>\n  </dict>\n  <dict>\n    <key>Device</key>\n    <string>NVidia</string>\n    <key>Key</key>\n    <string>AAPL,Haslid</string>\n    <key>Value</key>\n    <data>AQAAAA==</data>\n    </dict>\n</array>\nUsing device properties injection may be insufficient for some cases (new device, new standard, new OS), so this function lets you customize these injected properties.\n\nYou may write as many properties as you want for these devices: * ATI * NVidia * IntelGFX * LAN * WIFI * Firewire * SATA * IDE * HDA * HDMI * LPC * SmBUS * USB";
 
@@ -155,53 +122,8 @@
 /* Class = "NSTextFieldCell"; title = "LAN"; ObjectID = "QOy-nA-OJ1"; */
 "QOy-nA-OJ1.title" = "LAN";
 
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "Qec-jB-ZN6"; */
-"Qec-jB-ZN6.title" = "Text Cell";
-
 /* Class = "NSView"; ibShadowedToolTip = "First you should look your boot.log or preboot.log (obtained by press F2 in Clover GUI). There is a list of your PCI devices.\n\n4:432 0:000 PCI (00|02:05.00) : 10EC 8167 class=020000\n\nThis is LAN device\n\nVendorID= 10EC - this is Realtek\n\nDeviceID= 8167 - This is Realtek 8167/8169/8110 Gigabyte Ethernet Controller\n\nIt is located on the PCI bus (green digits)\n\nBus = 02\n\nDevice = 05 \n\nFunction = 00\n\nThis location will be unique for every device in your computer. You may have two equal graphics cards with the same IDs and same model. But their locations will be different.\n\nWe have to write into config.plist in section \"Devices\", array \"Arbitrary\" of items one per device you want to inject properties.\n\n\t<key>Devices</key>\n\t<dict>\n\t\t<key>Arbitrary</key>\n\t\t<array>\n\t\t\t<dict>\n\t\t\t\t<key>PciAddr</key>\n\t\t\t\t<string>02:05.00</string>\n\t\t\t\t<key>Comment</key>\n\t\t\t\t<string>Realtek LAN 8167</string>\n\t\t\t\t<key>CustomProperties</key>\n\t\t\t\t<array>\n\t\t\t\t\t<dict>\n\t\t\t\t\t\t<key>Key</key>\n\t\t\t\t\t\t<string>model</string>\n\t\t\t\t\t\t<key>Value</key>\n\t\t\t\t\t\t<string>Realtek 8169 Gigabit Ethernet Controller</string>\n\t\t\t\t\t</dict>\n\t\t\t\t\t<dict>\n\t\t\t\t\t\t<key>Key</key>\n\t\t\t\t\t\t<string>built-in</string>\n\t\t\t\t\t\t<key>Value</key>\n\t\t\t\t\t\t<data>AQAAAA==</data>\n\t\t\t\t\t</dict>\n\t\t\t\t</array>\n\t\t\t</dict>\n\t\t</array>"; ObjectID = "Qxp-DC-Voo"; */
 "Qxp-DC-Voo.ibShadowedToolTip" = "First you should look your boot.log or preboot.log (obtained by press F2 in Clover GUI). There is a list of your PCI devices.\n\n4:432 0:000 PCI (00|02:05.00) : 10EC 8167 class=020000\n\nThis is LAN device\n\nVendorID= 10EC - this is Realtek\n\nDeviceID= 8167 - This is Realtek 8167/8169/8110 Gigabyte Ethernet Controller\n\nIt is located on the PCI bus (green digits)\n\nBus = 02\n\nDevice = 05 \n\nFunction = 00\n\nThis location will be unique for every device in your computer. You may have two equal graphics cards with the same IDs and same model. But their locations will be different.\n\nWe have to write into config.plist in section \"Devices\", array \"Arbitrary\" of items one per device you want to inject properties.\n\n\t<key>Devices</key>\n\t<dict>\n\t\t<key>Arbitrary</key>\n\t\t<array>\n\t\t\t<dict>\n\t\t\t\t<key>PciAddr</key>\n\t\t\t\t<string>02:05.00</string>\n\t\t\t\t<key>Comment</key>\n\t\t\t\t<string>Realtek LAN 8167</string>\n\t\t\t\t<key>CustomProperties</key>\n\t\t\t\t<array>\n\t\t\t\t\t<dict>\n\t\t\t\t\t\t<key>Key</key>\n\t\t\t\t\t\t<string>model</string>\n\t\t\t\t\t\t<key>Value</key>\n\t\t\t\t\t\t<string>Realtek 8169 Gigabit Ethernet Controller</string>\n\t\t\t\t\t</dict>\n\t\t\t\t\t<dict>\n\t\t\t\t\t\t<key>Key</key>\n\t\t\t\t\t\t<string>built-in</string>\n\t\t\t\t\t\t<key>Value</key>\n\t\t\t\t\t\t<data>AQAAAA==</data>\n\t\t\t\t\t</dict>\n\t\t\t\t</array>\n\t\t\t</dict>\n\t\t</array>";
-
-/* Class = "NSComboBoxCell"; RPg-NS-WkE.ibShadowedObjectValues[0] = "ATI"; ObjectID = "RPg-NS-WkE"; */
-"RPg-NS-WkE.ibShadowedObjectValues[0]" = "ATI";
-
-/* Class = "NSComboBoxCell"; RPg-NS-WkE.ibShadowedObjectValues[1] = "NVidia"; ObjectID = "RPg-NS-WkE"; */
-"RPg-NS-WkE.ibShadowedObjectValues[1]" = "NVidia";
-
-/* Class = "NSComboBoxCell"; RPg-NS-WkE.ibShadowedObjectValues[2] = "IntelGFX"; ObjectID = "RPg-NS-WkE"; */
-"RPg-NS-WkE.ibShadowedObjectValues[2]" = "IntelGFX";
-
-/* Class = "NSComboBoxCell"; RPg-NS-WkE.ibShadowedObjectValues[3] = "LAN"; ObjectID = "RPg-NS-WkE"; */
-"RPg-NS-WkE.ibShadowedObjectValues[3]" = "LAN";
-
-/* Class = "NSComboBoxCell"; RPg-NS-WkE.ibShadowedObjectValues[4] = "WIFI"; ObjectID = "RPg-NS-WkE"; */
-"RPg-NS-WkE.ibShadowedObjectValues[4]" = "WIFI";
-
-/* Class = "NSComboBoxCell"; RPg-NS-WkE.ibShadowedObjectValues[5] = "Firewire"; ObjectID = "RPg-NS-WkE"; */
-"RPg-NS-WkE.ibShadowedObjectValues[5]" = "Firewire";
-
-/* Class = "NSComboBoxCell"; RPg-NS-WkE.ibShadowedObjectValues[6] = "SATA"; ObjectID = "RPg-NS-WkE"; */
-"RPg-NS-WkE.ibShadowedObjectValues[6]" = "SATA";
-
-/* Class = "NSComboBoxCell"; RPg-NS-WkE.ibShadowedObjectValues[7] = "IDE"; ObjectID = "RPg-NS-WkE"; */
-"RPg-NS-WkE.ibShadowedObjectValues[7]" = "IDE";
-
-/* Class = "NSComboBoxCell"; RPg-NS-WkE.ibShadowedObjectValues[8] = "HDA"; ObjectID = "RPg-NS-WkE"; */
-"RPg-NS-WkE.ibShadowedObjectValues[8]" = "HDA";
-
-/* Class = "NSComboBoxCell"; RPg-NS-WkE.ibShadowedObjectValues[9] = "HDMI"; ObjectID = "RPg-NS-WkE"; */
-"RPg-NS-WkE.ibShadowedObjectValues[9]" = "HDMI";
-
-/* Class = "NSComboBoxCell"; RPg-NS-WkE.ibShadowedObjectValues[10] = "LPC"; ObjectID = "RPg-NS-WkE"; */
-"RPg-NS-WkE.ibShadowedObjectValues[10]" = "LPC";
-
-/* Class = "NSComboBoxCell"; RPg-NS-WkE.ibShadowedObjectValues[11] = "SmBUS"; ObjectID = "RPg-NS-WkE"; */
-"RPg-NS-WkE.ibShadowedObjectValues[11]" = "SmBUS";
-
-/* Class = "NSComboBoxCell"; RPg-NS-WkE.ibShadowedObjectValues[12] = "USB"; ObjectID = "RPg-NS-WkE"; */
-"RPg-NS-WkE.ibShadowedObjectValues[12]" = "USB";
-
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "RW2-NS-GZb"; */
-"RW2-NS-GZb.title" = "Text Cell";
 
 /* Class = "NSTableColumn"; headerCell.title = "Disabled"; ObjectID = "TGL-3O-5P1"; */
 "TGL-3O-5P1.headerCell.title" = "Disabled";
@@ -209,8 +131,8 @@
 /* Class = "NSTextFieldCell"; title = "XHCI"; ObjectID = "TPv-Br-7ix"; */
 "TPv-Br-7ix.title" = "XHCI";
 
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "TgZ-ki-C6v"; */
-"TgZ-ki-C6v.title" = "Text Cell";
+/* Class = "NSMenuItem"; title = "NUMBER"; ObjectID = "TqV-YV-nT6"; */
+"TqV-YV-nT6.title" = "NUMBER";
 
 /* Class = "NSTableColumn"; headerCell.title = "Value*"; ObjectID = "Txa-kI-pAD"; */
 "Txa-kI-pAD.headerCell.title" = "Value*";
@@ -239,20 +161,11 @@
 /* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "1808 or 0x710"; ObjectID = "Xt7-nw-zTh"; */
 "Xt7-nw-zTh.ibShadowedIsNilPlaceholder" = "1808 or 0x710";
 
-/* Class = "NSTextField"; ibShadowedToolTip = "Set Hex value for disable a function.\n\nFunction Disable 1 RCBA 0x3418\n#define PCH_DISABLE_ALWAYS\t(1 << 0)\n#define PCH_DISABLE_ADSPD\t(1 << 1)\n#define PCH_DISABLE_SATA1\t(1 << 2)\n#define PCH_DISABLE_SMBUS\t(1 << 3)\n#define PCH_DISABLE_HD_AUDIO\t(1 << 4)\n#define PCH_DISABLE_EHCI2\t(1 << 13)\n#define PCH_DISABLE_LPC\t\t(1 << 14)\n#define PCH_DISABLE_EHCI1\t(1 << 15)\n#define PCH_DISABLE_PCIE(x)\t(1 << (16 + x))\n#define PCH_DISABLE_THERMAL\t(1 << 24)\n#define PCH_DISABLE_SATA2\t(1 << 25)\n#define PCH_DISABLE_XHCI\t(1 << 27)\n\n0x1 (to disable ALWAYS)\n0x2 (to disable ADSPD)\n0x4 (to disable SATA1)\n0x8 (to disable SMBUS)\n0x10 (to disable HDEF)\n0x2000 (to disable EHCI2)\n0x4000 (to disable LPC)\n0x8000 (to disable EHCI1)\n0x1000000 (to disable THERMAL)\n0x2000000 (to disable SATA2)\n0x8000000 (to disable XHCI)"; ObjectID = "Zk2-oy-DHb"; */
-"Zk2-oy-DHb.ibShadowedToolTip" = "Set Hex value for disable a function.\n\nFunction Disable 1 RCBA 0x3418\n#define PCH_DISABLE_ALWAYS\t(1 << 0)\n#define PCH_DISABLE_ADSPD\t(1 << 1)\n#define PCH_DISABLE_SATA1\t(1 << 2)\n#define PCH_DISABLE_SMBUS\t(1 << 3)\n#define PCH_DISABLE_HD_AUDIO\t(1 << 4)\n#define PCH_DISABLE_EHCI2\t(1 << 13)\n#define PCH_DISABLE_LPC\t\t(1 << 14)\n#define PCH_DISABLE_EHCI1\t(1 << 15)\n#define PCH_DISABLE_PCIE(x)\t(1 << (16 + x))\n#define PCH_DISABLE_THERMAL\t(1 << 24)\n#define PCH_DISABLE_SATA2\t(1 << 25)\n#define PCH_DISABLE_XHCI\t(1 << 27)\n\n0x1 (to disable ALWAYS)\n0x2 (to disable ADSPD)\n0x4 (to disable SATA1)\n0x8 (to disable SMBUS)\n0x10 (to disable HDEF)\n0x2000 (to disable EHCI2)\n0x4000 (to disable LPC)\n0x8000 (to disable EHCI1)\n0x1000000 (to disable THERMAL)\n0x2000000 (to disable SATA2)\n0x8000000 (to disable XHCI)";
+/* Class = "NSTextField"; ibShadowedToolTip = "Set Hex value for disable a function.\n\n/* Function Disable 1 RCBA 0x3418 */\n#define PCH_DISABLE_ALWAYS\t(1 << 0)\n#define PCH_DISABLE_ADSPD\t(1 << 1)\n#define PCH_DISABLE_SATA1\t(1 << 2)\n#define PCH_DISABLE_SMBUS\t(1 << 3)\n#define PCH_DISABLE_HD_AUDIO\t(1 << 4)\n#define PCH_DISABLE_EHCI2\t(1 << 13)\n#define PCH_DISABLE_LPC\t\t(1 << 14)\n#define PCH_DISABLE_EHCI1\t(1 << 15)\n#define PCH_DISABLE_PCIE(x)\t(1 << (16 + x))\n#define PCH_DISABLE_THERMAL\t(1 << 24)\n#define PCH_DISABLE_SATA2\t(1 << 25)\n#define PCH_DISABLE_XHCI\t(1 << 27)\n\n0x1 (to disable ALWAYS)\n0x2 (to disable ADSPD)\n0x4 (to disable SATA1)\n0x8 (to disable SMBUS)\n0x10 (to disable HDEF)\n0x2000 (to disable EHCI2)\n0x4000 (to disable LPC)\n0x8000 (to disable EHCI1)\n0x1000000 (to disable THERMAL)\n0x2000000 (to disable SATA2)\n0x8000000 (to disable XHCI)"; ObjectID = "Zk2-oy-DHb"; */
+"Zk2-oy-DHb.ibShadowedToolTip" = "Set Hex value for disable a function.\n\n/* Function Disable 1 RCBA 0x3418 */\n#define PCH_DISABLE_ALWAYS\t(1 << 0)\n#define PCH_DISABLE_ADSPD\t(1 << 1)\n#define PCH_DISABLE_SATA1\t(1 << 2)\n#define PCH_DISABLE_SMBUS\t(1 << 3)\n#define PCH_DISABLE_HD_AUDIO\t(1 << 4)\n#define PCH_DISABLE_EHCI2\t(1 << 13)\n#define PCH_DISABLE_LPC\t\t(1 << 14)\n#define PCH_DISABLE_EHCI1\t(1 << 15)\n#define PCH_DISABLE_PCIE(x)\t(1 << (16 + x))\n#define PCH_DISABLE_THERMAL\t(1 << 24)\n#define PCH_DISABLE_SATA2\t(1 << 25)\n#define PCH_DISABLE_XHCI\t(1 << 27)\n\n0x1 (to disable ALWAYS)\n0x2 (to disable ADSPD)\n0x4 (to disable SATA1)\n0x8 (to disable SMBUS)\n0x10 (to disable HDEF)\n0x2000 (to disable EHCI2)\n0x4000 (to disable LPC)\n0x8000 (to disable EHCI1)\n0x1000000 (to disable THERMAL)\n0x2000000 (to disable SATA2)\n0x8000000 (to disable XHCI)";
 
 /* Class = "NSButtonCell"; title = "ForceHPET"; ObjectID = "a4f-La-NY3"; */
 "a4f-La-NY3.title" = "ForceHPET";
-
-/* Class = "NSComboBoxCell"; aBO-8H-kPO.ibShadowedObjectValues[0] = "DATA"; ObjectID = "aBO-8H-kPO"; */
-"aBO-8H-kPO.ibShadowedObjectValues[0]" = "DATA";
-
-/* Class = "NSComboBoxCell"; aBO-8H-kPO.ibShadowedObjectValues[1] = "STRING"; ObjectID = "aBO-8H-kPO"; */
-"aBO-8H-kPO.ibShadowedObjectValues[1]" = "STRING";
-
-/* Class = "NSComboBoxCell"; aBO-8H-kPO.ibShadowedObjectValues[2] = "NUMBER"; ObjectID = "aBO-8H-kPO"; */
-"aBO-8H-kPO.ibShadowedObjectValues[2]" = "NUMBER";
 
 /* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "0xXXXX8086"; ObjectID = "amy-9Z-PoQ"; */
 "amy-9Z-PoQ.ibShadowedIsNilPlaceholder" = "0xXXXX8086";
@@ -269,9 +182,6 @@
 /* Class = "NSButton"; ibShadowedToolTip = "Renaming of Device name EH. This helps to surpass port restrictions in El Capitan onward."; ObjectID = "bzm-UW-nA9"; */
 "bzm-UW-nA9.ibShadowedToolTip" = "Renaming of Device name EH. This helps to surpass port restrictions in El Capitan onward.";
 
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "cmq-a8-msM"; */
-"cmq-a8-msM.title" = "Text Cell";
-
 /* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "0xXXXX8086"; ObjectID = "d4G-ss-TXN"; */
 "d4G-ss-TXN.ibShadowedIsNilPlaceholder" = "0xXXXX8086";
 
@@ -283,6 +193,9 @@
 
 /* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "hda-gfx"; ObjectID = "efq-d0-Dvy"; */
 "efq-d0-Dvy.ibShadowedIsNilPlaceholder" = "hda-gfx";
+
+/* Class = "NSMenuItem"; title = "DATA"; ObjectID = "ezV-ul-eUs"; */
+"ezV-ul-eUs.title" = "DATA";
 
 /* Class = "NSButton"; ibShadowedToolTip = "<key>AddClockID</key>\n<true/>\n<true/> - Enables a good, deep sleep, which cannot be exited by keyboard or mouse input.\n<false/> - The PC will possibly sleep and it can be woken up by keyboard or mouse; or it will be automatically woken up by some attached device\nInjects the property \"AAPL,clock-id\" with a unique identifier for each device. Set it to your liking.\n\nRequires USBInjection to be enabled.\n\nDefault value is set to disabled."; ObjectID = "f2J-nt-Amm"; */
 "f2J-nt-Amm.ibShadowedToolTip" = "<key>AddClockID</key>\n<true/>\n<true/> - Enables a good, deep sleep, which cannot be exited by keyboard or mouse input.\n<false/> - The PC will possibly sleep and it can be woken up by keyboard or mouse; or it will be automatically woken up by some attached device\nInjects the property \"AAPL,clock-id\" with a unique identifier for each device. Set it to your liking.\n\nRequires USBInjection to be enabled.\n\nDefault value is set to disabled.";
@@ -317,6 +230,9 @@
 /* Class = "NSButtonCell"; title = "AFGLowPowerState"; ObjectID = "lE2-SD-jA4"; */
 "lE2-SD-jA4.title" = "AFGLowPowerState";
 
+/* Class = "NSMenuItem"; title = "DATA"; ObjectID = "lOR-eJ-NQ2"; */
+"lOR-eJ-NQ2.title" = "DATA";
+
 /* Class = "NSTextFieldCell"; title = "ATI"; ObjectID = "m8Z-5b-HHv"; */
 "m8Z-5b-HHv.title" = "ATI";
 
@@ -329,11 +245,17 @@
 /* Class = "NSButtonCell"; title = "Add ClockID"; ObjectID = "nKB-UW-G26"; */
 "nKB-UW-G26.title" = "Add ClockID";
 
+/* Class = "NSMenuItem"; title = "STRING"; ObjectID = "ohV-YH-MUG"; */
+"ohV-YH-MUG.title" = "STRING";
+
 /* Class = "NSTabViewItem"; label = "Arbitrary"; ObjectID = "pj1-PC-aNN"; */
 "pj1-PC-aNN.label" = "Arbitrary";
 
 /* Class = "NSTableColumn"; headerCell.title = "Value Type"; ObjectID = "pxi-J0-2Fb"; */
 "pxi-J0-2Fb.headerCell.title" = "Value Type";
+
+/* Class = "NSMenuItem"; title = "NUMBER"; ObjectID = "qpU-dN-NrQ"; */
+"qpU-dN-NrQ.title" = "NUMBER";
 
 /* Class = "NSTableColumn"; headerCell.title = "Properties Key*"; ObjectID = "sUY-rc-CzA"; */
 "sUY-rc-CzA.headerCell.title" = "Properties Key*";
@@ -347,20 +269,11 @@
 /* Class = "NSTextFieldCell"; title = "IntelGFX"; ObjectID = "vDd-pS-Kg2"; */
 "vDd-pS-Kg2.title" = "IntelGFX";
 
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "vF1-NB-Tga"; */
-"vF1-NB-Tga.title" = "Text Cell";
-
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "vha-iy-O49"; */
-"vha-iy-O49.title" = "Text Cell";
-
 /* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "0xXXXX1002"; ObjectID = "xjE-Wt-AST"; */
 "xjE-Wt-AST.ibShadowedIsNilPlaceholder" = "0xXXXX1002";
 
 /* Class = "NSBox"; title = "Add Properties"; ObjectID = "xkr-rE-wcR"; */
 "xkr-rE-wcR.title" = "Add Properties";
-
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "yOf-aC-GdU"; */
-"yOf-aC-GdU.title" = "Text Cell";
 
 /* Class = "NSBox"; ibShadowedToolTip = "<key>FakeID</key>\n  <dict>\n    <key>ATI</key>\n    <string>0x68181002</string>\n    <key>IntelGFX</key>\n    <string>0x01268086</string>\n    <key>NVidia</key>\n    <string>0x0</string>\n    <key>LAN</key>\n    <string>0x436311ab</string>\n    <key>SATA</key>\n    <string>0x25628086</string>\n    <key>WIFI</key>\n    <string>0x431214E4</string>\n    <key>XHCI</key>\n    <string>0x0</string>\n    <key>IMEI</key>\n    <string>0x1E3A8086</string>\n  </dict>\nThis is a method to change PCI properties DeviceID and VendorID for the device will work with native drivers. In the example above: - AMDRadeonHD7850 has unsupported DeviceID=0x6819. Change to 0x6818 - Dell Wireless 1595, DeviceID=0x4315 is not supported. Change to 0x4312 - Marvell Yukon 8056, DeviceID=0x4353. Change to 0x4363.\nThere are other known substitutions for unsupported devices.\n\nThis substitution will work if InjectATI (Nvidia, Intel) is set. Or if FixDsdtMask set for the device.\n\nLikewise, the IMEI fix will only work if the DSDT Patch AddMCHC_0008 is enabled."; ObjectID = "yvB-P5-wy5"; */
 "yvB-P5-wy5.ibShadowedToolTip" = "<key>FakeID</key>\n  <dict>\n    <key>ATI</key>\n    <string>0x68181002</string>\n    <key>IntelGFX</key>\n    <string>0x01268086</string>\n    <key>NVidia</key>\n    <string>0x0</string>\n    <key>LAN</key>\n    <string>0x436311ab</string>\n    <key>SATA</key>\n    <string>0x25628086</string>\n    <key>WIFI</key>\n    <string>0x431214E4</string>\n    <key>XHCI</key>\n    <string>0x0</string>\n    <key>IMEI</key>\n    <string>0x1E3A8086</string>\n  </dict>\nThis is a method to change PCI properties DeviceID and VendorID for the device will work with native drivers. In the example above: - AMDRadeonHD7850 has unsupported DeviceID=0x6819. Change to 0x6818 - Dell Wireless 1595, DeviceID=0x4315 is not supported. Change to 0x4312 - Marvell Yukon 8056, DeviceID=0x4353. Change to 0x4363.\nThere are other known substitutions for unsupported devices.\n\nThis substitution will work if InjectATI (Nvidia, Intel) is set. Or if FixDsdtMask set for the device.\n\nLikewise, the IMEI fix will only work if the DSDT Patch AddMCHC_0008 is enabled.";
@@ -379,12 +292,3 @@
 
 /* Class = "NSTextFieldCell"; title = "CustomProperties"; ObjectID = "zlX-sr-gGp"; */
 "zlX-sr-gGp.title" = "CustomProperties";
-
-/* Class = "NSComboBoxCell"; zpk-Vh-PQx.ibShadowedObjectValues[0] = "STRING"; ObjectID = "zpk-Vh-PQx"; */
-"zpk-Vh-PQx.ibShadowedObjectValues[0]" = "STRING";
-
-/* Class = "NSComboBoxCell"; zpk-Vh-PQx.ibShadowedObjectValues[1] = "NUMBER"; ObjectID = "zpk-Vh-PQx"; */
-"zpk-Vh-PQx.ibShadowedObjectValues[1]" = "NUMBER";
-
-/* Class = "NSComboBoxCell"; zpk-Vh-PQx.ibShadowedObjectValues[2] = "DATA"; ObjectID = "zpk-Vh-PQx"; */
-"zpk-Vh-PQx.ibShadowedObjectValues[2]" = "DATA";

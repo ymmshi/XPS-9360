@@ -206,54 +206,6 @@
 /* Class = "NSTextFieldCell"; title = "Type*"; ObjectID = "CTa-Gq-VCt"; */
 "CTa-Gq-VCt.title" = "类型*";
 
-/* Class = "NSComboBoxCell"; CdM-ho-4sc.ibShadowedObjectValues[1] = "en"; ObjectID = "CdM-ho-4sc"; */
-"CdM-ho-4sc.ibShadowedObjectValues[1]" = "en";
-
-/* Class = "NSComboBoxCell"; CdM-ho-4sc.ibShadowedObjectValues[2] = "ru"; ObjectID = "CdM-ho-4sc"; */
-"CdM-ho-4sc.ibShadowedObjectValues[2]" = "ru";
-
-/* Class = "NSComboBoxCell"; CdM-ho-4sc.ibShadowedObjectValues[3] = "fr"; ObjectID = "CdM-ho-4sc"; */
-"CdM-ho-4sc.ibShadowedObjectValues[3]" = "fr";
-
-/* Class = "NSComboBoxCell"; CdM-ho-4sc.ibShadowedObjectValues[4] = "it"; ObjectID = "CdM-ho-4sc"; */
-"CdM-ho-4sc.ibShadowedObjectValues[4]" = "it";
-
-/* Class = "NSComboBoxCell"; CdM-ho-4sc.ibShadowedObjectValues[5] = "es"; ObjectID = "CdM-ho-4sc"; */
-"CdM-ho-4sc.ibShadowedObjectValues[5]" = "es";
-
-/* Class = "NSComboBoxCell"; CdM-ho-4sc.ibShadowedObjectValues[6] = "pt"; ObjectID = "CdM-ho-4sc"; */
-"CdM-ho-4sc.ibShadowedObjectValues[6]" = "pt";
-
-/* Class = "NSComboBoxCell"; CdM-ho-4sc.ibShadowedObjectValues[7] = "br"; ObjectID = "CdM-ho-4sc"; */
-"CdM-ho-4sc.ibShadowedObjectValues[7]" = "br";
-
-/* Class = "NSComboBoxCell"; CdM-ho-4sc.ibShadowedObjectValues[8] = "de"; ObjectID = "CdM-ho-4sc"; */
-"CdM-ho-4sc.ibShadowedObjectValues[8]" = "de";
-
-/* Class = "NSComboBoxCell"; CdM-ho-4sc.ibShadowedObjectValues[9] = "nl"; ObjectID = "CdM-ho-4sc"; */
-"CdM-ho-4sc.ibShadowedObjectValues[9]" = "nl";
-
-/* Class = "NSComboBoxCell"; CdM-ho-4sc.ibShadowedObjectValues[10] = "pl"; ObjectID = "CdM-ho-4sc"; */
-"CdM-ho-4sc.ibShadowedObjectValues[10]" = "pl";
-
-/* Class = "NSComboBoxCell"; CdM-ho-4sc.ibShadowedObjectValues[11] = "ua"; ObjectID = "CdM-ho-4sc"; */
-"CdM-ho-4sc.ibShadowedObjectValues[11]" = "ua";
-
-/* Class = "NSComboBoxCell"; CdM-ho-4sc.ibShadowedObjectValues[12] = "cz"; ObjectID = "CdM-ho-4sc"; */
-"CdM-ho-4sc.ibShadowedObjectValues[12]" = "cz";
-
-/* Class = "NSComboBoxCell"; CdM-ho-4sc.ibShadowedObjectValues[13] = "hr"; ObjectID = "CdM-ho-4sc"; */
-"CdM-ho-4sc.ibShadowedObjectValues[13]" = "hr";
-
-/* Class = "NSComboBoxCell"; CdM-ho-4sc.ibShadowedObjectValues[14] = "id"; ObjectID = "CdM-ho-4sc"; */
-"CdM-ho-4sc.ibShadowedObjectValues[14]" = "id";
-
-/* Class = "NSComboBoxCell"; CdM-ho-4sc.ibShadowedObjectValues[15] = "ko"; ObjectID = "CdM-ho-4sc"; */
-"CdM-ho-4sc.ibShadowedObjectValues[15]" = "ko";
-
-/* Class = "NSComboBoxCell"; CdM-ho-4sc.ibShadowedObjectValues[16] = "cn"; ObjectID = "CdM-ho-4sc"; */
-"CdM-ho-4sc.ibShadowedObjectValues[16]" = "zh_CN";
-
 /* Class = "NSTableColumn"; headerCell.title = "Disable"; ObjectID = "DW4-R5-08J"; */
 "DW4-R5-08J.headerCell.title" = "禁用";
 

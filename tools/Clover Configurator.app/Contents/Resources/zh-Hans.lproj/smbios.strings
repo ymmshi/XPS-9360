@@ -170,9 +170,6 @@
 /* Class = "NSTableColumn"; headerCell.title = "Frequency* (MHz)"; ObjectID = "EsJ-5o-DCN"; */
 "EsJ-5o-DCN.headerCell.title" = "频率* (MHz)";
 
-/* Class = "NSMenu"; title = "OtherViews"; ObjectID = "FuO-Om-24Y"; */
-"FuO-Om-24Y.title" = "OtherViews";
-
 /* Class = "NSComboBoxCell"; H70-61-gOQ.ibShadowedObjectValues[0] = "DDR"; ObjectID = "H70-61-gOQ"; */
 "H70-61-gOQ.ibShadowedObjectValues[0]" = "DDR";
 

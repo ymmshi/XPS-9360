@@ -13,6 +13,9 @@
 /* Class = "NSButtonCell"; title = "AirportBrcmFixup"; ObjectID = "1Us-SX-Ha7"; */
 "1Us-SX-Ha7.title" = "AirportBrcmFixup";
 
+/* Class = "NSButtonCell"; title = "Exclude OpenCore from Update check"; ObjectID = "1uw-NE-J1u"; */
+"1uw-NE-J1u.title" = "OpenCore von Überprüfung ausschliessen";
+
 /* Class = "NSMenuItem"; title = "Kext Updater"; ObjectID = "1Xt-HY-uBw"; */
 "1Xt-HY-uBw.title" = "Kext Updater";
 
@@ -91,6 +94,9 @@
 /* Class = "NSButtonCell"; title = "Mount"; ObjectID = "6nV-VG-RBM"; */
 "6nV-VG-RBM.title" = "Mounten";
 
+/* Class = "NSButtonCell"; title = "MacProMemoryNotificationD"; ObjectID = "6Y2-fO-Lga"; */
+"6Y2-fO-Lga.title" = "MacProMemoryNotificationD";
+
 /* Class = "NSButtonCell"; title = "IntelGraphicsFixup"; ObjectID = "7DJ-5F-tf3"; */
 "7DJ-5F-tf3.title" = "IntelGraphicsFixup";
 
@@ -111,6 +117,9 @@
 
 /* Class = "NSButtonCell"; title = "Download"; ObjectID = "8KI-5D-e2p"; */
 "8KI-5D-e2p.title" = "Download";
+
+/* Class = "NSMenuItem"; title = "OpenCore (NDK Fork)"; ObjectID = "8ss-Jz-7PF"; */
+"8ss-Jz-7PF.title" = "OpenCore (NDK Fork)";
 
 /* Class = "NSMenuItem"; title = "Please Select"; ObjectID = "9bX-ps-dhp"; */
 "9bX-ps-dhp.title" = "Bitte auswählen";
@@ -138,6 +147,9 @@
 
 /* Class = "NSMenuItem"; title = "13"; ObjectID = "21j-B7-8qR"; */
 "21j-B7-8qR.title" = "13";
+
+/* Class = "NSMenuItem"; title = "OcSupportPkg"; ObjectID = "25w-aq-FCF"; */
+"25w-aq-FCF.title" = "OcSupportPkg";
 
 /* Class = "NSButtonCell"; title = "EFI"; ObjectID = "32P-St-6ih"; */
 "32P-St-6ih.title" = "EFI";
@@ -192,6 +204,9 @@
 
 /* Class = "NSMenuItem"; title = "Please select"; ObjectID = "AQu-gQ-jTO"; */
 "AQu-gQ-jTO.title" = "Bitte auswählen";
+
+/* Class = "NSMenuItem"; title = "OpenCore (NDK Fork)"; ObjectID = "AQy-ED-smk"; */
+"AQy-ED-smk.title" = "OpenCore (NDK Fork)";
 
 /* Class = "NSTextFieldCell"; title = "EFI Folder Creator"; ObjectID = "Asi-UQ-1TT"; */
 "Asi-UQ-1TT.title" = "EFI Folder Creator";
@@ -270,6 +285,9 @@
 
 /* Class = "NSMenuItem"; title = "17"; ObjectID = "ccz-yv-NkB"; */
 "ccz-yv-NkB.title" = "17";
+
+/* Class = "NSMenuItem"; title = "OpenCore Nightly (NDK Fork)"; ObjectID = "cJN-jU-ADV"; */
+"cJN-jU-ADV.title" = "OpenCore Nightly (NDK Fork)";
 
 /* Class = "NSButtonCell"; title = "Start"; ObjectID = "CkC-KB-Dk4"; */
 "CkC-KB-Dk4.title" = "Download";
@@ -442,8 +460,8 @@
 /* Class = "NSButton"; ibShadowedToolTip = "Mounts/Unmounts the Boot-EFI"; ObjectID = "Gmk-gz-FIC"; */
 "Gmk-gz-FIC.ibShadowedToolTip" = "Mounted/Unmounted die Boot-EFI";
 
-/* Class = "NSButtonCell"; title = "WebDriver"; ObjectID = "gqe-Mv-U15"; */
-"gqe-Mv-U15.title" = "WebDriver";
+/* Class = "NSButtonCell"; title = "Webdriver"; ObjectID = "gqe-Mv-U15"; */
+"gqe-Mv-U15.title" = "Webdriver";
 
 /* Class = "NSMenuItem"; title = "10.11.6 - 15G1217"; ObjectID = "gVe-vH-pKe"; */
 "gVe-vH-pKe.title" = "10.11.6 - 15G1217";
@@ -484,9 +502,6 @@
 /* Class = "NSButtonCell"; title = "TSCAdjustReset"; ObjectID = "hxQ-d2-8hR"; */
 "hxQ-d2-8hR.title" = "TSCAdjustReset";
 
-/* Class = "NSButtonCell"; title = "Quit"; ObjectID = "hyr-lg-hWh"; */
-"hyr-lg-hWh.title" = "Beenden";
-
 /* Class = "NSMenuItem"; title = "10.12.6 - 16G1408"; ObjectID = "i4T-Lh-gXu"; */
 "i4T-Lh-gXu.title" = "10.12.6 - 16G1408";
 
@@ -523,6 +538,12 @@
 /* Class = "NSMenuItem"; title = "10.10.2 - 14C1510"; ObjectID = "iO5-iB-AJG"; */
 "iO5-iB-AJG.title" = "10.10.2 - 14C1510";
 
+/* Class = "NSMenuItem"; title = "10.13.6 - 17G11023"; ObjectID = "IOX-cB-Qui"; */
+"IOX-cB-Qui.title" = "10.13.6 - 17G11023";
+
+/* Class = "NSButtonCell"; title = "IntelBluetoothFirmware"; ObjectID = "iq5-nN-rMv"; */
+"iq5-nN-rMv.title" = "IntelBluetoothFirmware";
+
 /* Class = "NSButtonCell"; title = "EFI"; ObjectID = "It2-xu-0aW"; */
 "It2-xu-0aW.title" = "EFI";
 
@@ -540,6 +561,9 @@
 
 /* Class = "NSButtonCell"; title = "AppleBacklightFixup"; ObjectID = "JjW-CG-tmb"; */
 "JjW-CG-tmb.title" = "AppleBacklightFixup";
+
+/* Class = "NSButtonCell"; title = "Exclude Clover from Update check"; ObjectID = "JKH-QD-EW1"; */
+"JKH-QD-EW1.title" = "Clover von Überprüfung ausschliessen";
 
 /* Class = "NSMenuItem"; title = "4"; ObjectID = "JlQ-So-Ctb"; */
 "JlQ-So-Ctb.title" = "4";
@@ -763,6 +787,9 @@
 /* Class = "NSMenuItem"; title = "Theme"; ObjectID = "Pod-Cp-WME"; */
 "Pod-Cp-WME.title" = "Thema";
 
+/* Class = "NSButtonCell"; title = "SmallTreeIntel82576"; ObjectID = "pRM-yF-zsj"; */
+"pRM-yF-zsj.title" = "SmallTreeIntel82576";
+
 /* Class = "NSMenuItem"; title = "10.11.6 - 15G1108"; ObjectID = "psM-cp-HRB"; */
 "psM-cp-HRB.title" = "10.11.6 - 15G1108";
 
@@ -910,6 +937,9 @@
 /* Class = "NSBox"; title = "Box"; ObjectID = "Tfb-H6-fo8"; */
 "Tfb-H6-fo8.title" = "Box";
 
+/* Class = "NSMenuItem"; title = "OpenCore Nightly (NDK Fork)"; ObjectID = "TG2-Dr-2zV"; */
+"TG2-Dr-2zV.title" = "OpenCore Nightly (NDK Fork)";
+
 /* Class = "NSMenuItem"; title = "OpenCore Nightly"; ObjectID = "tGB-Gh-Bvm"; */
 "tGB-Gh-Bvm.title" = "OpenCore Nightly";
 
@@ -1005,6 +1035,9 @@
 
 /* Class = "NSTextFieldCell"; title = "Font Family"; ObjectID = "whC-9e-OnV"; */
 "whC-9e-OnV.title" = "Font Family";
+
+/* Class = "NSButtonCell"; title = "USBInjectAll"; ObjectID = "WHC-ZH-fTB"; */
+"WHC-ZH-fTB.title" = "USBInjectAll";
 
 /* Class = "NSButtonCell"; title = "Unmount all"; ObjectID = "wHQ-0o-YQJ"; */
 "wHQ-0o-YQJ.title" = "Alle auswerfen";

@@ -8,29 +8,14 @@
 /* Class = "NSTextFieldCell"; title = "Platform Feature"; ObjectID = "0GT-bB-c9d"; */
 "0GT-bB-c9d.title" = "Platform Feature";
 
+/* Class = "NSButtonCell"; title = "No Rom Info"; ObjectID = "0XD-yK-Tkh"; */
+"0XD-yK-Tkh.title" = "No Rom Info";
+
 /* Class = "NSTextFieldCell"; title = "Firmware Features Mask"; ObjectID = "0n5-Pc-2wK"; */
 "0n5-Pc-2wK.title" = "Firmware Features Mask";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Manufacturer, same as BiosVendor. \nClover knows what to do, no need to set this key."; ObjectID = "0rR-qR-wAX"; */
 "0rR-qR-wAX.ibShadowedToolTip" = "Manufacturer, same as BiosVendor. \nClover knows what to do, no need to set this key.";
-
-/* Class = "NSComboBoxCell"; 1GV-ej-OaR.ibShadowedObjectValues[0] = "PCI"; ObjectID = "1GV-ej-OaR"; */
-"1GV-ej-OaR.ibShadowedObjectValues[0]" = "PCI";
-
-/* Class = "NSComboBoxCell"; 1GV-ej-OaR.ibShadowedObjectValues[1] = "PCIe 1x"; ObjectID = "1GV-ej-OaR"; */
-"1GV-ej-OaR.ibShadowedObjectValues[1]" = "PCIe 1x";
-
-/* Class = "NSComboBoxCell"; 1GV-ej-OaR.ibShadowedObjectValues[2] = "PCIe 2x"; ObjectID = "1GV-ej-OaR"; */
-"1GV-ej-OaR.ibShadowedObjectValues[2]" = "PCIe 2x";
-
-/* Class = "NSComboBoxCell"; 1GV-ej-OaR.ibShadowedObjectValues[3] = "PCIe 4x"; ObjectID = "1GV-ej-OaR"; */
-"1GV-ej-OaR.ibShadowedObjectValues[3]" = "PCIe 4x";
-
-/* Class = "NSComboBoxCell"; 1GV-ej-OaR.ibShadowedObjectValues[4] = "PCIe 8x"; ObjectID = "1GV-ej-OaR"; */
-"1GV-ej-OaR.ibShadowedObjectValues[4]" = "PCIe 8x";
-
-/* Class = "NSComboBoxCell"; 1GV-ej-OaR.ibShadowedObjectValues[5] = "PCIe 16x"; ObjectID = "1GV-ej-OaR"; */
-"1GV-ej-OaR.ibShadowedObjectValues[5]" = "PCIe 16x";
 
 /* Class = "NSTextFieldCell"; title = "Serial Number"; ObjectID = "1P4-aL-skS"; */
 "1P4-aL-skS.title" = "Serial Number";
@@ -56,6 +41,9 @@
 /* Class = "NSTextField"; ibShadowedToolTip = "<key>FirmwareFeatures</key>\n<string>0xC0001403</string>\nSMBIOS.table128->FirmwareFeatures\n\nThese digits exceed the standard SMBIOS and are part of Apple's specification. Different real Macs show different values and no description of the meaning exists."; ObjectID = "6SM-nV-h8N"; */
 "6SM-nV-h8N.ibShadowedToolTip" = "<key>FirmwareFeatures</key>\n<string>0xC0001403</string>\nSMBIOS.table128->FirmwareFeatures\n\nThese digits exceed the standard SMBIOS and are part of Apple's specification. Different real Macs show different values and no description of the meaning exists.";
 
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "0x"; ObjectID = "6UR-BU-g07"; */
+"6UR-BU-g07.ibShadowedIsNilPlaceholder" = "0x";
+
 /* Class = "NSTableColumn"; headerCell.title = "Slot*"; ObjectID = "6cM-Hc-Zc2"; */
 "6cM-Hc-Zc2.headerCell.title" = "Slot*";
 
@@ -74,6 +62,9 @@
 /* Class = "NSTextFieldCell"; title = "System"; ObjectID = "7b8-FQ-DYs"; */
 "7b8-FQ-DYs.title" = "System";
 
+/* Class = "NSTextFieldCell"; title = "Smbios Version"; ObjectID = "7mi-M3-zH2"; */
+"7mi-M3-zH2.title" = "Smbios Version";
+
 /* Class = "NSButton"; ibShadowedToolTip = "<key>Mobile</key>\n<true/>\n\nUsually Clover will automatically detect the mobility of a system, \ne.g. if is powered by a battery, needs energy saving, or not. \nChange it to trick the system into thinking that a battery is not available, or otherwise."; ObjectID = "8BJ-2b-1Ms"; */
 "8BJ-2b-1Ms.ibShadowedToolTip" = "<key>Mobile</key>\n<true/>\n\nUsually Clover will automatically detect the mobility of a system, \ne.g. if is powered by a battery, needs energy saving, or not. \nChange it to trick the system into thinking that a battery is not available, or otherwise.";
 
@@ -82,69 +73,6 @@
 
 /* Class = "NSTextFieldCell"; title = "SlotCount"; ObjectID = "BQx-pe-Q0F"; */
 "BQx-pe-Q0F.title" = "SlotCount";
-
-/* Class = "NSComboBoxCell"; BsE-ti-iEN.ibShadowedObjectValues[0] = "200"; ObjectID = "BsE-ti-iEN"; */
-"BsE-ti-iEN.ibShadowedObjectValues[0]" = "200";
-
-/* Class = "NSComboBoxCell"; BsE-ti-iEN.ibShadowedObjectValues[1] = "266"; ObjectID = "BsE-ti-iEN"; */
-"BsE-ti-iEN.ibShadowedObjectValues[1]" = "266";
-
-/* Class = "NSComboBoxCell"; BsE-ti-iEN.ibShadowedObjectValues[2] = "333"; ObjectID = "BsE-ti-iEN"; */
-"BsE-ti-iEN.ibShadowedObjectValues[2]" = "333";
-
-/* Class = "NSComboBoxCell"; BsE-ti-iEN.ibShadowedObjectValues[3] = "366"; ObjectID = "BsE-ti-iEN"; */
-"BsE-ti-iEN.ibShadowedObjectValues[3]" = "366";
-
-/* Class = "NSComboBoxCell"; BsE-ti-iEN.ibShadowedObjectValues[4] = "400"; ObjectID = "BsE-ti-iEN"; */
-"BsE-ti-iEN.ibShadowedObjectValues[4]" = "400";
-
-/* Class = "NSComboBoxCell"; BsE-ti-iEN.ibShadowedObjectValues[5] = "433"; ObjectID = "BsE-ti-iEN"; */
-"BsE-ti-iEN.ibShadowedObjectValues[5]" = "433";
-
-/* Class = "NSComboBoxCell"; BsE-ti-iEN.ibShadowedObjectValues[6] = "533"; ObjectID = "BsE-ti-iEN"; */
-"BsE-ti-iEN.ibShadowedObjectValues[6]" = "533";
-
-/* Class = "NSComboBoxCell"; BsE-ti-iEN.ibShadowedObjectValues[7] = "667"; ObjectID = "BsE-ti-iEN"; */
-"BsE-ti-iEN.ibShadowedObjectValues[7]" = "667";
-
-/* Class = "NSComboBoxCell"; BsE-ti-iEN.ibShadowedObjectValues[8] = "800"; ObjectID = "BsE-ti-iEN"; */
-"BsE-ti-iEN.ibShadowedObjectValues[8]" = "800";
-
-/* Class = "NSComboBoxCell"; BsE-ti-iEN.ibShadowedObjectValues[9] = "1066"; ObjectID = "BsE-ti-iEN"; */
-"BsE-ti-iEN.ibShadowedObjectValues[9]" = "1066";
-
-/* Class = "NSComboBoxCell"; BsE-ti-iEN.ibShadowedObjectValues[10] = "1333"; ObjectID = "BsE-ti-iEN"; */
-"BsE-ti-iEN.ibShadowedObjectValues[10]" = "1333";
-
-/* Class = "NSComboBoxCell"; BsE-ti-iEN.ibShadowedObjectValues[11] = "1600"; ObjectID = "BsE-ti-iEN"; */
-"BsE-ti-iEN.ibShadowedObjectValues[11]" = "1600";
-
-/* Class = "NSComboBoxCell"; BsE-ti-iEN.ibShadowedObjectValues[12] = "1866"; ObjectID = "BsE-ti-iEN"; */
-"BsE-ti-iEN.ibShadowedObjectValues[12]" = "1866";
-
-/* Class = "NSComboBoxCell"; BsE-ti-iEN.ibShadowedObjectValues[13] = "2000"; ObjectID = "BsE-ti-iEN"; */
-"BsE-ti-iEN.ibShadowedObjectValues[13]" = "2000";
-
-/* Class = "NSComboBoxCell"; BsE-ti-iEN.ibShadowedObjectValues[14] = "2133"; ObjectID = "BsE-ti-iEN"; */
-"BsE-ti-iEN.ibShadowedObjectValues[14]" = "2133";
-
-/* Class = "NSComboBoxCell"; BsE-ti-iEN.ibShadowedObjectValues[15] = "2200"; ObjectID = "BsE-ti-iEN"; */
-"BsE-ti-iEN.ibShadowedObjectValues[15]" = "2200";
-
-/* Class = "NSComboBoxCell"; BsE-ti-iEN.ibShadowedObjectValues[16] = "2400"; ObjectID = "BsE-ti-iEN"; */
-"BsE-ti-iEN.ibShadowedObjectValues[16]" = "2400";
-
-/* Class = "NSComboBoxCell"; BsE-ti-iEN.ibShadowedObjectValues[17] = "2600"; ObjectID = "BsE-ti-iEN"; */
-"BsE-ti-iEN.ibShadowedObjectValues[17]" = "2600";
-
-/* Class = "NSComboBoxCell"; BsE-ti-iEN.ibShadowedObjectValues[18] = "2800"; ObjectID = "BsE-ti-iEN"; */
-"BsE-ti-iEN.ibShadowedObjectValues[18]" = "2800";
-
-/* Class = "NSComboBoxCell"; BsE-ti-iEN.ibShadowedObjectValues[19] = "3000"; ObjectID = "BsE-ti-iEN"; */
-"BsE-ti-iEN.ibShadowedObjectValues[19]" = "3000";
-
-/* Class = "NSComboBoxCell"; BsE-ti-iEN.ibShadowedObjectValues[20] = "3200"; ObjectID = "BsE-ti-iEN"; */
-"BsE-ti-iEN.ibShadowedObjectValues[20]" = "3200";
 
 /* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "0x"; ObjectID = "BuA-L1-7IU"; */
 "BuA-L1-7IU.ibShadowedIsNilPlaceholder" = "0x";
@@ -155,38 +83,14 @@
 /* Class = "NSTextFieldCell"; title = "Chassis"; ObjectID = "CCm-K3-zms"; */
 "CCm-K3-zms.title" = "Chassis";
 
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "Cai-68-vnq"; */
-"Cai-68-vnq.title" = "Text Cell";
-
 /* Class = "NSTextFieldCell"; title = "Location In Chassis"; ObjectID = "CqU-Mt-vpI"; */
 "CqU-Mt-vpI.title" = "Location In Chassis";
-
-/* Class = "NSTextFieldCell"; title = "Text"; ObjectID = "EBS-81-h7q"; */
-"EBS-81-h7q.title" = "Text";
 
 /* Class = "NSButtonCell"; title = "Mobile"; ObjectID = "EYq-eU-UOZ"; */
 "EYq-eU-UOZ.title" = "Mobile";
 
 /* Class = "NSTableColumn"; headerCell.title = "Frequency* (MHz)"; ObjectID = "EsJ-5o-DCN"; */
 "EsJ-5o-DCN.headerCell.title" = "Frequency* (MHz)";
-
-/* Class = "NSMenu"; title = "OtherViews"; ObjectID = "FuO-Om-24Y"; */
-"FuO-Om-24Y.title" = "OtherViews";
-
-/* Class = "NSComboBoxCell"; H70-61-gOQ.ibShadowedObjectValues[0] = "DDR"; ObjectID = "H70-61-gOQ"; */
-"H70-61-gOQ.ibShadowedObjectValues[0]" = "DDR";
-
-/* Class = "NSComboBoxCell"; H70-61-gOQ.ibShadowedObjectValues[1] = "DDR2"; ObjectID = "H70-61-gOQ"; */
-"H70-61-gOQ.ibShadowedObjectValues[1]" = "DDR2";
-
-/* Class = "NSComboBoxCell"; H70-61-gOQ.ibShadowedObjectValues[2] = "DDR3"; ObjectID = "H70-61-gOQ"; */
-"H70-61-gOQ.ibShadowedObjectValues[2]" = "DDR3";
-
-/* Class = "NSComboBoxCell"; H70-61-gOQ.ibShadowedObjectValues[3] = "DDR4"; ObjectID = "H70-61-gOQ"; */
-"H70-61-gOQ.ibShadowedObjectValues[3]" = "DDR4";
-
-/* Class = "NSMenuItem"; title = "Dual Channel"; ObjectID = "I6X-eG-gQz"; */
-"I6X-eG-gQz.title" = "Dual Channel";
 
 /* Class = "NSBox"; title = "Box"; ObjectID = "JHE-yU-rxg"; */
 "JHE-yU-rxg.title" = "Box";
@@ -200,38 +104,8 @@
 /* Class = "NSTextFieldCell"; title = "Bios Vendor"; ObjectID = "NN2-41-CPM"; */
 "NN2-41-CPM.title" = "Bios Vendor";
 
-/* Class = "NSComboBoxCell"; NYq-l3-8MD.ibShadowedObjectValues[0] = "ATI"; ObjectID = "NYq-l3-8MD"; */
-"NYq-l3-8MD.ibShadowedObjectValues[0]" = "ATI";
-
-/* Class = "NSComboBoxCell"; NYq-l3-8MD.ibShadowedObjectValues[1] = "NVidia"; ObjectID = "NYq-l3-8MD"; */
-"NYq-l3-8MD.ibShadowedObjectValues[1]" = "NVidia";
-
-/* Class = "NSComboBoxCell"; NYq-l3-8MD.ibShadowedObjectValues[2] = "IntelGFX"; ObjectID = "NYq-l3-8MD"; */
-"NYq-l3-8MD.ibShadowedObjectValues[2]" = "IntelGFX";
-
-/* Class = "NSComboBoxCell"; NYq-l3-8MD.ibShadowedObjectValues[3] = "LAN"; ObjectID = "NYq-l3-8MD"; */
-"NYq-l3-8MD.ibShadowedObjectValues[3]" = "LAN";
-
-/* Class = "NSComboBoxCell"; NYq-l3-8MD.ibShadowedObjectValues[4] = "WIFI"; ObjectID = "NYq-l3-8MD"; */
-"NYq-l3-8MD.ibShadowedObjectValues[4]" = "WIFI";
-
-/* Class = "NSComboBoxCell"; NYq-l3-8MD.ibShadowedObjectValues[5] = "Firewire"; ObjectID = "NYq-l3-8MD"; */
-"NYq-l3-8MD.ibShadowedObjectValues[5]" = "Firewire";
-
-/* Class = "NSComboBoxCell"; NYq-l3-8MD.ibShadowedObjectValues[6] = "HDMI"; ObjectID = "NYq-l3-8MD"; */
-"NYq-l3-8MD.ibShadowedObjectValues[6]" = "HDMI";
-
-/* Class = "NSComboBoxCell"; NYq-l3-8MD.ibShadowedObjectValues[7] = "USB"; ObjectID = "NYq-l3-8MD"; */
-"NYq-l3-8MD.ibShadowedObjectValues[7]" = "USB";
-
-/* Class = "NSComboBoxCell"; NYq-l3-8MD.ibShadowedObjectValues[8] = "NVME"; ObjectID = "NYq-l3-8MD"; */
-"NYq-l3-8MD.ibShadowedObjectValues[8]" = "NVME";
-
 /* Class = "NSTableColumn"; headerCell.title = "Part"; ObjectID = "NiG-TU-Xa1"; */
 "NiG-TU-Xa1.headerCell.title" = "Part";
-
-/* Class = "NSMenuItem"; title = "Quad Channel"; ObjectID = "Nnv-Il-gW0"; */
-"Nnv-Il-gW0.title" = "Quad Channel";
 
 /* Class = "NSTableColumn"; headerCell.title = "Vendor*"; ObjectID = "Npl-rZ-2fz"; */
 "Npl-rZ-2fz.headerCell.title" = "Vendor*";
@@ -290,20 +164,23 @@
 /* Class = "NSTextFieldCell"; title = "Chassis Manufacturer"; ObjectID = "Xda-xd-vOU"; */
 "Xda-xd-vOU.title" = "Chassis Manufacturer";
 
+/* Class = "NSTextFieldCell"; title = "Memory Rank"; ObjectID = "YoH-cZ-GzQ"; */
+"YoH-cZ-GzQ.title" = "Memory Rank";
+
 /* Class = "NSTextField"; ibShadowedToolTip = "EfiVersion, Clover will use a value according to the set Mac model, like it is used in real Macs,\nso that you don't need to set this key."; ObjectID = "ZZX-A9-hFF"; */
 "ZZX-A9-hFF.ibShadowedToolTip" = "EfiVersion, Clover will use a value according to the set Mac model, like it is used in real Macs,\nso that you don't need to set this key.";
 
 /* Class = "NSButtonCell"; title = "Generate New"; ObjectID = "aFE-2j-YxC"; */
 "aFE-2j-YxC.title" = "Generate New";
 
-/* Class = "NSMenuItem"; title = "Triple Channel"; ObjectID = "bcl-0o-TLR"; */
-"bcl-0o-TLR.title" = "Triple Channel";
-
 /* Class = "NSTextFieldCell"; title = "Board Serial Number"; ObjectID = "cDM-0z-QdO"; */
 "cDM-0z-QdO.title" = "Board Serial Number";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Board-ID, like \"Mac-6F01561E16C75D06\" for MacBookPro9,1.\n\nClover knows which to use based on ProductName and has no sense to set this key,\nunless Clover needs an update."; ObjectID = "clk-LC-67V"; */
 "clk-LC-67V.ibShadowedToolTip" = "Board-ID, like \"Mac-6F01561E16C75D06\" for MacBookPro9,1.\n\nClover knows which to use based on ProductName and has no sense to set this key,\nunless Clover needs an update.";
+
+/* Class = "NSButton"; ibShadowedToolTip = "<key>NoRomInfo</key>\n<true/>\n\nDisable rom info in hardware overview in system profiler."; ObjectID = "d4S-FL-OQz"; */
+"d4S-FL-OQz.ibShadowedToolTip" = "<key>NoRomInfo</key>\n<true/>\n\nDisable rom info in hardware overview in system profiler.";
 
 /* Class = "NSSegmentedCell"; d4s-i4-nwM.ibShadowedLabels[0] = "Model Lookup"; ObjectID = "d4s-i4-nwM"; */
 "d4s-i4-nwM.ibShadowedLabels[0]" = "Model Lookup";
@@ -329,17 +206,11 @@
 /* Class = "NSTextField"; ibShadowedToolTip = "Manufacturer, same as BiosVendor. \nClover knows what to do, no need to set this key."; ObjectID = "gGi-AR-CE7"; */
 "gGi-AR-CE7.ibShadowedToolTip" = "Manufacturer, same as BiosVendor. \nClover knows what to do, no need to set this key.";
 
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "ipY-s7-wNe"; */
-"ipY-s7-wNe.title" = "Text Cell";
-
 /* Class = "NSTextField"; ibShadowedToolTip = "Board Version, usually is equal to ProductName.\n\nClover knows which to use based on ProductName and has no sense to set this key."; ObjectID = "jay-Z0-iqn"; */
 "jay-Z0-iqn.ibShadowedToolTip" = "Board Version, usually is equal to ProductName.\n\nClover knows which to use based on ProductName and has no sense to set this key.";
 
 /* Class = "NSTextFieldCell"; title = "Channels"; ObjectID = "lEJ-CH-9YM"; */
 "lEJ-CH-9YM.title" = "Channels";
-
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "m1I-6c-B94"; */
-"m1I-6c-B94.title" = "Text Cell";
 
 /* Class = "NSTextFieldCell"; title = "Board"; ObjectID = "md2-zo-6QE"; */
 "md2-zo-6QE.title" = "Board";
@@ -362,32 +233,11 @@
 /* Class = "NSTextField"; ibShadowedToolTip = "<key>SmUUID</key>\n<string>00000000-0000-1000-8000-010203040506</string>\nThis is the UUID, which is written into the SMBIOS table. Apparently it makes sense to fill the last pairs of digits with the MAC address of your ethernet card. This UUID will also be used in case CustomUUID is missing. It also be used to initialize ROM RtVariable (use by iMessage) in case ROM is missing."; ObjectID = "pCR-MR-RPX"; */
 "pCR-MR-RPX.ibShadowedToolTip" = "<key>SmUUID</key>\n<string>00000000-0000-1000-8000-010203040506</string>\nThis is the UUID, which is written into the SMBIOS table. Apparently it makes sense to fill the last pairs of digits with the MAC address of your ethernet card. This UUID will also be used in case CustomUUID is missing. It also be used to initialize ROM RtVariable (use by iMessage) in case ROM is missing.";
 
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "pH3-R0-WFB"; */
-"pH3-R0-WFB.title" = "Text Cell";
-
 /* Class = "NSTextFieldCell"; title = "Firmware"; ObjectID = "pXB-Hd-hHg"; */
 "pXB-Hd-hHg.title" = "Firmware";
 
-/* Class = "NSMenuItem"; title = "Single Channel"; ObjectID = "sAc-kP-Xgk"; */
-"sAc-kP-Xgk.title" = "Single Channel";
-
 /* Class = "NSTextFieldCell"; title = "Board Manufacturer"; ObjectID = "sMQ-S7-pvh"; */
 "sMQ-S7-pvh.title" = "Board Manufacturer";
-
-/* Class = "NSComboBoxCell"; uOS-tn-tSy.ibShadowedObjectValues[0] = "1024"; ObjectID = "uOS-tn-tSy"; */
-"uOS-tn-tSy.ibShadowedObjectValues[0]" = "1024";
-
-/* Class = "NSComboBoxCell"; uOS-tn-tSy.ibShadowedObjectValues[1] = "2048"; ObjectID = "uOS-tn-tSy"; */
-"uOS-tn-tSy.ibShadowedObjectValues[1]" = "2048";
-
-/* Class = "NSComboBoxCell"; uOS-tn-tSy.ibShadowedObjectValues[2] = "4096"; ObjectID = "uOS-tn-tSy"; */
-"uOS-tn-tSy.ibShadowedObjectValues[2]" = "4096";
-
-/* Class = "NSComboBoxCell"; uOS-tn-tSy.ibShadowedObjectValues[3] = "8192"; ObjectID = "uOS-tn-tSy"; */
-"uOS-tn-tSy.ibShadowedObjectValues[3]" = "8192";
-
-/* Class = "NSComboBoxCell"; uOS-tn-tSy.ibShadowedObjectValues[4] = "16384"; ObjectID = "uOS-tn-tSy"; */
-"uOS-tn-tSy.ibShadowedObjectValues[4]" = "16384";
 
 /* Class = "NSPopUpButton"; ibShadowedToolTip = "Channels - Number of hardware channels supported by your memory chipset, usually two."; ObjectID = "vdg-14-eGI"; */
 "vdg-14-eGI.ibShadowedToolTip" = "Channels - Number of hardware channels supported by your memory chipset, usually two.";
@@ -397,9 +247,6 @@
 
 /* Class = "NSTextField"; ibShadowedToolTip = "<key>PlatformFeature</key>\n<string>0xFFFF</string>\n\nmemory tab disappearing/appearing. Above value makes it disappear.\nMemory tab should show up only if your RAM is not soldered to the motherboard.\nClover knows how this work for every Macs but you can customize it!Clover knows what to do, no need to set this key."; ObjectID = "wK9-vC-BPn"; */
 "wK9-vC-BPn.ibShadowedToolTip" = "<key>PlatformFeature</key>\n<string>0xFFFF</string>\n\nmemory tab disappearing/appearing. Above value makes it disappear.\nMemory tab should show up only if your RAM is not soldered to the motherboard.\nClover knows how this work for every Macs but you can customize it!Clover knows what to do, no need to set this key.";
-
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "xUg-wm-asM"; */
-"xUg-wm-asM.title" = "Text Cell";
 
 /* Class = "NSTextFieldCell"; title = "Chassis  Asset Tag"; ObjectID = "yAB-NZ-jih"; */
 "yAB-NZ-jih.title" = "Chassis  Asset Tag";

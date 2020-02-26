@@ -71,9 +71,6 @@
 /* Class = "NSMenuItem"; title = "Redo"; ObjectID = "6dh-zS-Vam"; */
 "6dh-zS-Vam.title" = "Redo";
 
-/* Class = "NSTextFieldCell"; title = "Notifications"; ObjectID = "6hs-bf-0wr"; */
-"6hs-bf-0wr.title" = "Notifications";
-
 /* Class = "NSMenuItem"; title = "Start Screen"; ObjectID = "72J-KQ-pxB"; */
 "72J-KQ-pxB.title" = "Start Screen";
 
@@ -107,6 +104,9 @@
 /* Class = "NSMenu"; title = "Help"; ObjectID = "F2S-fz-NVQ"; */
 "F2S-fz-NVQ.title" = "Help";
 
+/* Class = "NSMenuItem"; title = "Show Tips"; ObjectID = "FDe-Xy-MWt"; */
+"FDe-Xy-MWt.title" = "Show Tips";
+
 /* Class = "NSMenuItem"; title = "Clover Configurator Help"; ObjectID = "FKE-Sm-Kum"; */
 "FKE-Sm-Kum.title" = "Clover Configurator Help";
 
@@ -130,6 +130,9 @@
 
 /* Class = "NSMenuItem"; title = "Writing Direction"; ObjectID = "H1b-Si-o9J"; */
 "H1b-Si-o9J.title" = "Writing Direction";
+
+/* Class = "NSTextFieldCell"; title = "Tips Window"; ObjectID = "H5s-Nk-9YO"; */
+"H5s-Nk-9YO.title" = "Tips Window";
 
 /* Class = "NSMenuItem"; title = "View"; ObjectID = "H8h-7b-M4v"; */
 "H8h-7b-M4v.title" = "View";
@@ -377,9 +380,6 @@
 /* Class = "NSMenuItem"; title = "Check Grammar With Spelling"; ObjectID = "mK6-2p-4JG"; */
 "mK6-2p-4JG.title" = "Check Grammar With Spelling";
 
-/* Class = "NSButtonCell"; title = "Show Notifications"; ObjectID = "nzH-hr-x41"; */
-"nzH-hr-x41.title" = "Show Notifications";
-
 /* Class = "NSMenuItem"; title = "Ligatures"; ObjectID = "o6e-r0-MWq"; */
 "o6e-r0-MWq.title" = "Ligatures";
 
@@ -400,6 +400,9 @@
 
 /* Class = "NSMenuItem"; title = "Smart Dashes"; ObjectID = "rgM-f4-ycn"; */
 "rgM-f4-ycn.title" = "Smart Dashes";
+
+/* Class = "NSButtonCell"; title = "Keep in front"; ObjectID = "scK-f4-llG"; */
+"scK-f4-llG.title" = "Keep in front";
 
 /* Class = "NSMenuItem"; title = "Show Toolbar"; ObjectID = "snW-S8-Cw5"; */
 "snW-S8-Cw5.title" = "Show Toolbar";
@@ -448,6 +451,9 @@
 
 /* Class = "NSMenuItem"; title = "Speech"; ObjectID = "xrE-MZ-jX0"; */
 "xrE-MZ-jX0.title" = "Speech";
+
+/* Class = "NSButtonCell"; title = "Make transparent"; ObjectID = "yDl-We-Cap"; */
+"yDl-We-Cap.title" = "Make transparent";
 
 /* Class = "NSMenuItem"; title = "Show Substitutions"; ObjectID = "z6F-FW-3nz"; */
 "z6F-FW-3nz.title" = "Show Substitutions";

@@ -1,22 +1,4 @@
 
-/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "DnP-ye-kYk"; */
-"DnP-ye-kYk.title" = "Table View Cell";
-
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "HCV-2Y-u3c"; */
-"HCV-2Y-u3c.title" = "Text Cell";
-
-/* Class = "NSButtonCell"; title = "counter"; ObjectID = "ISH-Up-UYm"; */
-"ISH-Up-UYm.title" = "counter";
-
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "NhS-9g-06v"; */
-"NhS-9g-06v.title" = "Text Cell";
-
-/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "PTK-qd-KpZ"; */
-"PTK-qd-KpZ.title" = "Table View Cell";
-
-/* Class = "NSTextFieldCell"; title = "Label"; ObjectID = "Qrg-sI-1qR"; */
-"Qrg-sI-1qR.title" = "Label";
-
 /* Class = "NSBox"; title = "Efi Partitions"; ObjectID = "R3W-HU-gjm"; */
 "R3W-HU-gjm.title" = "Efi Partitions";
 
@@ -28,9 +10,6 @@
 
 /* Class = "NSTextFieldCell"; title = "Disk UUID"; ObjectID = "XxG-gW-RBV"; */
 "XxG-gW-RBV.title" = "Disk UUID";
-
-/* Class = "NSTextFieldCell"; title = "Label"; ObjectID = "Ylq-9V-KdJ"; */
-"Ylq-9V-KdJ.title" = "Label";
 
 /* Class = "NSButtonCell"; title = "unMount partition"; ObjectID = "ZTm-48-oGJ"; */
 "ZTm-48-oGJ.title" = "unMount partition";

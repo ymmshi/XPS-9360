@@ -5,7 +5,7 @@
 /* Class = "NSTextFieldCell"; title = "ScreenEdgeX"; ObjectID = "1CM-mH-OVe"; */
 "1CM-mH-OVe.title" = "ScreenEdgeX";
 
-/* Class = "NSMenuItem"; title = "Scale"; ObjectID = "1ZQ-1F-ccp"; */
+/* Class = "NSMenuItem"; title = "Scale"; ObjectID = "1ZQ-1F-ccp"; Note = "Do not translate"; */
 "1ZQ-1F-ccp.title" = "Scale";
 
 /* Class = "NSTextFieldCell"; title = "TileXSpace"; ObjectID = "25g-IE-MHM"; */
@@ -16,9 +16,6 @@
 
 /* Class = "NSButtonCell"; title = "Save Theme"; ObjectID = "3VQ-MU-24B"; */
 "3VQ-MU-24B.title" = "Save Theme";
-
-/* Class = "NSMenu"; title = "OtherViews"; ObjectID = "3lt-aO-JPg"; */
-"3lt-aO-JPg.title" = "OtherViews";
 
 /* Class = "NSTextFieldCell"; title = "OffsetY"; ObjectID = "3qb-DM-3Gj"; */
 "3qb-DM-3Gj.title" = "OffsetY";
@@ -62,17 +59,8 @@
 /* Class = "NSTextFieldCell"; title = "Sharp"; ObjectID = "DTa-vL-Jpt"; */
 "DTa-vL-Jpt.title" = "Sharp";
 
-/* Class = "NSMenu"; title = "OtherViews"; ObjectID = "E8Z-mV-LYh"; */
-"E8Z-mV-LYh.title" = "OtherViews";
-
 /* Class = "NSTextFieldCell"; title = "SelectionSmallWidth"; ObjectID = "EAX-cV-YhQ"; */
 "EAX-cV-YhQ.title" = "SelectionSmallWidth";
-
-/* Class = "NSMenuItem"; title = "Load"; ObjectID = "Ev2-I2-beu"; */
-"Ev2-I2-beu.title" = "Load";
-
-/* Class = "NSMenuItem"; title = "left"; ObjectID = "Hb9-Dp-bzw"; */
-"Hb9-Dp-bzw.title" = "left";
 
 /* Class = "NSTextFieldCell"; title = "Scale"; ObjectID = "HrL-09-KBY"; */
 "HrL-09-KBY.title" = "Scale";
@@ -86,14 +74,8 @@
 /* Class = "NSTextFieldCell"; title = "DistanceFromScreenEdgeX"; ObjectID = "J9E-qI-wDH"; */
 "J9E-qI-wDH.title" = "DistanceFromScreenEdgeX";
 
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "JJ3-W4-GpI"; */
-"JJ3-W4-GpI.title" = "Text Cell";
-
 /* Class = "NSBox"; title = "Anime"; ObjectID = "JTH-QL-XmF"; */
 "JTH-QL-XmF.title" = "Anime";
-
-/* Class = "NSMenuItem"; title = "Gray"; ObjectID = "Jgi-hR-PdH"; */
-"Jgi-hR-PdH.title" = "Gray";
 
 /* Class = "NSTextFieldCell"; title = "Height"; ObjectID = "KjY-OH-lww"; */
 "KjY-OH-lww.title" = "Height";
@@ -170,9 +152,6 @@
 /* Class = "NSBox"; title = "Target Partition"; ObjectID = "cCw-Ly-mbU"; */
 "cCw-Ly-mbU.title" = "Target Partition";
 
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "cSJ-S6-xJP"; */
-"cSJ-S6-xJP.title" = "Text Cell";
-
 /* Class = "NSBox"; title = "Layout"; ObjectID = "ddr-sA-r4b"; */
 "ddr-sA-r4b.title" = "Layout";
 
@@ -188,9 +167,6 @@
 /* Class = "NSTextFieldCell"; title = "Path"; ObjectID = "elK-sV-faA"; */
 "elK-sV-faA.title" = "Path";
 
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "epY-tK-wcO"; */
-"epY-tK-wcO.title" = "Text Cell";
-
 /* Class = "NSTextFieldCell"; title = "ScreenEdgeY"; ObjectID = "eq9-cB-uDN"; */
 "eq9-cB-uDN.title" = "ScreenEdgeY";
 
@@ -199,9 +175,6 @@
 
 /* Class = "NSButtonCell"; title = "Help"; ObjectID = "ffy-wu-DgR"; */
 "ffy-wu-DgR.title" = "Help";
-
-/* Class = "NSMenuItem"; title = "right"; ObjectID = "g7E-Ne-LKa"; */
-"g7E-Ne-LKa.title" = "right";
 
 /* Class = "NSTableColumn"; headerCell.title = "Once"; ObjectID = "gdZ-VP-yMw"; */
 "gdZ-VP-yMw.headerCell.title" = "Once";
@@ -215,17 +188,8 @@
 /* Class = "NSBox"; title = "Components"; ObjectID = "haY-Pq-JZU"; */
 "haY-Pq-JZU.title" = "Components";
 
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "hkq-Tx-miG"; */
-"hkq-Tx-miG.title" = "Text Cell";
-
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "huU-p8-NNM"; */
-"huU-p8-NNM.title" = "Text Cell";
-
 /* Class = "NSTextFieldCell"; title = "BarHeight"; ObjectID = "k4a-uF-ugc"; */
 "k4a-uF-ugc.title" = "BarHeight";
-
-/* Class = "NSMenuItem"; title = "Alfa"; ObjectID = "kK7-St-iDY"; */
-"kK7-St-iDY.title" = "Alfa";
 
 /* Class = "NSTableColumn"; headerCell.title = "NudgeY"; ObjectID = "lBA-7E-Zct"; */
 "lBA-7E-Zct.headerCell.title" = "NudgeY";
@@ -233,7 +197,7 @@
 /* Class = "NSBox"; title = "Scroll"; ObjectID = "mFu-tq-vW7"; */
 "mFu-tq-vW7.title" = "Scroll";
 
-/* Class = "NSMenuItem"; title = "Tile"; ObjectID = "n8v-qG-b2F"; */
+/* Class = "NSMenuItem"; title = "Tile"; ObjectID = "n8v-qG-b2F"; Note = "Do not translate"; */
 "n8v-qG-b2F.title" = "Tile";
 
 /* Class = "NSTextFieldCell"; title = "DesignWidth"; ObjectID = "nE2-We-ovk"; */
@@ -245,17 +209,8 @@
 /* Class = "NSButtonCell"; title = "Functions"; ObjectID = "ooZ-yq-puo"; */
 "ooZ-yq-puo.title" = "Functions";
 
-/* Class = "NSComboBoxCell"; pn5-FS-ZAC.ibShadowedObjectValues[1] = "top"; ObjectID = "pn5-FS-ZAC"; */
-"pn5-FS-ZAC.ibShadowedObjectValues[1]" = "top";
-
-/* Class = "NSComboBoxCell"; pn5-FS-ZAC.ibShadowedObjectValues[2] = "bottom"; ObjectID = "pn5-FS-ZAC"; */
-"pn5-FS-ZAC.ibShadowedObjectValues[2]" = "bottom";
-
 /* Class = "NSButtonCell"; title = "Load Themes / Partitions"; ObjectID = "q25-pB-uhX"; */
 "q25-pB-uhX.title" = "Load Themes / Partitions";
-
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "qJJ-CC-NBb"; */
-"qJJ-CC-NBb.title" = "Text Cell";
 
 /* Class = "NSTextFieldCell"; title = "Small"; ObjectID = "qpA-xs-f9k"; */
 "qpA-xs-f9k.title" = "Small";
@@ -269,14 +224,8 @@
 /* Class = "NSButtonCell"; title = "Banner"; ObjectID = "tBZ-nb-JlC"; */
 "tBZ-nb-JlC.title" = "Banner";
 
-/* Class = "NSMenuItem"; title = "bottom"; ObjectID = "tia-Km-gGY"; */
-"tia-Km-gGY.title" = "bottom";
-
 /* Class = "NSTextFieldCell"; title = "TextOffset"; ObjectID = "tkr-x1-LdZ"; */
 "tkr-x1-LdZ.title" = "TextOffset";
-
-/* Class = "NSMenuItem"; title = "top"; ObjectID = "uQ0-6T-IPH"; */
-"uQ0-6T-IPH.title" = "top";
 
 /* Class = "NSTextFieldCell"; title = "ButtonOffset"; ObjectID = "uWL-2Q-FUN"; */
 "uWL-2Q-FUN.title" = "ButtonOffset";
@@ -287,23 +236,11 @@
 /* Class = "NSBox"; title = "Banner"; ObjectID = "vcp-AH-oaj"; */
 "vcp-AH-oaj.title" = "Banner";
 
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "w9W-gy-Wwv"; */
-"w9W-gy-Wwv.title" = "Text Cell";
-
 /* Class = "NSButtonCell"; title = "Vertical"; ObjectID = "xaA-4x-M1H"; */
 "xaA-4x-M1H.title" = "Vertical";
 
 /* Class = "NSTextFieldCell"; title = "Type"; ObjectID = "yS1-ct-JR3"; */
 "yS1-ct-JR3.title" = "Type";
-
-/* Class = "NSComboBoxCell"; yXg-dW-9wb.ibShadowedObjectValues[1] = "left"; ObjectID = "yXg-dW-9wb"; */
-"yXg-dW-9wb.ibShadowedObjectValues[1]" = "left";
-
-/* Class = "NSComboBoxCell"; yXg-dW-9wb.ibShadowedObjectValues[2] = "right"; ObjectID = "yXg-dW-9wb"; */
-"yXg-dW-9wb.ibShadowedObjectValues[2]" = "right";
-
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "yiE-kB-MI0"; */
-"yiE-kB-MI0.title" = "Text Cell";
 
 /* Class = "NSTextFieldCell"; title = "Color"; ObjectID = "zKq-5d-EOd"; */
 "zKq-5d-EOd.title" = "Color";

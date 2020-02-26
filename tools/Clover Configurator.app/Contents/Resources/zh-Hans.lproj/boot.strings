@@ -1,7 +1,4 @@
 
-/* Class = "NSMenu"; title = "OtherViews"; ObjectID = "0GB-Uj-LEN"; */
-"0GB-Uj-LEN.title" = "OtherViews";
-
 /* Class = "NSMenuItem"; title = "-alcoff"; ObjectID = "0KN-En-cfk"; */
 "0KN-En-cfk.title" = "-alcoff";
 
@@ -289,9 +286,6 @@
 
 /* Class = "NSMenuItem"; title = "-vsmcrpt"; ObjectID = "RdQ-nr-l5L"; */
 "RdQ-nr-l5L.title" = "-vsmcrpt";
-
-/* Class = "NSMenu"; title = "OtherViews"; ObjectID = "Rfp-Dc-j1Q"; */
-"Rfp-Dc-j1Q.title" = "OtherViews";
 
 /* Class = "NSMenu"; title = "Help"; ObjectID = "Ry8-9p-YDp"; */
 "Ry8-9p-YDp.title" = "帮助";

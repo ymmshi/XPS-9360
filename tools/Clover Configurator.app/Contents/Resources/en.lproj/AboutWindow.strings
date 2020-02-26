@@ -2,9 +2,6 @@
 /* Class = "NSWindow"; title = "About"; ObjectID = "1"; */
 "1.title" = "About";
 
-/* Class = "NSTextFieldCell"; title = "copyright"; ObjectID = "LaQ-kj-zXn"; */
-"LaQ-kj-zXn.title" = "copyright";
-
 /* Class = "NSButtonCell"; title = "Donate"; ObjectID = "Wky-VX-jr0"; */
 "Wky-VX-jr0.title" = "Donate";
 
@@ -19,9 +16,6 @@
 
 /* Class = "NSTextFieldCell"; title = "GLOBAL EDITION"; ObjectID = "kry-kr-bjb"; */
 "kry-kr-bjb.title" = "GLOBAL EDITION";
-
-/* Class = "NSTextFieldCell"; title = "version"; ObjectID = "wUa-DZ-OPf"; */
-"wUa-DZ-OPf.title" = "version";
 
 /* Class = "NSButtonCell"; title = "Credits"; ObjectID = "xam-yL-m99"; */
 "xam-yL-m99.title" = "Credits";

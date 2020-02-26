@@ -139,37 +139,6 @@ ATI 커넥터를 호스트 컨트롤러에 인젝션 해주세요";
 /* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "write a MS-DOS path (\"\\\") to a folder or a single kext"; ObjectID = "d5H-ev-FTW"; */
 "d5H-ev-FTW.ibShadowedIsNilPlaceholder" = "MS-DOS 경로 (\"\\\") 를 폴더나 단일 Kext에 작성해 주세요";
 
-/* Class = "NSTableView"; ibShadowedToolTip = "- Find: data to to be found inside the desired kext \n\n- Replace: data to be replaced with the contents of the Find key.\n\n- Comment: this remind you what this patch does. \n           In truth this key is optional, but it's a bad (bad) practice\n           to not use it. Remind that this comment show up in the GUI\n           so please use a short description or will be truncated.\n\nOptional keys:\n\n- Disabled: boolean key, if true this patch will be skipped by Clover..\n \n\n- MatchOS: string containings one or more os version separated by comma:\n\t   10.11 means that only if you boot into 10.11 the patch will be activated, but not for 10.11.1\n           10.11.x means that every revision of 10.11 will activate your patch, but not for 10.12\n           \n\t   10.11.6,10.12.x,10.13.x\n\n           the above string will activate your patch for all versions of Sierra and High Sierra, but\n           in El Capitan only if 10.11.6 is detected.\n\n- MatchBuild: Suppose that your patch only works in 10.11.6 with security update installed:\n\n              15G1004\n\n\t      by specifying the build number you can apply this patch only if the build 15G1004.\n       \t      As for MatchOS you can use more then one build string separated by comma."; ObjectID = "fwV-Ju-Xrc"; */
-"fwV-Ju-Xrc.ibShadowedToolTip" = "- Find: 원하는 kext에서 찾을 수있는 데이터
-
-- Replace: 바꿀 데이터를 찾기 키의 내용으로 변경 합니다
-
-- Comment: 이 패치의 내용을 알려줍니다.
-           사실이 키는 선택 사항이지만 나쁜 (나쁜) 연습입니다.
-           그것을 사용하지 않기. 이 주석이 GUI에 나타납니다.
-           짧은 설명을 사용하거나 잘립니다
-
-Optional keys:
-
-- Disabled: 부울 키 값이 True일 경우 클로버에서 건너 뜁니다
-
-
-- MatchOS: 쉼표로 구분 된 하나 이상의 os 버전 문자열 포함 :
-	   10.11은 10.11로 부팅 한 경우에만 패치가 활성화 되지만 10.11.1은 활성화되지 않음을 의미 합니다
-           10.11.x는 모든 버전의 10.11이 패치를 활성화 하지만 10.12는 활성화하지 않는다는 것을 의미 합니다
-
-	   10.11.6,10.12.x,10.13.x
-
-           위의 문자열은 Sierra 및 High Sierra의 모든 버전에 대한 패치를 활성화 하지만, 10.11.6이 발견 된 경우에만
-           El Capitan에서 패치를 활성화 합니다
-
-- MatchBuild: 보안 업데이트가 설치된 10.11.6에서만 패치가 작동한다고 가정 합니다:
-
-              15G1004
-
-	      빌드 번호를 지정하면 빌드 15G1004 인 경우에만이 패치를 적용 할 수 있습니다
-       	      MatchOS의 경우 쉼표로 구분 된 빌드 문자열을 두 개 이상 사용할 수 있습니다";
-
 /* Class = "NSTextField"; ibShadowedToolTip = "<key>ATIConnectorsController</key>\n<string>6000</string>\nFor a fully working AMD video card injecting properties into the registry is not enough. Additionally a modification of the connectors in the according controller binary file is necessary. The example points to the 6000 series controller file:\n\n<key>ATIConnectorsData</key>\n<string>000400000403000000010000210302040400000014020000000100000000 040310000000100000000001000000000001</string>\n<key>ATIConnectorsPatch</key>\n<string>040000001402000000010000000004040004000004030000000100001102 010500000000000000000000000000000000</string>\nThis method works for systems using Mac OS X 10.7 or newer."; ObjectID = "Gho-ZW-2Ud"; */
 "Gho-ZW-2Ud.ibShadowedToolTip" = "<key>ATIConnectorsController</key>
 <string>6000</string>

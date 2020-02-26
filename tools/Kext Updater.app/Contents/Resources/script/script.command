@@ -82,7 +82,7 @@ function _getsecret() {
     fi
 }
 
-allkextsupper="ACPIBatteryManager AirportBrcmFixup AppleALC AppleBacklightFixup AsusSMC ATH9KFixup AtherosE2200Ethernet AtherosWiFiInjector AzulPatcher4600 BrcmPatchRam BT4LEContinuityFixup Clover CodecCommander CoreDisplayFixup CPUFriend EFI-Driver EnableLidWake FakePCIID FakeSMC GenericUSBXHCI HibernationFixup IntelGraphicsFixup IntelGraphicsDVMTFixup IntelMausi IntelMausiEthernet Lilu LiluFriend NightShiftUnlocker NoTouchID NoVPAJpeg NullCpuPowerManagement NullEthernet NvidiaGraphicsFixup OpenCore RealtekRTL8111 RTCMemoryFixup Shiki SinetekRTSX SystemProfilerMemoryFixup ThunderboltReset TSCAdjustReset USBInjectAll VirtualSMC VoodooHDA VoodooI2C VoodooInput VoodooPS2 VoodooSDHC VoodooSMBus VoodooTSCSync WhateverGreen"
+allkextsupper="ACPIBatteryManager AirportBrcmFixup AppleALC AppleBacklightFixup AsusSMC ATH9KFixup AtherosE2200Ethernet AtherosWiFiInjector AzulPatcher4600 BrcmPatchRam BT4LEContinuityFixup Clover CodecCommander CoreDisplayFixup CPUFriend EFI-Driver EnableLidWake FakePCIID FakeSMC GenericUSBXHCI HibernationFixup IntelBluetootFirmware IntelGraphicsFixup IntelGraphicsDVMTFixup IntelMausi IntelMausiEthernet Lilu LiluFriend NightShiftUnlocker NoTouchID NoVPAJpeg NullCpuPowerManagement NullEthernet NvidiaGraphicsFixup OpenCore RealtekRTL8111 RTCMemoryFixup Shiki SinetekRTSX SystemProfilerMemoryFixup ThunderboltReset TSCAdjustReset USBInjectAll VirtualSMC VoodooHDA VoodooI2C VoodooInput VoodooPS2 VoodooSDHC VoodooSMBus VoodooTSCSync WhateverGreen"
 allkextslower=$( echo "$allkextsupper" | tr '[:upper:]' '[:lower:]' )
 
 #========================= Excluded Kexts =========================#
@@ -110,8 +110,8 @@ function _excludedkexts()
         offline_node=$( _helpDefaultRead "EFIx" )
         offline_path=$( df -h |grep $offline_node |sed 's/.*\/Vol/\/Vol/g')
         find "$offline_path" -name "Info.plist" |grep -v Sensor |grep -v 501 | while read fname; do
-        kext_name=$( defaults read "$fname" CFBundleName )
-        kext_version=$( defaults read "$fname" CFBundleVersion )
+        kext_name=$( /usr/libexec/PlistBuddy -c "print CFBundleIdentifier" "$fname" )
+        kext_version=$( /usr/libexec/PlistBuddy -c "print CFBundleVersion" "$fname" )
         echo "$kext_name (""$kext_version"")" >> "$ScriptTmpPath"/offline_efi_kexts
         done
         
@@ -131,8 +131,8 @@ function _excludedkexts()
         kextstatsori=""
         custom_path=$( _helpDefaultRead "CustomEfiPath" )
         find "$custom_path" -name "Info.plist" |grep -v Sensor |grep -v 501 | while read fname; do
-        kext_name=$( defaults read "$fname" CFBundleName )
-        kext_version=$( defaults read "$fname" CFBundleVersion )
+        kext_name=$( /usr/libexec/PlistBuddy -c "print CFBundleIdentifier" "$fname" )
+        kext_version=$( /usr/libexec/PlistBuddy -c "print CFBundleVersion" "$fname" )
         echo "$kext_name (""$kext_version"")" >> "$ScriptTmpPath"/custom_efi_kexts
         done
 
@@ -206,6 +206,7 @@ kextArray=(
 "fakesmc","FakeSMC","FakeSMC",""
 "genericusbxhci","GenericUSBXHCI","GenericUSBXHCI",""
 "hibernationfixup","HibernationFixup","HibernationFixup",""
+"intelbluetoothfirmware","IntelBluetoothFirmware","IntelBluetoothFirmware",""
 "intelgraphicsdvmtfixup","IntelGraphicsDVMTFixup","IntelGraphicsDVMTFixup","WhateverGreen","Alarm"
 "intelgraphicsfixup","IntelGraphicsFixup","IntelGraphicsFixup","WhateverGreen","Alarm"
 "intelmausi","AppleIntelE1000","AppleIntelE1000","IntelMausi"
@@ -213,6 +214,7 @@ kextArray=(
 "intelmausi","IntelMausi","IntelMausi",""
 "lilu","Lilu ","Lilu",""
 "lilufriend","LiluFriend","LiluFriend",""
+"macpromnd","MacProMemoryNotificationDisabler","MacProMemoryNotificationDisabler",""
 "nightshiftunlocker","NightShiftUnlocker","NightShiftUnlocker",""
 "notouchid","NoTouchID","NoTouchID",""
 "novpajpeg","NoVPAJpeg","NoVPAJpeg",""
@@ -225,6 +227,7 @@ kextArray=(
 "rtcmemoryfixup","RTCMemoryFixup","RTCMemoryFixup",""
 "shiki","Shiki","Shiki","WhateverGreen","Alarm"
 "sinetekrtsx","Sinetek-rtsx","Sinetekrtsx",""
+"smalltreeintel82576","SmallTreeIntel82576","SmallTreeIntel82576",""
 "systemprofilermemoryfixup","SystemProfilerMemoryFixup","SystemProfilerMemoryFixup",""
 "thunderboltreset","ThunderboltReset ","ThunderboltReset",""
 "tscadjustreset","TSCAdjustReset","TSCAdjustReset",""
@@ -597,6 +600,8 @@ function initial()
     /usr/libexec/PlistBuddy -c "Delete Rootuser" "${ScriptHome}/Library/Preferences/kextupdater.slsoft.de.plist" >/dev/null 2>&1
     fi
 
+    _languageselect
+
     efiscan=$( ../bin/./BDMESG |grep -e "SelfDevicePath" -e "Found Storage" | sed -e s/".*GPT,//g" -e "s/.*MBR,//g" -e "s/,.*//g" | xargs )
     if [[ $efiscan = "" ]]; then
     efiscan=$( nvram 4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102:boot-path | sed -e s/".*GPT,//g" -e "s/.*MBR,//g" -e "s/,.*//g" | xargs )
@@ -653,6 +658,16 @@ function initial()
         bootloader="OpenCore"
         ocversion=$( nvram 4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102:opencore-version |sed -e "s/.*REL/REL/g" -e "s/REL-//g" -e "s/-.*//g" )
         _helpDefaultWrite "Bootloaderversion" "$bootloader v$ocversion"
+    fi
+
+    nohack=$( _helpDefaultRead "Bootloaderversion" )
+    if [[ "$nohack" = "OpenCore v" ]]; then
+        lang=$( osascript -e 'user locale of (get system info)' )
+        if [[ "$lang" = "de_DE" ]]; then
+            _helpDefaultWrite "Bootloaderversion" "😢 Kein Hackintosh!"
+        else
+            _helpDefaultWrite "Bootloaderversion" "😢 Get a Hackintosh!"
+        fi
     fi
 
     if [[ $mountpoint != "" ]];then
@@ -862,8 +877,8 @@ kextstats=$( echo -e "$kextstats" |sed "s/d/./g" ) ### Removing shitty Character
         offline_node=$( _helpDefaultRead "EFIx" )
         offline_path=$( df -h |grep $offline_node |sed 's/.*\/Vol/\/Vol/g')
         find "$offline_path" -name "Info.plist" |grep -v Sensor |grep -v 501 | while read fname; do
-        kext_name=$( defaults read "$fname" CFBundleName )
-        kext_version=$( defaults read "$fname" CFBundleVersion )
+        kext_name=$( /usr/libexec/PlistBuddy -c "print CFBundleIdentifier" "$fname" )
+        kext_version=$( /usr/libexec/PlistBuddy -c "print CFBundleVersion" "$fname" )
         echo "$kext_name (""$kext_version"")" >> "$ScriptTmpPath"/offline_efi_kexts
         done
 
@@ -883,8 +898,8 @@ kextstats=$( echo -e "$kextstats" |sed "s/d/./g" ) ### Removing shitty Character
         kextstats=""
         custom_path=$( _helpDefaultRead "CustomEfiPath" )
         find "$custom_path" -name "Info.plist" |grep -v Sensor |grep -v 501 | while read fname; do
-        kext_name=$( defaults read "$fname" CFBundleName )
-        kext_version=$( defaults read "$fname" CFBundleVersion )
+        kext_name=$( /usr/libexec/PlistBuddy -c "print CFBundleIdentifier" "$fname" )
+        kext_version=$( /usr/libexec/PlistBuddy -c "print CFBundleVersion" "$fname" )
         echo "$kext_name (""$kext_version"")" >> "$ScriptTmpPath"/custom_efi_kexts
         done
 
@@ -1159,8 +1174,14 @@ function _main()
     if [ -d ${ScriptDownloadPath}/"opencore" ]; then
     mv ${ScriptDownloadPath}/opencore ${ScriptDownloadPath}/"OpenCore"
     fi
+    if [ -d ${ScriptDownloadPath}/"opencore-ndk" ]; then
+    mv ${ScriptDownloadPath}/opencore-ndk ${ScriptDownloadPath}/"OpenCore (NDK Fork)"
+    fi
     if [ -d ${ScriptDownloadPath}/"applesupport" ]; then
     mv ${ScriptDownloadPath}/applesupport ${ScriptDownloadPath}/"AppleSupport"
+    fi
+    if [ -d ${ScriptDownloadPath}/"ocsupportpkg" ]; then
+    mv ${ScriptDownloadPath}/applesupport ${ScriptDownloadPath}/"OcSupportPkg"
     fi
     if [ -d ${ScriptDownloadPath}/"nvidiagraphicsfixup" ]; then
     mv ${ScriptDownloadPath}/nvidiagraphicsfixup ${ScriptDownloadPath}/"NvidiaGraphicsFixup"
@@ -1168,11 +1189,17 @@ function _main()
     if [ -d ${ScriptDownloadPath}/"atheroswifiinjector" ]; then
     mv ${ScriptDownloadPath}/atheroswifiinjector ${ScriptDownloadPath}/"AtherosWiFiInjector"
     fi
+    if [ -d ${ScriptDownloadPath}/"macpromnd" ]; then
+    mv ${ScriptDownloadPath}/macpromnd ${ScriptDownloadPath}/"MacProMemoryNotificationDisabler"
+    fi
     if [ -d ${ScriptDownloadPath}/"thunderboltreset" ]; then
     mv ${ScriptDownloadPath}/thunderboltreset ${ScriptDownloadPath}/"ThunderboltReset"
     fi
     if [ -d ${ScriptDownloadPath}/"tscadjustreset" ]; then
     mv ${ScriptDownloadPath}/tscadjustreset ${ScriptDownloadPath}/"TSCAdjustReset"
+    fi
+    if [ -d ${ScriptDownloadPath}/"intelbluetoothfirmware" ]; then
+    mv ${ScriptDownloadPath}/tscadjustreset ${ScriptDownloadPath}/"IntelBluetoothFirmware"
     fi
     if [ -d ${ScriptDownloadPath}/"applealcnightly" ]; then
     mv ${ScriptDownloadPath}/applealcnightly ${ScriptDownloadPath}/"AppleALC Nightly"
@@ -1206,6 +1233,9 @@ function _main()
     fi
     if [ -d ${ScriptDownloadPath}/"opencorenightly" ]; then
     mv ${ScriptDownloadPath}/opencorenightly ${ScriptDownloadPath}/"OpenCore Nightly"
+    fi
+    if [ -d ${ScriptDownloadPath}/"opencorenightly-ndk" ]; then
+    mv ${ScriptDownloadPath}/opencorenightly-ndk ${ScriptDownloadPath}/"OpenCore Nightly (NDK Fork)"
     fi
 
     if [[ $checkchime = "1" ]]; then
@@ -1264,11 +1294,20 @@ if [ $kexte = "Bootloader" ]; then
         if [[ $kextchoice = "OpenCore" ]]; then
           kextchoice="opencore"
         fi
+        if [[ $kextchoice = "OpenCore-NDK" ]]; then
+          kextchoice="opencore-ndk"
+        fi
         if [[ $kextchoice = "OpenCoreNightly" ]]; then
           kextchoice="opencorenightly"
         fi
+        if [[ $kextchoice = "OpenCoreNightly-NDK" ]]; then
+          kextchoice="opencorenightly-ndk"
+        fi
         if [[ $kextchoice = "AppleSupport" ]]; then
           kextchoice="applesupport"
+        fi
+        if [[ $kextchoice = "OcSupportPkg" ]]; then
+          kextchoice="ocsupportpkg"
         fi
         if [[ $kextchoice = "AppleSupportNightly" ]]; then
           kextchoice="applesupportnightly"
@@ -2107,6 +2146,12 @@ function _efi_folder_creator()
         elif [[ "$efi_creator" = "OpenCore Nightly" ]]; then
             folder="opencorenightlycreator"
             kext_target="OC/Kexts"
+        elif [[ "$efi_creator" = "OpenCore Nightly (NDK Fork)" ]]; then
+            folder="opencorenightly-ndkcreator"
+            kext_target="OC/Kexts"
+        elif [[ "$efi_creator" = "OpenCore (NDK Fork)" ]]; then
+            folder="opencore-ndkcreator"
+            kext_target="OC/Kexts"
         fi
 
         echo "Bootloader: $efi_creator"
@@ -2114,8 +2159,12 @@ function _efi_folder_creator()
         echo "$creating_efi"
         echo " "
         
+        if [[ ! -d "${ScriptDownloadPath}" ]]; then
+            mkdir "${ScriptDownloadPath}"
+        fi
+        
         curl -sS -o ${ScriptTmpPath}/EFI.zip https://$url/${folder}/EFI.zip
-        unzip -o -q ${ScriptTmpPath}/EFI.zip -d ${ScriptDownloadPath}/EFI
+        unzip -o -q ${ScriptTmpPath}/EFI.zip -d "${ScriptDownloadPath}"/EFI
 
         while read -r line; do
             if [[ "$line" = "ACPIBatteryManager" ]]; then
@@ -2133,12 +2182,18 @@ function _efi_folder_creator()
                 _PRINT_MSG "$efi_manual_1 $line $efi_manual_2\n"
             elif [[ "$line" = "GenericUSBXHCI" ]]; then
                 cp -r ${ScriptDownloadPath}/$line/Universal/$line.kext ${ScriptDownloadPath}/${efi_name}/$kext_target/.
+            elif [[ "$line" = "IntelBluetoothFirmware" ]]; then
+                 _PRINT_MSG "$efi_manual_1 $line $efi_manual_2\n"
+            elif [[ "$line" = "MacProMemoryNotificationDisabler" ]]; then
+                 _PRINT_MSG "$efi_manual_1 $line $efi_manual_2\n"
             elif [[ "$line" = "NullEthernet" ]]; then
                 _PRINT_MSG "$efi_manual_1 $line $efi_manual_2\n"
             elif [[ "$line" = "RealtekRTL8111" ]]; then
                 cp -r ${ScriptDownloadPath}/$line/$line-*/Vers*/Release/$line.kext ${ScriptDownloadPath}/${efi_name}/$kext_target/.
             elif [[ "$line" = "Sinetekrtsx" ]]; then
                 cp -r ${ScriptDownloadPath}/$line/*.kext ${ScriptDownloadPath}/${efi_name}/$kext_target/.
+            elif [[ "$line" = "SmallTreeIntel82576" ]]; then
+                cp -r ${ScriptDownloadPath}/$line/Extensions/*.kext ${ScriptDownloadPath}/${efi_name}/$kext_target/.
             elif [[ "$line" = "USBInjectAll" ]]; then
                 cp -r ${ScriptDownloadPath}/$line/Release/*.kext ${ScriptDownloadPath}/${efi_name}/$kext_target/.
             elif [[ "$line" = "VirtualSMC" ]]; then
@@ -2153,7 +2208,7 @@ function _efi_folder_creator()
                 cp -r ${ScriptDownloadPath}/$line/$line.kext ${ScriptDownloadPath}/${efi_name}/$kext_target/.
             fi
         done < "${ScriptTmpPath}"/eficreator
-    
+
     defaults write "${ScriptHome}/Library/Preferences/kextupdater.slsoft.de.plist" "EFI Creator" "None"
 
     fi

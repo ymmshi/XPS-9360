@@ -1,14 +1,18 @@
 ## MacOS with xps-9360
 
-### 使用情况
+### 正常使用
  
 | 选项 | 状态 | 选项 | 状态 
 | :---: | :---: | :---:| :---: |
-声音| **ok** |睡眠| **ok** |
-显卡| **ok** |蓝牙| **ok** |
-网卡| **ok** |变频| **ok** |
-雷电口热拔插| **ok** |睡眠变频| **ok** |
-触摸板| **ok** |iMessage| no |
+声音/录音| 完美 |睡眠| 完美 |
+显卡| 完美 |蓝牙| 完美 |
+无线网卡| 完美 |变频| 完美 |
+TypeC| 完美 |触摸板| 完美 |
+摄像头| 完美 |
+
+### Todo
+
+[x] imessage/facetime 
 
 ### 配置
 |配置|参数
@@ -25,11 +29,11 @@ BIOS版本 | 2.9.0
 
 驱动|版本|驱动|版本
 :---:|:---:|:---:|:---:
-AirportBrcmFixup|2.0.4|Lilu|1.4.0
-AppleALC|1.4.4|USBInjectAll|0.7.1
-BrcmPatchRam|2.5.0|VirtualSMC|1.0.9
-Clover|5099|VoodooPS2|1.9.2
-CPUFriend|1.1.9|WhateverGreen|1.3.5
+AirportBrcmFixup|2.0.6|Lilu|1.4.1
+AppleALC|1.4.6|USBInjectAll|0.7.1
+BrcmPatchRam|2.5.1|VirtualSMC|1.1.1
+Clover|5103|VoodooPS2|2.1.1
+CPUFriend|1.2.0|WhateverGreen|1.3.6
 
 ### 安装前准备
 
@@ -43,16 +47,24 @@ CPUFriend|1.1.9|WhateverGreen|1.3.5
 
 ### 安装过程
 
-1. 使用黑果小兵的系统及 EFI 进行安装,安装过程中会报两次错误,第一次报错重启继续安装,第二次报错后重启使用我的 EFI 文件进入系统即可
+1. 使用黑果小兵的系统及 EFI 进行安装,安装过程中会报两次错误,第一次报错重启继续安装,第二次报错后重启使用我的 EFI 文件进入系统
 
-2. 使用 xps9360.sh 打开第三方应用权限
+2.  进入系统使用Clover Configurator生成新的机型参数
 
-3. 执行命令开启 HIDPI ,把分辨率设为1440*810,显示更清楚
+### 小优化
+
+1. 打开第三方应用权限, 参考[the-darkvoid](https://github.com/the-darkvoid/XPS9360-macOS)
+
+2. 开启HIDPI,把分辨率设为1440*810,显示更清楚，参考[xzhih](https://github.com/the-Quert/XPS-9360-macOS)
+
+3.  使用 hackintosh 定制USB, 参考[黑果小兵](https://blog.daliansky.net/Intel-FB-Patcher-USB-Custom-Video.html)
 
 ### 致谢
 
 ### [the-darkvoid](https://github.com/the-darkvoid/XPS9360-macOS)
 
-### [triton21](http://bbs.pcbeta.com/forum.php?mod=viewthread&tid=1769152&highlight=hidpi)
+### [the-Quert](https://github.com/the-Quert/XPS-9360-macOS)
 
-### [黑果小兵的部落阁](https://blog.daliansky.net/about/)
+### [xzhih](https://github.com/xzhih/one-key-hidpi)
+
+### [黑果小兵](https://blog.daliansky.net/about/)

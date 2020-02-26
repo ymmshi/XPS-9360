@@ -13,36 +13,6 @@
 /* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "write a MS-DOS path (\"\\\") to a folder or a single kext"; ObjectID = "d5H-ev-FTW"; */
 "d5H-ev-FTW.ibShadowedIsNilPlaceholder" = "Schreiben Sie einen MS-DOS-Pfad (\"\\\") in einen Ordner oder einen einzelnen Kext";
 
-/* Class = "NSTableView"; ibShadowedToolTip = "- Find: data to to be found inside the desired kext \n\n- Replace: data to be replaced with the contents of the Find key.\n\n- Comment: this remind you what this patch does. \n           In truth this key is optional, but it's a bad (bad) practice\n           to not use it. Remind that this comment show up in the GUI\n           so please use a short description or will be truncated.\n\nOptional keys:\n\n- Disabled: boolean key, if true this patch will be skipped by Clover..\n \n\n- MatchOS: string containings one or more os version separated by comma:\n\t   10.11 means that only if you boot into 10.11 the patch will be activated, but not for 10.11.1\n           10.11.x means that every revision of 10.11 will activate your patch, but not for 10.12\n           \n\t   10.11.6,10.12.x,10.13.x\n\n           the above string will activate your patch for all versions of Sierra and High Sierra, but\n           in El Capitan only if 10.11.6 is detected.\n\n- MatchBuild: Suppose that your patch only works in 10.11.6 with security update installed:\n\n              15G1004\n\n\t      by specifying the build number you can apply this patch only if the build 15G1004.\n       \t      As for MatchOS you can use more then one build string separated by comma."; ObjectID = "fwV-Ju-Xrc"; */
-"fwV-Ju-Xrc.ibShadowedToolTip" = "- Find: Daten, die im gewünschten Kext gefunden werden sollen
-
-- Replace: Daten, die durch den Inhalt des Find-Wortes ersetzt werden sollen.
-
-- Comment: Dies erinnert Sie daran, was dieser Patch macht.
-            In Wahrheit ist dieser Wert optional, aber es ist eine schlechte Idee ihn nicht zu benutzen. Erinnern Sie sich daran, dass dieser Kommentar in der GUI angezeigt wird
-            Verwenden Sie daher bitte eine kurze Beschreibung oder der Kommentar wird abgeschnitten dargestellt.
-
-Optionale Parameter:
-
-- Disabled: boolescher Wert, wenn auf true gesetzt, wird dieser Patch von Clover übersprungen.
- 
-
-- MatchOS: Zeichenfolge, die eine oder mehrere durch Kommas getrennte OS-Version enthält:
-	   10.11 bedeutet, dass der Patch nur beim Booten in 10.11 aktiviert wird, nicht jedoch für 10.11.1
-            10.11.x bedeutet, dass jede Version von 10.11 Ihren Patch aktiviert, nicht jedoch für 10.12
-           
-10.11.6.10.12.x, 10.13.x
-
-           Die obige Zeichenfolge aktiviert Ihren Patch für alle Versionen von Sierra und High Sierra, aber
-            in El Capitan nur, wenn 10.11.6 erkannt wird.
-
-- MatchBuild: Angenommen, Ihr Patch funktioniert nur in Version 10.11.6, wenn ein Sicherheitsupdate installiert ist:
-
-              15G1004
-
-	      Durch die Angabe der Build-Nummer können Sie diesen Patch nur bei Build 15G1004 anwenden.
-        Für MatchOS können Sie mehr als einen durch Komma getrennten Build-String verwenden.";
-
 /* Class = "NSTextField"; ibShadowedToolTip = "<key>ATIConnectorsController</key>\n<string>6000</string>\nFor a fully working AMD video card injecting properties into the registry is not enough. Additionally a modification of the connectors in the according controller binary file is necessary. The example points to the 6000 series controller file:\n\n<key>ATIConnectorsData</key>\n<string>000400000403000000010000210302040400000014020000000100000000 040310000000100000000001000000000001</string>\n<key>ATIConnectorsPatch</key>\n<string>040000001402000000010000000004040004000004030000000100001102 010500000000000000000000000000000000</string>\nThis method works for systems using Mac OS X 10.7 or newer."; ObjectID = "Gho-ZW-2Ud"; */
 "Gho-ZW-2Ud.ibShadowedToolTip" = "<key>ATIConnectorsController</key><string>6000</string>Für eine voll funktionsfähige AMD-Grafikkarte reicht das Injizieren der Eigenschaften in die Registry nicht aus. Zusätzlich ist eine Änderung der Anschlüsse in der entsprechenden Controller-Binärdatei erforderlich. Das Beispiel zeigt die Controller-Datei einer 6000-Series Karte:<key>ATIConnectorsData</key><string>000400000403000000010000210302040400000014020000000100000000 040310000000100000000001000000000001</string><key>ATIConnectorsPatch</key><string>040000001402000000010000000004040004000004030000000100001102 010500000000000000000000000000000000</string>Diese Methode funktioniert für Systeme, die Mac OS X 10.7 oder neuer verwenden.";
 

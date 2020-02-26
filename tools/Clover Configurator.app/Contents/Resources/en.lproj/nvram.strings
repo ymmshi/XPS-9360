@@ -29,9 +29,6 @@
 /* Class = "NSButton"; ibShadowedToolTip = "Apply theme to NVRAM"; ObjectID = "Sv3-b7-xz5"; */
 "Sv3-b7-xz5.ibShadowedToolTip" = "Apply theme to NVRAM";
 
-/* Class = "NSMenu"; title = "OtherViews"; ObjectID = "U9t-mE-65e"; */
-"U9t-mE-65e.title" = "OtherViews";
-
 /* Class = "NSTextFieldCell"; title = "Kernel boot aguments:"; ObjectID = "UWa-yr-H98"; */
 "UWa-yr-H98.title" = "Kernel boot aguments:";
 
@@ -49,9 +46,6 @@
 
 /* Class = "NSTextFieldCell"; title = "EFI folder backups:"; ObjectID = "gVq-p0-q3Q"; */
 "gVq-p0-q3Q.title" = "EFI folder backups:";
-
-/* Class = "NSMenu"; title = "OtherViews"; ObjectID = "hi4-OB-L8p"; */
-"hi4-OB-L8p.title" = "OtherViews";
 
 /* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "0"; ObjectID = "iwR-mO-rIU"; */
 "iwR-mO-rIU.ibShadowedIsNilPlaceholder" = "0";
