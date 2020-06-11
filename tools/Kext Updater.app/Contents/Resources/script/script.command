@@ -64,7 +64,7 @@ function _checkpass() {
 function _checkpass_initial() {
 
     user=$( _helpDefaultRead "Rootuser" )
-    passw=$( security find-generic-password -a "Kext Updater" -w | sed "s/\"/\\\\\"/g")
+    passw=$( security find-generic-password -a "Kext Updater" -w | sed "s/\"/\\\\\"/g" )
 
     osascript -e 'do shell script "dscl /Local/Default -u '$user'" user name "'"$user"'" password "'"$passw"'" with administrator privileges' >/dev/null 2>&1
 
@@ -82,14 +82,15 @@ function _getsecret() {
     fi
 }
 
-allkextsupper="ACPIBatteryManager AirportBrcmFixup AppleALC AppleBacklightFixup AsusSMC ATH9KFixup AtherosE2200Ethernet AtherosWiFiInjector AzulPatcher4600 BrcmPatchRam BT4LEContinuityFixup Clover CodecCommander CoreDisplayFixup CPUFriend EFI-Driver EnableLidWake FakePCIID FakeSMC GenericUSBXHCI HibernationFixup IntelBluetootFirmware IntelGraphicsFixup IntelGraphicsDVMTFixup IntelMausi IntelMausiEthernet Lilu LiluFriend NightShiftUnlocker NoTouchID NoVPAJpeg NullCpuPowerManagement NullEthernet NvidiaGraphicsFixup OpenCore RealtekRTL8111 RTCMemoryFixup Shiki SinetekRTSX SystemProfilerMemoryFixup ThunderboltReset TSCAdjustReset USBInjectAll VirtualSMC VoodooHDA VoodooI2C VoodooInput VoodooPS2 VoodooSDHC VoodooSMBus VoodooTSCSync WhateverGreen"
+### kextadd ###
+allkextsupper="ACPIBatteryManager AirportBrcmFixup AppleALC AppleBacklightFixup AsusSMC ATH9KFixup AtherosE2200Ethernet AtherosWiFiInjector AzulPatcher4600 BrcmPatchRam BT4LEContinuityFixup Clover CodecCommander CoreDisplayFixup CPUFriend EFI-Driver EnableLidWake FakePCIID FakeSMC GenericUSBXHCI HibernationFixup IntelBluetootFirmware IntelGraphicsFixup IntelGraphicsDVMTFixup IntelMausi IntelMausiEthernet Lilu LiluFriend LucyRTL8125Ethernet NightShiftUnlocker NoTouchID NoVPAJpeg NullCpuPowerManagement NullEthernet NvidiaGraphicsFixup NVMeFix OpenCore RealtekRTL8111 RTCMemoryFixup SMCAMDProcessor Shiki SinetekRTSX SystemProfilerMemoryFixup ThunderboltReset TSCAdjustReset USBInjectAll VirtualSMC VoodooHDA VoodooI2C VoodooInput VoodooPS2 VoodooSDHC VoodooSMBus VoodooTSCSync WhateverGreen"
 allkextslower=$( echo "$allkextsupper" | tr '[:upper:]' '[:lower:]' )
 
 #========================= Excluded Kexts =========================#
 
 function _excludedkexts()
 {
-    kextstatsori=$( kextstat | grep -v com.apple |sed -e "s/d0/.0/g" -e "s/d1/.1/g" -e "s/d2/.2/g" -e "s/d3/.3/g" -e "s/d4/.4/g" -e "s/d5/.5/g" -e "s/d6/.6/g" -e "s/d7/.7/g" -e "s/d8/.8/g" -e "s/d9/.9/g")
+    kextstatsori=$( kextstat | grep -v com.apple | grep -v "VoodooI2C[A-Z]" )
     #bdmesg=$( ../bin/./BDMESG |grep "Clover revision" |sed -e "s/.*revision:\ /Clover\ (/g" -e "s/(mas.*/)/g" -e "s/\ )/)/g" )
     bdmesg=$( ../bin/./BDMESG |grep "Clover revision" |sed 's/.*revision:\ //g' |cut -c 1-4 |sed -e 's/^/Clover\ (/' -e 's/$/)/g' )
     #kuversion=$( _helpDefaultRead "KUVersion" )
@@ -103,6 +104,9 @@ function _excludedkexts()
           kextstatsori=$( echo -e "$kextstatsori" "\nOpenCore ($ocversion)" )
         fi
     fi
+
+    ### DEBUG Point. Testing Kexts without really loaded ###
+    #kextstatsori=$( echo -e "$kextstatsori" "\n  116    1 0xffffff7f8423a000 0x28000    0x28000    com.alexandred.VoodooI2C (2.4.2) 31FC3ED7-7A4D-3AB7-B32B-29AD171FD393 <115 57 41 13 12 6 5 3 1>" )
 
     if [[ "$offline_efi" = "yes" ]]; then
         rm "$ScriptTmpPath"/offline_efi_kexts
@@ -171,7 +175,7 @@ function _excludedkexts()
 ################################################################
 
 ScriptHome=$(echo $HOME)
-ScriptTmpPath="/private/tmp/kextupdater"
+ScriptTmpPath="$HOME"/.ku_temp
 MY_PATH="`dirname \"$0\"`"
 cd "$MY_PATH"
 
@@ -210,10 +214,11 @@ kextArray=(
 "intelgraphicsdvmtfixup","IntelGraphicsDVMTFixup","IntelGraphicsDVMTFixup","WhateverGreen","Alarm"
 "intelgraphicsfixup","IntelGraphicsFixup","IntelGraphicsFixup","WhateverGreen","Alarm"
 "intelmausi","AppleIntelE1000","AppleIntelE1000","IntelMausi"
-"intelmausiethernet","IntelMausiEthernet","IntelMausiEthernet","IntelMausi"
+"intelmausiethernet","IntelMausiEthernet","IntelMausiEthernet",""
 "intelmausi","IntelMausi","IntelMausi",""
 "lilu","Lilu ","Lilu",""
 "lilufriend","LiluFriend","LiluFriend",""
+"lucyrtl8125ethernet","LucyRTL8125Ethernet","LucyRTL8125Ethernet",""
 "macpromnd","MacProMemoryNotificationDisabler","MacProMemoryNotificationDisabler",""
 "nightshiftunlocker","NightShiftUnlocker","NightShiftUnlocker",""
 "notouchid","NoTouchID","NoTouchID",""
@@ -222,9 +227,11 @@ kextArray=(
 "nullethernet","NullEthernet","NullEthernet",""
 "nvidiagraphicsfixup","LibValFix","NVWebDriverLibValFix","WhateverGreen","Alarm"
 "nvidiagraphicsfixup","NvidiaGraphicsFixup","NvidiaGraphicsFixup","WhateverGreen","Alarm"
+"nvmefix","NVMeFix","NVMeFix",""
 "opencore","OpenCore","OpenCore",""
 "realtekrtl8111","RealtekRTL8111","RealtekRTL8111",""
 "rtcmemoryfixup","RTCMemoryFixup","RTCMemoryFixup",""
+"smcamdprocessor","SMCAMDProcessor","SMCAMDProcessor",""
 "shiki","Shiki","Shiki","WhateverGreen","Alarm"
 "sinetekrtsx","Sinetek-rtsx","Sinetekrtsx",""
 "smalltreeintel82576","SmallTreeIntel82576","SmallTreeIntel82576",""
@@ -234,7 +241,7 @@ kextArray=(
 "usbinjectall","USBInjectAll","USBInjectAll",""
 "virtualsmc","VirtualSMC","VirtualSMC",""
 "voodoohda","VoodooHDA","VoodooHDA",""
-"voodooi2c","VoodooI2C (","VoodooI2C",""
+"voodooi2c","VoodooI2C","VoodooI2C",""
 "voodooinput","VoodooInput","VoodooInput",""
 "voodoops2","PS2Controller","VoodooPS2",""
 "voodoosdhc","VoodooSDHC","VoodooSDHC",""
@@ -250,54 +257,18 @@ function _languageselect()
 {
 
     if [[ $lan2 = de* ]]; then
-    export LC_ALL=de_DE
-    language="de"
-#elif [[ $lan2 = tr* ]]; then
-#    export LC_ALL=tr_TR
-#   language="tr"
-#   elif [[ $lan2 = ru* ]]; then
-#   export LC_ALL=ru_RU
-#   language="ru"
-#   elif [[ $lan2 = uk* ]]; then
-#   export LC_ALL=uk_UK
-#   language="uk"
-#   elif [[ $lan2 = es* ]]; then
-#   export LC_ALL=es_ES
-#   language="es"
-#   elif [[ $lan2 = pt* ]]; then
-#   export LC_ALL=pt_PT
-#   language="pt-PT"
-#   elif [[ $lan2 = nl* ]]; then
-#   export LC_ALL=nl_NL
-#   language="nl"
-#   elif [[ $lan2 = fr* ]]; then
-#   export LC_ALL=fr_FR
-#   language="fr"
-#   elif [[ $lan2 = it* ]]; then
-#   export LC_ALL=it_IT
-#   language="it"
-#   elif [[ $lan2 = fi* ]]; then
-#   export LC_ALL=fi_FI
-#   language="fi"
-#   elif [[ $lan2 = pl* ]]; then
-#   export LC_ALL=pl_PL
-#   language="pl"
-#   elif [[ $lan2 = sv* ]]; then
-#   export LC_ALL=sv_SV
-#   language="sv"
-#   elif [[ $lan2 = cs* ]]; then
-#   export LC_ALL=cs_CS
-#   language="cs"
+      export LC_ALL=de_DE
+      language="de"
     else
-    export LC_ALL=en_EN
-    language="en"
+      export LC_ALL=en_EN
+      language="en"
     fi
     if [ ! -d "$ScriptTmpPath" ]; then
         mkdir "$ScriptTmpPath"
     fi
-    #if [ ! -f ${ScriptTmpPath}/locale.tmp ]; then
+
     cat ../bashstrings/$language.bashstrings > ${ScriptTmpPath}/locale.tmp
-    #fi
+
     source ${ScriptTmpPath}/locale.tmp
 }
 
@@ -315,7 +286,7 @@ function _setrootuser()
     OK="0"
 
     admin=$( _helpDefaultRead "Admin" ) >/dev/null 2>&1
-if [[ $admin = "" ]]; then
+    if [[ $admin = "" ]]; then
 
     groups "$user" | grep -q -w admin
     if [ $? = 0 ]; then
@@ -423,24 +394,23 @@ function _resetrootuser()
 function scanallefis()
 {
 
-    for a in {1..8}; do
-    /usr/libexec/PlistBuddy -c "Delete EFI$a-Name" "${ScriptHome}/Library/Preferences/kextupdater.slsoft.de.plist" >/dev/null 2>&1
-    done
+    #for a in {1..30}; do
+    #/usr/libexec/PlistBuddy -c "Delete EFI$a-Name" "${ScriptHome}/Library/Preferences/kextupdater.slsoft.de.plist" >/dev/null 2>&1
+    #done
 
-    /usr/libexec/PlistBuddy -c "Delete EFIx" "${ScriptHome}/Library/Preferences/kextupdater.slsoft.de.plist" >/dev/null 2>&1
+    #/usr/libexec/PlistBuddy -c "Delete EFIx" "${ScriptHome}/Library/Preferences/kextupdater.slsoft.de.plist" >/dev/null 2>&1
 
     if [ -f "$ScriptTmpPath"/drives ]; then
       rm "$ScriptTmpPath"/drives*
     fi
 
     bootnode=$( _helpDefaultRead "EFI Root" )
-    excludebootefi=$( diskutil info "$bootnode" |grep "Node" | sed "s/.*dev\///g" )
+    excludebootefi=$( diskutil info "$bootnode" |grep "Node" | sed "s/.*dev\///g" | rev | sed 's/[0-9]s//g' | rev )
 
-    efis=$( diskutil list | grep "EFI" | sed "s/.*disk/disk/g" | cut -c 1-7 | grep -v "$excludebootefi")
-    #efis=$( diskutil list | grep "EFI" | sed "s/.*disk/disk/g" | cut -c 1-7 )
-
+    efis=$( diskutil list | grep "EFI" | sed "s/.*disk/disk/g" | rev | sed 's/[0-9]s//g' | rev | grep -v "$excludebootefi$")
+   
     while read -r line; do
-    node=$( echo $line | cut -c 1-5 )
+    node=$( echo $line )
     efiname=$( diskutil info $node |grep "Media Name:" | sed "s/.*://g" |xargs )
     echo -e "$line"";""$efiname" >> "$ScriptTmpPath"/drives
     done <<< "$efis"
@@ -566,16 +536,22 @@ function unmountefiall()
 
     _languageselect
 
+    cp "$ScriptTmpPath"/drives_pulldown "$ScriptTmpPath"/drives_pulldown_unmount
+    echo "" >> "$ScriptTmpPath"/drives_pulldown_unmount
+
     while IFS= read -r line
     do
-        disk=$( echo "$line" | sed "s/\ -.*//g" )
-        if [[ $keychain = "1" ]]; then
-            _getsecret
-        osascript -e 'do shell script "diskutil unmount '$disk'" user name "'"$user"'" password "'"$passw"'" with administrator privileges' >/dev/null 2>&1
-            else
-        osascript -e 'do shell script "diskutil unmount '$disk'" with administrator privileges' >/dev/null 2>&1
+        if [[ "$line" != "" ]]; then
+            disk=$( echo "$line" | sed 's/\ -\ .*//g' )
+            disk=$( echo "$disk"s1 )
+            if [[ $keychain = "1" ]]; then
+                _getsecret
+            osascript -e 'do shell script "diskutil unmount '$disk'" user name "'"$user"'" password "'"$passw"'" with administrator privileges' >/dev/null 2>&1
+                else
+            osascript -e 'do shell script "diskutil unmount '$disk'" with administrator privileges' >/dev/null 2>&1
+            fi
         fi
-    done < ""$ScriptTmpPath"/drives_pulldown"
+    done < ""$ScriptTmpPath"/drives_pulldown_unmount"
 
     _helpDefaultWrite "Mounted" "No"
 
@@ -716,7 +692,7 @@ function initial()
     if [[ "$menubar_version_running" != "$menubar_version_bundle" ]]; then
         if [[ "$menubar_prefs_activated" = "1" ]]; then
             pkill -f KUMenuBar
-            kill -kill "$menubar_pid"
+            kill -kill "$menubar_pid" >/dev/null 2>&1
             open "${kuroot}/Kext Updater.app/Contents/Resources/bin/KUMenuBar.app"
         fi
     fi
@@ -731,6 +707,18 @@ function initial()
 
     if [[ $bootloader = "OpenCore" ]]; then
     check_opencore_conf
+    fi
+
+    keychain=$( _helpDefaultRead "Keychain" )
+
+    if [[ "$keychain" = 1 ]]; then ### Checks if the Rootpassword is still valid
+        passw=$( security find-generic-password -a "Kext Updater" -w | sed "s/\"/\\\\\"/g" )
+            if [[ "$passw" != 44 ]]; then
+                osascript -e 'do shell script "sudo date" user name "'"$rootuser"'" password "'"$passw"'" with administrator privileges' >/dev/null 2>&1
+                if [[ $? != "0" ]]; then
+                    echo "$rootpass_wrong"
+                fi
+            fi
     fi
 
 }
@@ -867,8 +855,8 @@ fi
 #bdmesg=$( ../bin/./BDMESG |grep "Clover revision" |sed -e "s/.*revision:\ /Clover\ (/g" -e "s/(mas.*/)/g" -e "s/\ )/)/g" )
 bdmesg=$( ../bin/./BDMESG |grep "Clover revision" |sed 's/.*revision:\ //g' |cut -c 1-4 |sed -e 's/^/Clover\ (/' -e 's/$/)/g' )
 kextstats=$( echo -e "$kextstats" "\n$bdmesg" )
-kextstats=$( echo -e "$kextstats" |sed "s/d0)/)/g" ) ### Removing shitty Character "d" from Version String @ IntelMausiEthernet
-kextstats=$( echo -e "$kextstats" |sed "s/d/./g" ) ### Removing shitty Character "d" from Version String @ ThunderboltReset
+#kextstats=$( echo -e "$kextstats" |sed "s/d0)/)/g" ) ### Removing shitty Character "d" from Version String @ IntelMausiEthernet
+#kextstats=$( echo -e "$kextstats" |sed "s/d/./g" ) ### Removing shitty Character "d" from Version String @ ThunderboltReset
 #kextstats=$( echo -e "$kextstats" "\nAPFS ($apfs)" )
 
     if [[ "$offline_efi" = "yes" ]]; then
@@ -1101,14 +1089,14 @@ function _cleanup()
 function _lastcheck()
 {
 
-    if [[ "$custom_efi" = "" ]] && [[ "$offline_efi" = "" ]]; then
+    #if [[ "$custom_efi" = "" ]] && [[ "$offline_efi" = "" ]]; then
         lastcheckfunc=$( _helpDefaultRead "Last Check" )
         if [[ $lastcheckfunc != "Never" ]]; then
             echo $lastcheck
             echo $lastcheckfunc
             echo " "
         fi
-    fi
+    #fi
 }
 
 #============================== Main Function ==============================#
@@ -1181,7 +1169,10 @@ function _main()
     mv ${ScriptDownloadPath}/applesupport ${ScriptDownloadPath}/"AppleSupport"
     fi
     if [ -d ${ScriptDownloadPath}/"ocsupportpkg" ]; then
-    mv ${ScriptDownloadPath}/applesupport ${ScriptDownloadPath}/"OcSupportPkg"
+    mv ${ScriptDownloadPath}/ocsupportpkg ${ScriptDownloadPath}/"OcSupportPkg"
+    fi
+    if [ -d ${ScriptDownloadPath}/"ocbinarydata" ]; then
+    mv ${ScriptDownloadPath}/ocbinarydata ${ScriptDownloadPath}/"OcBinaryData"
     fi
     if [ -d ${ScriptDownloadPath}/"nvidiagraphicsfixup" ]; then
     mv ${ScriptDownloadPath}/nvidiagraphicsfixup ${ScriptDownloadPath}/"NvidiaGraphicsFixup"
@@ -1191,6 +1182,9 @@ function _main()
     fi
     if [ -d ${ScriptDownloadPath}/"macpromnd" ]; then
     mv ${ScriptDownloadPath}/macpromnd ${ScriptDownloadPath}/"MacProMemoryNotificationDisabler"
+    fi
+    if [ -d ${ScriptDownloadPath}/"radeonboost" ]; then
+    mv ${ScriptDownloadPath}/radeonboost ${ScriptDownloadPath}/"RadeonBoost"
     fi
     if [ -d ${ScriptDownloadPath}/"thunderboltreset" ]; then
     mv ${ScriptDownloadPath}/thunderboltreset ${ScriptDownloadPath}/"ThunderboltReset"
@@ -1203,6 +1197,9 @@ function _main()
     fi
     if [ -d ${ScriptDownloadPath}/"applealcnightly" ]; then
     mv ${ScriptDownloadPath}/applealcnightly ${ScriptDownloadPath}/"AppleALC Nightly"
+    fi
+    if [ -d ${ScriptDownloadPath}/"intelmausiethernet" ]; then
+    mv ${ScriptDownloadPath}/lilunightly ${ScriptDownloadPath}/"IntelMausiEthernet"
     fi
     if [ -d ${ScriptDownloadPath}/"lilunightly" ]; then
     mv ${ScriptDownloadPath}/lilunightly ${ScriptDownloadPath}/"Lilu Nightly"
@@ -1308,6 +1305,9 @@ if [ $kexte = "Bootloader" ]; then
         fi
         if [[ $kextchoice = "OcSupportPkg" ]]; then
           kextchoice="ocsupportpkg"
+        fi
+        if [[ $kextchoice = "OcBinaryData" ]]; then
+          kextchoice="ocbinarydata"
         fi
         if [[ $kextchoice = "AppleSupportNightly" ]]; then
           kextchoice="applesupportnightly"
@@ -1422,6 +1422,8 @@ lan2=$( echo -e "$content" | grep "Language" | sed "s/.*\=\ //g" | xargs )
 
 _languageselect
 
+
+
 if [ -f "$ScriptTmpPath"/array ]; then
 rm "$ScriptTmpPath"/array
 fi
@@ -1436,9 +1438,19 @@ checkarray=$( cat "$ScriptTmpPath"/array )
 
 if [[ $checkarray = "kextLoadArray=()" ]]; then
 _helpDefaultWrite "Ready" "Error"
-echo "$nokextselected"
+
+check_bootloader=$( _helpDefaultRead "EFI Creator" )
+
+if [[ "$check_bootloader" = "None" ]]; then
+    echo "$nokextselected"
+fi
+
 if [[ $checkchime = "1" ]]; then
-_playchimedeath
+
+if [[ "$check_bootloader" = "None" ]]; then
+    _playchimedeath
+fi
+
 fi
 fi
 exit 0
@@ -1463,7 +1475,7 @@ function kudaemon()
 
     while IFS='' read -r line || [[ -n "$line" ]]; do
         kext=$( echo "$line" |sed "s/-.*//g" )
-        kstat=$( grep -w "$kext" "$ScriptTmpPath"/daemon_kextstat | sed -e "s/.*(//g" -e "s/).*//g" -e "s/\.//g" -e "s/d0//g" -e "s/d/./g" )
+        kstat=$( grep -w "$kext" "$ScriptTmpPath"/daemon_kextstat | sed -e "s/.*(//g" -e "s/).*//g" -e "s/\.//g" )
         kover=$( grep -w "$kext" "$ScriptTmpPath"/daemon_overview | sed -e "s/.*-//g" -e "s/+.*//g" )
 
         if [[ $kstat != "" ]]; then
@@ -2146,10 +2158,10 @@ function _efi_folder_creator()
         elif [[ "$efi_creator" = "OpenCore Nightly" ]]; then
             folder="opencorenightlycreator"
             kext_target="OC/Kexts"
-        elif [[ "$efi_creator" = "OpenCore Nightly (NDK Fork)" ]]; then
+        elif [[ "$efi_creator" = "OpenCore Nightly (N-D-K Fork)" ]]; then
             folder="opencorenightly-ndkcreator"
             kext_target="OC/Kexts"
-        elif [[ "$efi_creator" = "OpenCore (NDK Fork)" ]]; then
+        elif [[ "$efi_creator" = "OpenCore (N-D-K Fork)" ]]; then
             folder="opencore-ndkcreator"
             kext_target="OC/Kexts"
         fi
@@ -2194,6 +2206,8 @@ function _efi_folder_creator()
                 cp -r ${ScriptDownloadPath}/$line/*.kext ${ScriptDownloadPath}/${efi_name}/$kext_target/.
             elif [[ "$line" = "SmallTreeIntel82576" ]]; then
                 cp -r ${ScriptDownloadPath}/$line/Extensions/*.kext ${ScriptDownloadPath}/${efi_name}/$kext_target/.
+            elif [[ "$line" = "SMCAMDProcessor" ]]; then
+                _PRINT_MSG "$efi_manual_1 $line $efi_manual_2\n"
             elif [[ "$line" = "USBInjectAll" ]]; then
                 cp -r ${ScriptDownloadPath}/$line/Release/*.kext ${ScriptDownloadPath}/${efi_name}/$kext_target/.
             elif [[ "$line" = "VirtualSMC" ]]; then

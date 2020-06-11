@@ -29,11 +29,12 @@ BIOS版本 | 2.9.0
 
 驱动|版本|驱动|版本
 :---:|:---:|:---:|:---:
-AirportBrcmFixup|2.0.7|Lilu|1.4.4
-AppleALC|1.4.9|USBInjectAll|0.7.1
-BrcmPatchRam|2.5.3|VirtualSMC|1.1.3
-Clover|5118|VoodooPS2|2.1.1
-CPUFriend|1.2.0|WhateverGreen|1.3.9
+AirportBrcmFixup|2.0.7|Lilu|1.4.5
+AppleALC|1.5.0|USBInjectAll|0.7.1
+BrcmPatchRam|2.5.3|VirtualSMC|1.1.4
+Clover|5119|VoodooPS2|2.1.1
+CPUFriend|1.2.0|WhateverGreen|1.4.0
+VoodooI2C|2.4.2|VoodooInput|1.0.5
 
 ### 安装前准备
 

@@ -125,6 +125,9 @@
 /* Class = "NSTabViewItem"; label = "RenameDevices"; ObjectID = "Ica-Db-Et9"; */
 "Ica-Db-Et9.label" = "RenameDevices";
 
+/* Class = "NSTextFieldCell"; title = "PNLF_UID"; ObjectID = "J2Y-PK-EKk"; */
+"J2Y-PK-EKk.title" = "PNLF_UID";
+
 /* Class = "NSButton"; ibShadowedToolTip = "Adds device MCHC to DSDT. For H61M this is obligatory, else KP."; ObjectID = "Jds-ye-0B2"; */
 "Jds-ye-0B2.ibShadowedToolTip" = "Adds device MCHC to DSDT. For H61M this is obligatory, else KP.";
 
@@ -365,6 +368,9 @@
 /* Class = "NSTextField"; ibShadowedToolTip = "<key>MaxMultiplier</key>\n<integer>30</integer>\nIntroduces as an analogy to the minimal multiplier but not really necessary. It is not advised to set it."; ObjectID = "ecf-V5-wTF"; */
 "ecf-V5-wTF.ibShadowedToolTip" = "<key>MaxMultiplier</key>\n<integer>30</integer>\nIntroduces as an analogy to the minimal multiplier but not really necessary. It is not advised to set it.";
 
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "0x0A"; ObjectID = "em8-2d-DPK"; */
+"em8-2d-DPK.ibShadowedIsNilPlaceholder" = "0x0A";
+
 /* Class = "NSButton"; ibShadowedToolTip = "Helps enable SpeedStep on Ivy Bridge+ systems."; ObjectID = "fUT-Un-eDT"; */
 "fUT-Un-eDT.ibShadowedToolTip" = "Helps enable SpeedStep on Ivy Bridge+ systems.";
 
@@ -409,6 +415,9 @@
 
 /* Class = "NSButtonCell"; title = "AddIMEI"; ObjectID = "ibY-pj-3RE"; */
 "ibY-pj-3RE.title" = "AddIMEI";
+
+/* Class = "NSTableColumn"; headerCell.title = "DropForAllOS"; ObjectID = "isy-VL-Zon"; */
+"isy-VL-Zon.headerCell.title" = "DropForAllOS";
 
 /* Class = "NSButtonCell"; title = "FixRegions"; ObjectID = "jB6-mi-WyK"; */
 "jB6-mi-WyK.title" = "FixRegions";

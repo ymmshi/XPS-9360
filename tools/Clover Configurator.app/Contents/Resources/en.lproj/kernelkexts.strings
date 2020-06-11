@@ -17,6 +17,9 @@
 /* Class = "NSTableColumn"; headerCell.title = "MaskReplace [HEX]"; ObjectID = "2C4-03-KYL"; */
 "2C4-03-KYL.headerCell.title" = "MaskReplace [HEX]";
 
+/* Class = "NSTableColumn"; headerCell.title = "StartPattern [HEX]"; ObjectID = "4c1-RL-xow"; */
+"4c1-RL-xow.headerCell.title" = "StartPattern [HEX]";
+
 /* Class = "NSTextFieldCell"; title = "FakeCPUID"; ObjectID = "4kQ-S2-0fh"; */
 "4kQ-S2-0fh.title" = "FakeCPUID";
 
@@ -59,6 +62,9 @@
 /* Class = "NSButtonCell"; title = "Kernel LAPIC"; ObjectID = "EzT-Kb-ZbE"; */
 "EzT-Kb-ZbE.title" = "Kernel LAPIC";
 
+/* Class = "NSTableColumn"; headerCell.title = "StartPattern [HEX]"; ObjectID = "F9g-CX-YVj"; */
+"F9g-CX-YVj.headerCell.title" = "StartPattern [HEX]";
+
 /* Class = "NSTableColumn"; headerCell.title = "Comment"; ObjectID = "Fc0-zk-qC2"; */
 "Fc0-zk-qC2.headerCell.title" = "Comment";
 
@@ -74,11 +80,17 @@
 /* Class = "NSBox"; title = "Box"; ObjectID = "HV5-nU-8c3"; */
 "HV5-nU-8c3.title" = "Box";
 
+/* Class = "NSTableColumn"; headerCell.title = "Procedure"; ObjectID = "J6J-Q3-yAc"; */
+"J6J-Q3-yAc.headerCell.title" = "Procedure";
+
 /* Class = "NSButtonCell"; title = "PanicNoKextDump"; ObjectID = "JNJ-vV-UQg"; */
 "JNJ-vV-UQg.title" = "PanicNoKextDump";
 
 /* Class = "NSTableColumn"; headerCell.title = "Find* [HEX]"; ObjectID = "Kuf-nc-3Cb"; */
 "Kuf-nc-3Cb.headerCell.title" = "Find* [HEX]";
+
+/* Class = "NSTableColumn"; headerCell.title = "RangeFind"; ObjectID = "Mig-61-lWw"; */
+"Mig-61-lWw.headerCell.title" = "RangeFind";
 
 /* Class = "NSTableColumn"; headerCell.title = "MatchBuild"; ObjectID = "Ort-Ca-n5u"; */
 "Ort-Ca-n5u.headerCell.title" = "MatchBuild";
@@ -92,14 +104,26 @@
 /* Class = "NSButton"; ibShadowedToolTip = "<key>AppleIntelCPUPM</key>\n<true/>\nAsusAICPUPM key was renamed to AppleIntelCPUPM.\n\nSome vendors, like ASUS, restrict the use of MSR register 0xE2 in their power management module to ReadOnly. On Sandy/Ivy Bridge systems the kext AppleIntelCpuPowerManagement will try to write to this register and cause a kernel panic. This patch will eliminate the kext's write operations."; ObjectID = "Tha-bt-y4P"; */
 "Tha-bt-y4P.ibShadowedToolTip" = "<key>AppleIntelCPUPM</key>\n<true/>\nAsusAICPUPM key was renamed to AppleIntelCPUPM.\n\nSome vendors, like ASUS, restrict the use of MSR register 0xE2 in their power management module to ReadOnly. On Sandy/Ivy Bridge systems the kext AppleIntelCpuPowerManagement will try to write to this register and cause a kernel panic. This patch will eliminate the kext's write operations.";
 
+/* Class = "NSTableColumn"; headerCell.title = "StartPattern [HEX]"; ObjectID = "TxS-j3-Bf7"; */
+"TxS-j3-Bf7.headerCell.title" = "StartPattern [HEX]";
+
 /* Class = "NSButtonCell"; title = "Apple RTC"; ObjectID = "UVL-fi-NbL"; */
 "UVL-fi-NbL.title" = "Apple RTC";
+
+/* Class = "NSTableColumn"; headerCell.title = "Procedure"; ObjectID = "V5M-QZ-u0J"; */
+"V5M-QZ-u0J.headerCell.title" = "Procedure";
 
 /* Class = "NSTableView"; ibShadowedToolTip = "- Name: kext executable name (i.e. without extension), \n        but You can, instead, use the CFBundleIdentifier.\n\n- Find: data to to be found inside the desired kext \n\n- Replace: data to be replaced with the contents of the Find key.\n\n- Comment: this remind you what this patch does. \n           In truth this key is optional, but it's a bad (bad) practice\n           to not use it. Remind that this comment show up in the GUI\n           so please use a short description or will be truncated.\n\nOptional keys:\n\n- InfoPlistPatch: boolean key, if true, data replacement wil be performed\n                  on the _PrelinkInfoDictionary (Info.plist inside prelinkedkernel) \n\t\t  instead of the executable.\n                  In older OSes this also happened on the real kexts\n                  loaded from the filesystem by boot.efi (now only prelinked\n                  kexts are taken into account) so be aware that what you see on the real\n\t\t  kext can be different due to some different tags used (IDREF).\n\n- Disabled: boolean key, if true this patch will be skipped by Clover.\n           Mind that you can use different configs callable at boot in GUI, so this\n           can be usefull on purpose.  \n           You can make your pattern (Find/Replace) unique by increasing the data length\n           and your patch will be only performed if a match exist, but this can be \n\t   problematic. AppleHDA need zeroing codec 1 (example) until 10.11, and codec 2 \n\t   in 10.12 ...but codec 1 must not be patched..otherwise no sound:\n\t   Consider to use MatchOS or MatchBuild to dinamically\n\t   load/skip variants of the same kind of patch in different OS versions.\n \n\n- MatchOS: string containings one or more os version separated by comma:\n\t   10.11 means that only if you boot into 10.11 the patch will be activated, but not for 10.11.1\n           10.11.x means that every revision of 10.11 will activate your patch, but not for 10.12\n           \n\t   10.11.6,10.12.x,10.13.x\n\n           the above string will activate your patch for all versions of Sierra and High Sierra, but\n           in El Capitan only if 10.11.6 is detected.\n\n- MatchBuild: Suppose that your patch only works in 10.11.6 with security update installed:\n\n              15G1004\n\n\t      by specifying the build number you can apply this patch only if the build 15G1004.\n       \t      As for MatchOS you can use more then one build string separated by comma."; ObjectID = "VEJ-gW-nUU"; */
 "VEJ-gW-nUU.ibShadowedToolTip" = "- Name: kext executable name (i.e. without extension), \n        but You can, instead, use the CFBundleIdentifier.\n\n- Find: data to to be found inside the desired kext \n\n- Replace: data to be replaced with the contents of the Find key.\n\n- Comment: this remind you what this patch does. \n           In truth this key is optional, but it's a bad (bad) practice\n           to not use it. Remind that this comment show up in the GUI\n           so please use a short description or will be truncated.\n\nOptional keys:\n\n- InfoPlistPatch: boolean key, if true, data replacement wil be performed\n                  on the _PrelinkInfoDictionary (Info.plist inside prelinkedkernel) \n\t\t  instead of the executable.\n                  In older OSes this also happened on the real kexts\n                  loaded from the filesystem by boot.efi (now only prelinked\n                  kexts are taken into account) so be aware that what you see on the real\n\t\t  kext can be different due to some different tags used (IDREF).\n\n- Disabled: boolean key, if true this patch will be skipped by Clover.\n           Mind that you can use different configs callable at boot in GUI, so this\n           can be usefull on purpose.  \n           You can make your pattern (Find/Replace) unique by increasing the data length\n           and your patch will be only performed if a match exist, but this can be \n\t   problematic. AppleHDA need zeroing codec 1 (example) until 10.11, and codec 2 \n\t   in 10.12 ...but codec 1 must not be patched..otherwise no sound:\n\t   Consider to use MatchOS or MatchBuild to dinamically\n\t   load/skip variants of the same kind of patch in different OS versions.\n \n\n- MatchOS: string containings one or more os version separated by comma:\n\t   10.11 means that only if you boot into 10.11 the patch will be activated, but not for 10.11.1\n           10.11.x means that every revision of 10.11 will activate your patch, but not for 10.12\n           \n\t   10.11.6,10.12.x,10.13.x\n\n           the above string will activate your patch for all versions of Sierra and High Sierra, but\n           in El Capitan only if 10.11.6 is detected.\n\n- MatchBuild: Suppose that your patch only works in 10.11.6 with security update installed:\n\n              15G1004\n\n\t      by specifying the build number you can apply this patch only if the build 15G1004.\n       \t      As for MatchOS you can use more then one build string separated by comma.";
 
 /* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "kext name"; ObjectID = "VMl-as-cIc"; */
 "VMl-as-cIc.ibShadowedIsNilPlaceholder" = "kext name";
+
+/* Class = "NSTableColumn"; headerCell.title = "RangeFind"; ObjectID = "Vad-o9-jBe"; */
+"Vad-o9-jBe.headerCell.title" = "RangeFind";
+
+/* Class = "NSTableColumn"; headerCell.title = "MaskStart [HEX]"; ObjectID = "Vle-2n-mWg"; */
+"Vle-2n-mWg.headerCell.title" = "MaskStart [HEX]";
 
 /* Class = "NSTableColumn"; headerCell.title = "Disabled"; ObjectID = "WYf-di-eHU"; */
 "WYf-di-eHU.headerCell.title" = "Disabled";
@@ -118,6 +142,9 @@
 
 /* Class = "NSButton"; ibShadowedToolTip = "<key>KernelAndKextPatches</key>\n<dict>\n   <key>KernelPm</key>\n   <true/>\n</dict>\nKernel power management patch for Haswell with locked msrs. Works with 10.8.5 and 10.9 kernels."; ObjectID = "YYX-cr-aFn"; */
 "YYX-cr-aFn.ibShadowedToolTip" = "<key>KernelAndKextPatches</key>\n<dict>\n   <key>KernelPm</key>\n   <true/>\n</dict>\nKernel power management patch for Haswell with locked msrs. Works with 10.8.5 and 10.9 kernels.";
+
+/* Class = "NSTableColumn"; headerCell.title = "MaskStart [HEX]"; ObjectID = "aQo-Ex-rek"; */
+"aQo-Ex-rek.headerCell.title" = "MaskStart [HEX]";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "<key>ATIConnectorsPatch</key>\n<string>040000001402000000010000000004040004000004030000000100001102 010500000000000000000000000000000000</string>\n\nPatch and Inject ATI Connectors to the host controller."; ObjectID = "bj3-FA-qqt"; */
 "bj3-FA-qqt.ibShadowedToolTip" = "<key>ATIConnectorsPatch</key>\n<string>040000001402000000010000000004040004000004030000000100001102 010500000000000000000000000000000000</string>\n\nPatch and Inject ATI Connectors to the host controller.";
@@ -139,6 +166,12 @@
 
 /* Class = "NSTableColumn"; headerCell.title = "MatchOS"; ObjectID = "gMY-Pf-myq"; */
 "gMY-Pf-myq.headerCell.title" = "MatchOS";
+
+/* Class = "NSTableColumn"; headerCell.title = "MaskStart [HEX]"; ObjectID = "giO-IY-QYm"; */
+"giO-IY-QYm.headerCell.title" = "MaskStart [HEX]";
+
+/* Class = "NSTableColumn"; headerCell.title = "RangeFind"; ObjectID = "iYP-Pu-cpX"; */
+"iYP-Pu-cpX.headerCell.title" = "RangeFind";
 
 /* Class = "NSTableColumn"; headerCell.title = "MaskFind [HEX]"; ObjectID = "ifh-7F-cPY"; */
 "ifh-7F-cPY.headerCell.title" = "MaskFind [HEX]";

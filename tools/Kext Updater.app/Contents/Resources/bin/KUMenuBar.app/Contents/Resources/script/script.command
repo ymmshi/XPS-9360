@@ -2,7 +2,7 @@
 #
 
 ScriptHome=$(echo $HOME)
-ScriptTmpPath="/private/tmp/kextupdater"
+ScriptTmpPath="$HOME"/.ku_temp
 kuroot=`defaults read "${ScriptHome}/Library/Preferences/kextupdater.slsoft.de.plist" "KU Root"`
 efi_root=$( defaults read "${ScriptHome}/Library/Preferences/kextupdater.slsoft.de.plist" "EFI Root" )
 download_path=$( defaults read "${ScriptHome}/Library/Preferences/kextupdater.slsoft.de.plist" "Downloadpath" )
@@ -95,6 +95,28 @@ function quitmenu()
         kill -kill "$runcheck"
     fi
 
+}
+
+function rebuild_kextcache()
+{
+
+    osascript -e 'do shell script "chmod -R 755 /System/Library/Extensions/*; sudo chown -R root:wheel /System/Library/Extensions/*; sudo touch /System/Library/Extensions; sudo chmod -R 755 /Library/Extensions/*; sudo chown -R root:wheel /Library/Extensions/*; sudo touch /Library/Extensions; sudo kextcache -i /; sudo kextcache -u / -v 6" with administrator privileges' >/dev/null 2>&1
+
+}
+
+function reboot()
+{
+
+    osascript -e 'tell app "System Events" to restart'
+
+}
+
+function mounthelper()
+{
+
+    efi_mount=$( defaults read "${ScriptHome}/Library/Preferences/kextupdaterhelper.slsoft.de.plist" "EFIx" )
+    defaults write "${ScriptHome}/Library/Preferences/kextupdater.slsoft.de.plist" "EFIx" "$efi_mount"
+    
 }
 
 $1

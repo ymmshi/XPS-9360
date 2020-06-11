@@ -5,9 +5,6 @@
 /* Class = "NSTextFieldCell"; title = "ScreenEdgeX"; ObjectID = "1CM-mH-OVe"; */
 "1CM-mH-OVe.title" = "ScreenEdgeX";
 
-/* Class = "NSMenuItem"; title = "Scale"; ObjectID = "1ZQ-1F-ccp"; Note = "Do not translate"; */
-"1ZQ-1F-ccp.title" = "Scale";
-
 /* Class = "NSTextFieldCell"; title = "TileXSpace"; ObjectID = "25g-IE-MHM"; */
 "25g-IE-MHM.title" = "TileXSpace";
 
@@ -196,9 +193,6 @@
 
 /* Class = "NSBox"; title = "Scroll"; ObjectID = "mFu-tq-vW7"; */
 "mFu-tq-vW7.title" = "Scroll";
-
-/* Class = "NSMenuItem"; title = "Tile"; ObjectID = "n8v-qG-b2F"; Note = "Do not translate"; */
-"n8v-qG-b2F.title" = "Tile";
 
 /* Class = "NSTextFieldCell"; title = "DesignWidth"; ObjectID = "nE2-We-ovk"; */
 "nE2-We-ovk.title" = "DesignWidth";

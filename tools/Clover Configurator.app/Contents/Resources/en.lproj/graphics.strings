@@ -1,18 +1,9 @@
 
-/* Class = "NSMenuItem"; title = "AMD3800 Controller:"; ObjectID = "0IR-4Y-Yda"; */
-"0IR-4Y-Yda.title" = "AMD3800 Controller:";
-
-/* Class = "NSMenuItem"; title = "AMD9300 Controller:"; ObjectID = "24N-oy-78j"; */
-"24N-oy-78j.title" = "AMD9300 Controller:";
-
 /* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "number"; ObjectID = "25N-fC-6b4"; */
 "25N-fC-6b4.ibShadowedIsNilPlaceholder" = "number";
 
 /* Class = "NSTableView"; ibShadowedToolTip = "<key>ATI</key>\n<array>\n\t<dict>\n\t<key>IOPCIPrimaryMatch</key>\n\t<string>0x10021234</string>\n\t<key>IOPCISubDevId</key>\n\t<string>0x106b</string>\n\t<key>LoadVBios</key>\n\t<true/>\n\t<key>Model</key>\n\t<string>AMD very cool card</string>\n\t<key>VRAM</key>\n\t<integer>8192</integer>\n\t<key>VideoPorts</key>\n\t<integer>4</integer>\n\t</dict>\n</array>\n\nMore than one AMD video cards? Add info under Graphics->ATI as an array of dictionaries:\n\n- IOPCIPrimaryMatch, device id\n- IOPCISubDevId, sub vendor id of your card\n- LoadVBios, load video bios\n- Model, name to be displayed\n- VRAM, the amount of video RAM, cosmetic only\n- VideoPorts, the ports available for this card"; ObjectID = "2E4-Ux-C7E"; */
 "2E4-Ux-C7E.ibShadowedToolTip" = "<key>ATI</key>\n<array>\n\t<dict>\n\t<key>IOPCIPrimaryMatch</key>\n\t<string>0x10021234</string>\n\t<key>IOPCISubDevId</key>\n\t<string>0x106b</string>\n\t<key>LoadVBios</key>\n\t<true/>\n\t<key>Model</key>\n\t<string>AMD very cool card</string>\n\t<key>VRAM</key>\n\t<integer>8192</integer>\n\t<key>VideoPorts</key>\n\t<integer>4</integer>\n\t</dict>\n</array>\n\nMore than one AMD video cards? Add info under Graphics->ATI as an array of dictionaries:\n\n- IOPCIPrimaryMatch, device id\n- IOPCISubDevId, sub vendor id of your card\n- LoadVBios, load video bios\n- Model, name to be displayed\n- VRAM, the amount of video RAM, cosmetic only\n- VideoPorts, the ports available for this card";
-
-/* Class = "NSMenuItem"; title = "Cannonlake (desktop):"; ObjectID = "37H-Rx-Zg5"; */
-"37H-Rx-Zg5.title" = "Cannonlake (desktop):";
 
 /* Class = "NSTextFieldCell"; title = "ProductID"; ObjectID = "3p4-vG-tT7"; */
 "3p4-vG-tT7.title" = "ProductID";
@@ -41,9 +32,6 @@
 /* Class = "NSButtonCell"; title = "Inject NVidia"; ObjectID = "6U0-ce-YRL"; */
 "6U0-ce-YRL.title" = "Inject NVidia";
 
-/* Class = "NSMenuItem"; title = "AMD6000 Controller:"; ObjectID = "8LD-ry-5ah"; */
-"8LD-ry-5ah.title" = "AMD6000 Controller:";
-
 /* Class = "NSBox"; title = "PatchVBios"; ObjectID = "8O6-lT-HAq"; */
 "8O6-lT-HAq.title" = "PatchVBios";
 
@@ -56,14 +44,8 @@
 /* Class = "NSButton"; ibShadowedToolTip = "<key>NvidiaGeneric</key>\n<true/>\n\nIf this true then generic name for Videocard will be used. For example instead of\nGigabyte Geforce 7300LE \nYou will see\nNVIDIA Geforce 7300LE"; ObjectID = "A8W-lA-vZO"; */
 "A8W-lA-vZO.ibShadowedToolTip" = "<key>NvidiaGeneric</key>\n<true/>\n\nIf this true then generic name for Videocard will be used. For example instead of\nGigabyte Geforce 7300LE \nYou will see\nNVIDIA Geforce 7300LE";
 
-/* Class = "NSMenuItem"; title = "AMD8000 Controller:"; ObjectID = "ANX-FT-7iO"; */
-"ANX-FT-7iO.title" = "AMD8000 Controller:";
-
 /* Class = "NSButtonCell"; title = "NvidiaGeneric"; ObjectID = "BgG-Eu-Y6R"; */
 "BgG-Eu-Y6R.title" = "NvidiaGeneric";
-
-/* Class = "NSMenuItem"; title = "AMD9520 Controller:"; ObjectID = "Bj4-yD-beB"; */
-"Bj4-yD-beB.title" = "AMD9520 Controller:";
 
 /* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "number"; ObjectID = "Cxs-xM-Pp3"; */
 "Cxs-xM-Pp3.ibShadowedIsNilPlaceholder" = "number";
@@ -77,9 +59,6 @@
 /* Class = "NSTableColumn"; headerCell.title = "IOPCISubDevId"; ObjectID = "G5P-e4-lQn"; */
 "G5P-e4-lQn.headerCell.title" = "IOPCISubDevId";
 
-/* Class = "NSMenuItem"; title = "Skylake (mobile):"; ObjectID = "GdN-hS-ZSb"; */
-"GdN-hS-ZSb.title" = "Skylake (mobile):";
-
 /* Class = "NSTableColumn"; headerCell.title = "VRAM"; ObjectID = "GdW-mg-f1W"; */
 "GdW-mg-f1W.headerCell.title" = "VRAM";
 
@@ -92,41 +71,17 @@
 /* Class = "NSTextField"; ibShadowedToolTip = "<key>ig-platform-id</key>\n<string>0x01620005</string>\nThis parameter is used to enable the internal Intel HD 4000 video card. Until now no common rule for selecting a value was found, so either let Clover handle this parameter or use another one if it does not work.\n\nHere is a table with possible values:\n\nValue|Type|Ports :---|:---|:--- 0x01660000|Mobile|4 ports: 1 LVDS, 3 DP 0x01660001|Mobile|4 ports: 1 LVDS, 1 HDMI, 2 DP 0x01660002|Mobile|1 port: LVDS 0x01660003|Mobile|4 ports: 1 LVDS, 1 HDMI e 2 DP 0x01660004|Mobile|1 port: LVDS 0x01620005|Desktop|3 ports: DP 0x01620006|Desktop|0 ports 0x01620007|Desktop|0 ports 0x01660008|Mobile|3 ports: 1 LVDS, 2 DP 0x01660009|Mobile|3 ports: 1 LVDS, 2 DP 0x0166000a|Mobile|3 ports: 2 DP, 1 HDMI 0x0166000b|Mobile|3 ports: 2 DP, 1 HDMI"; ObjectID = "IRG-f1-fId"; */
 "IRG-f1-fId.ibShadowedToolTip" = "<key>ig-platform-id</key>\n<string>0x01620005</string>\nThis parameter is used to enable the internal Intel HD 4000 video card. Until now no common rule for selecting a value was found, so either let Clover handle this parameter or use another one if it does not work.\n\nHere is a table with possible values:\n\nValue|Type|Ports :---|:---|:--- 0x01660000|Mobile|4 ports: 1 LVDS, 3 DP 0x01660001|Mobile|4 ports: 1 LVDS, 1 HDMI, 2 DP 0x01660002|Mobile|1 port: LVDS 0x01660003|Mobile|4 ports: 1 LVDS, 1 HDMI e 2 DP 0x01660004|Mobile|1 port: LVDS 0x01620005|Desktop|3 ports: DP 0x01620006|Desktop|0 ports 0x01620007|Desktop|0 ports 0x01660008|Mobile|3 ports: 1 LVDS, 2 DP 0x01660009|Mobile|3 ports: 1 LVDS, 2 DP 0x0166000a|Mobile|3 ports: 2 DP, 1 HDMI 0x0166000b|Mobile|3 ports: 2 DP, 1 HDMI";
 
-/* Class = "NSMenuItem"; title = "Coffeelake (desktop):"; ObjectID = "Ijx-3T-O4D"; */
-"Ijx-3T-O4D.title" = "Coffeelake (desktop):";
-
 /* Class = "NSBox"; title = "Box"; ObjectID = "Jrc-fS-99G"; */
 "Jrc-fS-99G.title" = "Box";
 
-/* Class = "NSMenuItem"; title = "Ivy Bridge HD4000 (mobile):"; ObjectID = "JuO-57-0kg"; */
-"JuO-57-0kg.title" = "Ivy Bridge HD4000 (mobile):";
-
 /* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "0x1006"; ObjectID = "KS4-4B-20d"; */
 "KS4-4B-20d.ibShadowedIsNilPlaceholder" = "0x1006";
-
-/* Class = "NSMenuItem"; title = "AMD9510 Controller:"; ObjectID = "KaM-2f-15R"; */
-"KaM-2f-15R.title" = "AMD9510 Controller:";
-
-/* Class = "NSMenuItem"; title = "AMD4600 Controller:"; ObjectID = "LGz-Cs-q86"; */
-"LGz-Cs-q86.title" = "AMD4600 Controller:";
-
-/* Class = "NSMenuItem"; title = "Haswell (desktop):"; ObjectID = "MtX-4n-ZO4"; */
-"MtX-4n-ZO4.title" = "Haswell (desktop):";
-
-/* Class = "NSMenuItem"; title = "BroadWell:"; ObjectID = "NEb-YT-nAn"; */
-"NEb-YT-nAn.title" = "BroadWell:";
-
-/* Class = "NSMenuItem"; title = "Ivy Bridge HD4000 (desktop):"; ObjectID = "Ncf-SM-J6X"; */
-"Ncf-SM-J6X.title" = "Ivy Bridge HD4000 (desktop):";
 
 /* Class = "NSTableColumn"; headerCell.title = "VideoPorts"; ObjectID = "NjL-84-2Lh"; */
 "NjL-84-2Lh.headerCell.title" = "VideoPorts";
 
 /* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "MBytes"; ObjectID = "PxK-Hh-U4Z"; */
 "PxK-Hh-U4Z.ibShadowedIsNilPlaceholder" = "MBytes";
-
-/* Class = "NSMenuItem"; title = "AMD9000 Controller:"; ObjectID = "PzC-3O-TKX"; Note = "Do not translate"; */
-"PzC-3O-TKX.title" = "AMD9000 Controller:";
 
 /* Class = "NSBox"; title = "NVIDIA"; ObjectID = "RWV-gV-PWA"; */
 "RWV-gV-PWA.title" = "NVIDIA";
@@ -151,9 +106,6 @@
 
 /* Class = "NSButton"; ibShadowedToolTip = "<key>RadeonDeInit</key>\n<true/>\n\nRev 4296\nA possibility to de-init Radeon cards.\nIt was very old problem since ElCapitan that AMD Radeon HD6xxx and up will not wake after sleep if used as first card.\nIf the card is secondary and CSM enabled then the card works fine. So the differences is initialisation.\nThe solution was found by vit9696 and used in private WhateverGreen.kext. Then Mieze proposed the solution as ACPI patch.\nNow I included this into Clover.\nYou have to set in config.plist"; ObjectID = "UTZ-9I-Mss"; */
 "UTZ-9I-Mss.ibShadowedToolTip" = "<key>RadeonDeInit</key>\n<true/>\n\nRev 4296\nA possibility to de-init Radeon cards.\nIt was very old problem since ElCapitan that AMD Radeon HD6xxx and up will not wake after sleep if used as first card.\nIf the card is secondary and CSM enabled then the card works fine. So the differences is initialisation.\nThe solution was found by vit9696 and used in private WhateverGreen.kext. Then Mieze proposed the solution as ACPI patch.\nNow I included this into Clover.\nYou have to set in config.plist";
-
-/* Class = "NSMenuItem"; title = "Sandy Bridge HD3000:"; ObjectID = "V8p-Nb-5t0"; */
-"V8p-Nb-5t0.title" = "Sandy Bridge HD3000:";
 
 /* Class = "NSButtonCell"; title = "Patch VBios"; ObjectID = "XgX-Jz-Fiz"; */
 "XgX-Jz-Fiz.title" = "Patch VBios";
@@ -182,9 +134,6 @@
 /* Class = "NSTextField"; ibShadowedToolTip = "<key>NVCAP</key>\n<string>04000000000003000C0000000000000A00000000</string>\nThis parameter is only useful for Nvidia video cards and configures types and usage of video ports. The example line contains 40 capitalised hexadecimal digits. Theory is missing in this case and praxis shows controversial results.\n\nYou can also find other methods on calculating a correct value for this line.\n\nClover will try to generate one according to the video bios."; ObjectID = "bf1-cI-er9"; */
 "bf1-cI-er9.ibShadowedToolTip" = "<key>NVCAP</key>\n<string>04000000000003000C0000000000000A00000000</string>\nThis parameter is only useful for Nvidia video cards and configures types and usage of video ports. The example line contains 40 capitalised hexadecimal digits. Theory is missing in this case and praxis shows controversial results.\n\nYou can also find other methods on calculating a correct value for this line.\n\nClover will try to generate one according to the video bios.";
 
-/* Class = "NSMenuItem"; title = "Haswell (mobile):"; ObjectID = "c55-ZL-CnZ"; */
-"c55-ZL-CnZ.title" = "Haswell (mobile):";
-
 /* Class = "NSButton"; ibShadowedToolTip = "<key>Inject</key>\n<true/>\n\nInject, if true, your EDID->Custom"; ObjectID = "cr7-K5-nzi"; */
 "cr7-K5-nzi.ibShadowedToolTip" = "<key>Inject</key>\n<true/>\n\nInject, if true, your EDID->Custom";
 
@@ -200,14 +149,8 @@
 /* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "0x1002XXXX"; ObjectID = "dvj-Pp-if9"; */
 "dvj-Pp-if9.ibShadowedIsNilPlaceholder" = "0x1002XXXX";
 
-/* Class = "NSMenuItem"; title = "Coffeelake (mobile):"; ObjectID = "dwQ-0C-wRz"; */
-"dwQ-0C-wRz.title" = "Coffeelake (mobile):";
-
 /* Class = "NSTableView"; ibShadowedToolTip = "<key>PatchVBiosBytes</key>\n<array>\n    <dict>\n        <key>Find</key>\n        <data>gAeoAqAF</data>\n        <key>Replace</key>\n        <data>gAeoAjgE</data>\n    </dict>\n</array>\n\nThis example applied to an AMD Radeon HD 6670 video bios, resulting in a replacement of mode 1920x1440 with mode 1920x1080. \nIt is advised to choose a mode with the same horizontal resolution.\n\nIt is possible to apply multiple patches. An Nvidia video bios, for instance, was successfully modified with four patches."; ObjectID = "eeh-6p-NEB"; */
 "eeh-6p-NEB.ibShadowedToolTip" = "<key>PatchVBiosBytes</key>\n<array>\n    <dict>\n        <key>Find</key>\n        <data>gAeoAqAF</data>\n        <key>Replace</key>\n        <data>gAeoAjgE</data>\n    </dict>\n</array>\n\nThis example applied to an AMD Radeon HD 6670 video bios, resulting in a replacement of mode 1920x1440 with mode 1920x1080. \nIt is advised to choose a mode with the same horizontal resolution.\n\nIt is possible to apply multiple patches. An Nvidia video bios, for instance, was successfully modified with four patches.";
-
-/* Class = "NSMenuItem"; title = "AMD9515 Controller:"; ObjectID = "f1u-CV-pQ0"; */
-"f1u-CV-pQ0.title" = "AMD9515 Controller:";
 
 /* Class = "NSButtonCell"; title = "NvidiaNoEFI"; ObjectID = "fvj-gz-fFb"; */
 "fvj-gz-fFb.title" = "NvidiaNoEFI";
@@ -226,12 +169,6 @@
 
 /* Class = "NSTextField"; ibShadowedToolTip = "<key>ProductID</key>\n<string>0x06DE</string>\n\nOverrides and inject your Display product id.\nSome time, your Display's EEPROM is not good and OEM manufacturers usually install\nfor a good result the OS customized with the right EDID data ignoring what's on the EEPROM.\nSo if the EEPROM is damaged you have to inject correct info.<string>0x11BF</string>\n\nOverrides and inject your Display Vendor id.\nSome time, your Display's EEPROM is not good and OEM manufacturers usually install\nfor a good result the OS customized with the right EDID data ignoring what's on the EEPROM.\nSo if the EEPROM is damaged you have to inject correct info."; ObjectID = "j0a-hX-BLv"; */
 "j0a-hX-BLv.ibShadowedToolTip" = "<key>ProductID</key>\n<string>0x06DE</string>\n\nOverrides and inject your Display product id.\nSome time, your Display's EEPROM is not good and OEM manufacturers usually install\nfor a good result the OS customized with the right EDID data ignoring what's on the EEPROM.\nSo if the EEPROM is damaged you have to inject correct info.<string>0x11BF</string>\n\nOverrides and inject your Display Vendor id.\nSome time, your Display's EEPROM is not good and OEM manufacturers usually install\nfor a good result the OS customized with the right EDID data ignoring what's on the EEPROM.\nSo if the EEPROM is damaged you have to inject correct info.";
-
-/* Class = "NSMenuItem"; title = "Kabylake (desktop):"; ObjectID = "kS0-gp-mxi"; */
-"kS0-gp-mxi.title" = "Kabylake (desktop):";
-
-/* Class = "NSMenuItem"; title = "AMD7000 Controller:"; ObjectID = "lUL-rE-jeZ"; */
-"lUL-rE-jeZ.title" = "AMD7000 Controller:";
 
 /* Class = "NSButtonCell"; title = "NvidiaSingle"; ObjectID = "lf3-pM-5zH"; */
 "lf3-pM-5zH.title" = "NvidiaSingle";
@@ -257,23 +194,8 @@
 /* Class = "NSTextFieldCell"; title = "FB Name"; ObjectID = "oow-qe-zgk"; */
 "oow-qe-zgk.title" = "FB Name";
 
-/* Class = "NSMenuItem"; title = "Cannonlake (mobile):"; ObjectID = "p4w-eQ-IYE"; */
-"p4w-eQ-IYE.title" = "Cannonlake (mobile):";
-
-/* Class = "NSMenuItem"; title = "Old ATI Controller:"; ObjectID = "pUt-Uh-yfc"; */
-"pUt-Uh-yfc.title" = "Old ATI Controller:";
-
-/* Class = "NSMenuItem"; title = "AMD5000 Controller:"; ObjectID = "pa6-L5-DJh"; */
-"pa6-L5-DJh.title" = "AMD5000 Controller:";
-
-/* Class = "NSMenuItem"; title = "AMD2600 Controller:"; ObjectID = "q45-CE-7pX"; */
-"q45-CE-7pX.title" = "AMD2600 Controller:";
-
 /* Class = "NSButton"; ibShadowedToolTip = "<key>NvidiaSingle</key>\n<true/>\n\nImplemented NvidiaSingle\nIf you have two cards Nvidia and wants to inject only first one:\nthen you can set this parameter."; ObjectID = "qbi-hO-FhU"; */
 "qbi-hO-FhU.ibShadowedToolTip" = "<key>NvidiaSingle</key>\n<true/>\n\nImplemented NvidiaSingle\nIf you have two cards Nvidia and wants to inject only first one:\nthen you can set this parameter.";
-
-/* Class = "NSMenuItem"; title = "AMD9500 Controller:"; ObjectID = "qrP-2S-fn2"; */
-"qrP-2S-fn2.title" = "AMD9500 Controller:";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "parameter is for providing custom EDID when it's missing. The main requirement is to have a correct maximal resolution.\n\nAnother possibility is to use ViewSonic EDID Editor v3.1.5 that can easily be ported to Mac, if needed.\n\nAn EDID from a Dell Inspiron will be used in the sample configuration file with a matrix of 1440x900.\n\nA custom EDID will also be used for automatic video bios patching. Look above.\n\nYou can override VendorID and ProductID in EDID."; ObjectID = "qrY-PP-Osn"; */
 "qrY-PP-Osn.ibShadowedToolTip" = "parameter is for providing custom EDID when it's missing. The main requirement is to have a correct maximal resolution.\n\nAnother possibility is to use ViewSonic EDID Editor v3.1.5 that can easily be ported to Mac, if needed.\n\nAn EDID from a Dell Inspiron will be used in the sample configuration file with a matrix of 1440x900.\n\nA custom EDID will also be used for automatic video bios patching. Look above.\n\nYou can override VendorID and ProductID in EDID.";
@@ -281,14 +203,8 @@
 /* Class = "NSTextField"; ibShadowedToolTip = "<key>VRAM</key>\n<integer>1024</integer>\nAmount of video memory in MB. It is determined automatically but no one will be harmed if you write a correct value. However, changing it has not helped anyone yet."; ObjectID = "qtF-e6-lNk"; */
 "qtF-e6-lNk.ibShadowedToolTip" = "<key>VRAM</key>\n<integer>1024</integer>\nAmount of video memory in MB. It is determined automatically but no one will be harmed if you write a correct value. However, changing it has not helped anyone yet.";
 
-/* Class = "NSMenuItem"; title = "AMD2400 Controller:"; ObjectID = "qyq-um-vWq"; */
-"qyq-um-vWq.title" = "AMD2400 Controller:";
-
 /* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "HEX value"; ObjectID = "s4T-rc-I13"; */
 "s4T-rc-I13.ibShadowedIsNilPlaceholder" = "HEX value";
-
-/* Class = "NSMenuItem"; title = "Kabylake (mobile):"; ObjectID = "tdP-7s-wAa"; */
-"tdP-7s-wAa.title" = "Kabylake (mobile):";
 
 /* Class = "NSTableColumn"; headerCell.title = "IOPCIPrimaryMatch"; ObjectID = "tyQ-WL-gQa"; */
 "tyQ-WL-gQa.headerCell.title" = "IOPCIPrimaryMatch";
@@ -301,12 +217,6 @@
 
 /* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "framebuffer"; ObjectID = "vUX-ax-DYA"; */
 "vUX-ax-DYA.ibShadowedIsNilPlaceholder" = "framebuffer";
-
-/* Class = "NSMenuItem"; title = "AMD4800 Controller:"; ObjectID = "vr8-X9-g6h"; */
-"vr8-X9-g6h.title" = "AMD4800 Controller:";
-
-/* Class = "NSMenuItem"; title = "Skylake (desktop):"; ObjectID = "vyD-G1-PJu"; */
-"vyD-G1-PJu.title" = "Skylake (desktop):";
 
 /* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "0xA1"; ObjectID = "wLY-r7-6EP"; */
 "wLY-r7-6EP.ibShadowedIsNilPlaceholder" = "0xA1";

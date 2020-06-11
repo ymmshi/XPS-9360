@@ -8,6 +8,9 @@
 /* Class = "NSMenuItem"; title = "STRING"; ObjectID = "1g6-ym-4Z2"; */
 "1g6-ym-4Z2.title" = "STRING";
 
+/* Class = "NSTabViewItem"; label = "Platform IDs"; ObjectID = "1qc-EA-Uji"; */
+"1qc-EA-Uji.label" = "Platform IDs";
+
 /* Class = "NSButton"; ibShadowedToolTip = "<key>FixOwnership</key>\n<true/>\nIt is possible to leave USB injection enabled and only turn off the ownership fix.\n\nThis fix is not relevant for UEFI booting."; ObjectID = "2I2-ep-g7I"; */
 "2I2-ep-g7I.ibShadowedToolTip" = "<key>FixOwnership</key>\n<true/>\nIt is possible to leave USB injection enabled and only turn off the ownership fix.\n\nThis fix is not relevant for UEFI booting.";
 
@@ -19,6 +22,9 @@
 
 /* Class = "NSButton"; ibShadowedToolTip = "<key>ResetHDA</key>\n<true/>\nAudio controller initialization. Some users have non-working sound after cold boot but works after restart or wake (even on Windows!). This is a workaround that works at early boot, so it will affect Windows as well."; ObjectID = "4ga-hk-hZY"; */
 "4ga-hk-hZY.ibShadowedToolTip" = "<key>ResetHDA</key>\n<true/>\nAudio controller initialization. Some users have non-working sound after cold boot but works after restart or wake (even on Windows!). This is a workaround that works at early boot, so it will affect Windows as well.";
+
+/* Class = "NSMenuItem"; title = "List of PCI Devices"; ObjectID = "4tY-iq-hCR"; */
+"4tY-iq-hCR.title" = "List of PCI Devices";
 
 /* Class = "NSTableColumn"; headerCell.title = "Key*"; ObjectID = "5Yq-DI-Ikq"; */
 "5Yq-DI-Ikq.headerCell.title" = "Key*";
@@ -65,6 +71,9 @@
 /* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "0xXXXX14E4"; ObjectID = "EuO-kz-UKB"; */
 "EuO-kz-UKB.ibShadowedIsNilPlaceholder" = "0xXXXX14E4";
 
+/* Class = "NSWindow"; title = "Presets"; ObjectID = "EvK-oK-dlf"; */
+"EvK-oK-dlf.title" = "Presets";
+
 /* Class = "NSTableColumn"; headerCell.title = "Comment"; ObjectID = "F5e-zV-Jze"; */
 "F5e-zV-Jze.headerCell.title" = "Comment";
 
@@ -92,6 +101,9 @@
 /* Class = "NSButton"; ibShadowedToolTip = "Try to force enable HPET if isn't."; ObjectID = "Hfo-IB-7nr"; */
 "Hfo-IB-7nr.ibShadowedToolTip" = "Try to force enable HPET if isn't.";
 
+/* Class = "NSTabViewItem"; label = "Framebuffer"; ObjectID = "ISa-bF-nRd"; */
+"ISa-bF-nRd.label" = "Framebuffer";
+
 /* Class = "NSButtonCell"; title = "HighCurrent"; ObjectID = "JU3-mD-ZWl"; */
 "JU3-mD-ZWl.title" = "HighCurrent";
 
@@ -109,6 +121,15 @@
 
 /* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "0xXXXX10DE"; ObjectID = "NDY-K4-95p"; */
 "NDY-K4-95p.ibShadowedIsNilPlaceholder" = "0xXXXX10DE";
+
+/* Class = "NSButtonCell"; title = "Add"; ObjectID = "O1o-VB-fdr"; */
+"O1o-VB-fdr.title" = "Add";
+
+/* Class = "NSTabViewItem"; label = "Device IDs"; ObjectID = "OS2-jM-ikj"; */
+"OS2-jM-ikj.label" = "Device IDs";
+
+/* Class = "NSTabViewItem"; label = "Selected Platform"; ObjectID = "OXm-fI-nYI"; */
+"OXm-fI-nYI.label" = "Selected Platform";
 
 /* Class = "NSTableView"; ibShadowedToolTip = "<key>AddProperties</key>\n<array>\n  <dict>\n    <key>Device</key>\n    <string>NVidia</string>\n    <key>Key</key>\n    <string>AAPL,HasPanel</string>\n    <key>Value</key>\n    <data>AQAAAA==</data>\n  </dict>\n  <dict>\n    <key>Device</key>\n    <string>NVidia</string>\n    <key>Key</key>\n    <string>AAPL,Haslid</string>\n    <key>Value</key>\n    <data>AQAAAA==</data>\n    </dict>\n</array>\nUsing device properties injection may be insufficient for some cases (new device, new standard, new OS), so this function lets you customize these injected properties.\n\nYou may write as many properties as you want for these devices: * ATI * NVidia * IntelGFX * LAN * WIFI * Firewire * SATA * IDE * HDA * HDMI * LPC * SmBUS * USB"; ObjectID = "Ob7-UX-r0p"; */
 "Ob7-UX-r0p.ibShadowedToolTip" = "<key>AddProperties</key>\n<array>\n  <dict>\n    <key>Device</key>\n    <string>NVidia</string>\n    <key>Key</key>\n    <string>AAPL,HasPanel</string>\n    <key>Value</key>\n    <data>AQAAAA==</data>\n  </dict>\n  <dict>\n    <key>Device</key>\n    <string>NVidia</string>\n    <key>Key</key>\n    <string>AAPL,Haslid</string>\n    <key>Value</key>\n    <data>AQAAAA==</data>\n    </dict>\n</array>\nUsing device properties injection may be insufficient for some cases (new device, new standard, new OS), so this function lets you customize these injected properties.\n\nYou may write as many properties as you want for these devices: * ATI * NVidia * IntelGFX * LAN * WIFI * Firewire * SATA * IDE * HDA * HDMI * LPC * SmBUS * USB";
@@ -161,7 +182,7 @@
 /* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "1808 or 0x710"; ObjectID = "Xt7-nw-zTh"; */
 "Xt7-nw-zTh.ibShadowedIsNilPlaceholder" = "1808 or 0x710";
 
-/* Class = "NSTextField"; ibShadowedToolTip = "Set Hex value for disable a function.\n\n/* Function Disable 1 RCBA 0x3418 */\n#define PCH_DISABLE_ALWAYS\t(1 << 0)\n#define PCH_DISABLE_ADSPD\t(1 << 1)\n#define PCH_DISABLE_SATA1\t(1 << 2)\n#define PCH_DISABLE_SMBUS\t(1 << 3)\n#define PCH_DISABLE_HD_AUDIO\t(1 << 4)\n#define PCH_DISABLE_EHCI2\t(1 << 13)\n#define PCH_DISABLE_LPC\t\t(1 << 14)\n#define PCH_DISABLE_EHCI1\t(1 << 15)\n#define PCH_DISABLE_PCIE(x)\t(1 << (16 + x))\n#define PCH_DISABLE_THERMAL\t(1 << 24)\n#define PCH_DISABLE_SATA2\t(1 << 25)\n#define PCH_DISABLE_XHCI\t(1 << 27)\n\n0x1 (to disable ALWAYS)\n0x2 (to disable ADSPD)\n0x4 (to disable SATA1)\n0x8 (to disable SMBUS)\n0x10 (to disable HDEF)\n0x2000 (to disable EHCI2)\n0x4000 (to disable LPC)\n0x8000 (to disable EHCI1)\n0x1000000 (to disable THERMAL)\n0x2000000 (to disable SATA2)\n0x8000000 (to disable XHCI)"; ObjectID = "Zk2-oy-DHb"; */
+//* Class = "NSTextField"; ibShadowedToolTip = "Set Hex value for disable a function.\n\n/* Function Disable 1 RCBA 0x3418 */\n#define PCH_DISABLE_ALWAYS\t(1 << 0)\n#define PCH_DISABLE_ADSPD\t(1 << 1)\n#define PCH_DISABLE_SATA1\t(1 << 2)\n#define PCH_DISABLE_SMBUS\t(1 << 3)\n#define PCH_DISABLE_HD_AUDIO\t(1 << 4)\n#define PCH_DISABLE_EHCI2\t(1 << 13)\n#define PCH_DISABLE_LPC\t\t(1 << 14)\n#define PCH_DISABLE_EHCI1\t(1 << 15)\n#define PCH_DISABLE_PCIE(x)\t(1 << (16 + x))\n#define PCH_DISABLE_THERMAL\t(1 << 24)\n#define PCH_DISABLE_SATA2\t(1 << 25)\n#define PCH_DISABLE_XHCI\t(1 << 27)\n\n0x1 (to disable ALWAYS)\n0x2 (to disable ADSPD)\n0x4 (to disable SATA1)\n0x8 (to disable SMBUS)\n0x10 (to disable HDEF)\n0x2000 (to disable EHCI2)\n0x4000 (to disable LPC)\n0x8000 (to disable EHCI1)\n0x1000000 (to disable THERMAL)\n0x2000000 (to disable SATA2)\n0x8000000 (to disable XHCI)"; ObjectID = "Zk2-oy-DHb"; */
 "Zk2-oy-DHb.ibShadowedToolTip" = "Set Hex value for disable a function.\n\n/* Function Disable 1 RCBA 0x3418 */\n#define PCH_DISABLE_ALWAYS\t(1 << 0)\n#define PCH_DISABLE_ADSPD\t(1 << 1)\n#define PCH_DISABLE_SATA1\t(1 << 2)\n#define PCH_DISABLE_SMBUS\t(1 << 3)\n#define PCH_DISABLE_HD_AUDIO\t(1 << 4)\n#define PCH_DISABLE_EHCI2\t(1 << 13)\n#define PCH_DISABLE_LPC\t\t(1 << 14)\n#define PCH_DISABLE_EHCI1\t(1 << 15)\n#define PCH_DISABLE_PCIE(x)\t(1 << (16 + x))\n#define PCH_DISABLE_THERMAL\t(1 << 24)\n#define PCH_DISABLE_SATA2\t(1 << 25)\n#define PCH_DISABLE_XHCI\t(1 << 27)\n\n0x1 (to disable ALWAYS)\n0x2 (to disable ADSPD)\n0x4 (to disable SATA1)\n0x8 (to disable SMBUS)\n0x10 (to disable HDEF)\n0x2000 (to disable EHCI2)\n0x4000 (to disable LPC)\n0x8000 (to disable EHCI1)\n0x1000000 (to disable THERMAL)\n0x2000000 (to disable SATA2)\n0x8000000 (to disable XHCI)";
 
 /* Class = "NSButtonCell"; title = "ForceHPET"; ObjectID = "a4f-La-NY3"; */
@@ -169,6 +190,9 @@
 
 /* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "0xXXXX8086"; ObjectID = "amy-9Z-PoQ"; */
 "amy-9Z-PoQ.ibShadowedIsNilPlaceholder" = "0xXXXX8086";
+
+/* Class = "NSTabViewItem"; label = "Current System"; ObjectID = "aoM-1O-tLo"; */
+"aoM-1O-tLo.label" = "Current System";
 
 /* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "0xXXXX8086"; ObjectID = "av3-rR-WHU"; */
 "av3-rR-WHU.ibShadowedIsNilPlaceholder" = "0xXXXX8086";
@@ -187,6 +211,9 @@
 
 /* Class = "NSButton"; ibShadowedToolTip = "<key>AFGLowPowerState</key>\n<false/>\nThis helps remove cracking sounds at audio output after idle mode, so sound card is always on."; ObjectID = "dn8-Pw-elB"; */
 "dn8-Pw-elB.ibShadowedToolTip" = "<key>AFGLowPowerState</key>\n<false/>\nThis helps remove cracking sounds at audio output after idle mode, so sound card is always on.";
+
+/* Class = "NSButtonCell"; title = "Spoof ID"; ObjectID = "e9g-dr-rID"; */
+"e9g-dr-rID.title" = "Spoof ID";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Fix MaxBrightness for Intel"; ObjectID = "eMI-Yt-Luy"; */
 "eMI-Yt-Luy.ibShadowedToolTip" = "Fix MaxBrightness for Intel";
@@ -284,11 +311,17 @@
 /* Class = "NSTableColumn"; headerCell.title = "Properties Value"; ObjectID = "zDl-Sr-4Fb"; */
 "zDl-Sr-4Fb.headerCell.title" = "Properties Value";
 
+/* Class = "NSTabViewItem"; label = "CPU Codenames"; ObjectID = "zE4-PU-vZF"; */
+"zE4-PU-vZF.label" = "CPU Codenames";
+
 /* Class = "NSTextFieldCell"; title = "WIFI"; ObjectID = "zEn-Md-gTE"; */
 "zEn-Md-gTE.title" = "WIFI";
 
 /* Class = "NSButtonCell"; title = "HDMIInjection"; ObjectID = "zQM-Rc-Ud8"; */
 "zQM-Rc-Ud8.title" = "HDMIInjection";
+
+/* Class = "NSMenuItem"; title = "Add all PCI devices"; ObjectID = "zSg-ru-Mu7"; */
+"zSg-ru-Mu7.title" = "Add all PCI devices";
 
 /* Class = "NSTextFieldCell"; title = "CustomProperties"; ObjectID = "zlX-sr-gGp"; */
 "zlX-sr-gGp.title" = "CustomProperties";
