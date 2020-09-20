@@ -23,17 +23,17 @@ CPU | i7-8550U
 网卡蓝牙 | DW1830
 内存 | 16G
 硬盘 | SM961(256G)
-BIOS版本 | 2.9.0
+BIOS版本 | 2.13.0
 
 ### 驱动版本
 
 驱动|版本|驱动|版本
 :---:|:---:|:---:|:---:
-AirportBrcmFixup|2.0.8|Lilu|1.4.6
-AppleALC|1.5.1|USBInjectAll|0.7.1
-BrcmPatchRam|2.5.4|VirtualSMC|1.1.5
-Clover|5120|VoodooPS2|2.1.1
-CPUFriend|1.2.1|WhateverGreen|1.4.1
+AirportBrcmFixup|2.0.9|Lilu|1.4.7
+AppleALC|1.5.2|USBInjectAll|0.7.1
+BrcmPatchRam|2.5.4|VirtualSMC|1.1.6
+Clover|5122|VoodooPS2|2.1.1
+CPUFriend|1.2.1|WhateverGreen|1.4.2
 VoodooI2C|2.4.4|VoodooInput|1.0.7
 
 ### 安装前准备
